@@ -1,0 +1,75 @@
+# Alacritty basic config
+
+# Setup the terminal
+env:
+  TERM: xterm-256color
+
+# window settings
+window:
+  padding:
+    x: 5
+    y: 6
+  dynamic_padding: true
+
+# Scrolling
+scrolling:
+  history: 10000
+
+# Font Settings
+font:
+  normal:
+    family: SauceCodePro Nerd Font Mono
+    style: Regular
+
+  bold:
+    family: SauceCodePro Nerd Font Mono
+    style: Bold
+
+  italic:
+    family: SauceCodePro Nerd Font Mono
+    style: Italic
+
+  bold_italic:
+    family: SauceCodePro Nerd Font Mono
+
+    style: Bold Italic
+
+  size: 9
+# Colors (Material Theme)
+colors:
+  # Default colors
+  primary:
+    background: '#1e282d'
+    foreground: '#c4c7d1'
+
+  # Normal colors
+  normal:
+    black:   '#666666'
+    red:     '#eb606b'
+    green:   '#c3e88d'
+    yellow:  '#f7eb95'
+    blue:    '#80cbc4'
+    magenta: '#ff2f90'
+    cyan:    '#aeddff'
+    white:   '#ffffff'
+
+  # Bright colors
+  bright:
+    black:   '#ff262b'
+    red:     '#eb606b'
+    green:   '#c3e88d'
+    yellow:  '#f7eb95'
+    blue:    '#7dc6bf'
+    magenta: '#6c71c4'
+    cyan:    '#35434d'
+    white:   '#ffffff'
+
+# Opacity
+background_opacity: 0.75
+
+# Shell settings
+shell:
+  program: /bin/zsh
+  args:
+    - --login
+

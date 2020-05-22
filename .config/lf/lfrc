@@ -1,0 +1,87 @@
+# Basic Settings
+set preview true
+set previewer preview
+set color256 true
+set drawbox true
+set icons true
+set ignorecase true
+
+# Open function
+cmd open ${{
+    case $(file --mime-type "$f" -bL) in
+        text/*|application/json/*/application/x-wine-extension-ini) $EDITOR "$f";;
+        video/*|image/*/application/pdf) xdg-open "$f" & disown;;
+        *) xdg-open "$f" ;;
+    esac
+}}
+
+# make directory
+cmd mkdir ${{
+  printf "Directory Name: "
+  read ans
+  mkdir "$ans"
+}}
+
+# make file
+cmd mkfile ${{
+  printf "File Name: "
+  read ans
+  $EDITOR "$ans"
+}}
+
+# make programs executable
+cmd chmod ${{
+  printf "Mode Bits: "
+  read ans
+
+  for file in "$fx"
+  do
+    chmod $ans $file
+  done
+}}
+
+# Archive
+cmd unarchive ${{
+    aunpack "$f"
+}}
+# Removing some default bindings
+map m
+map o
+map n
+map "'"
+map '"'
+map d
+map c
+map e
+map f
+
+# Different file openings
+map ee $$EDITOR "$f"
+map ev $$VISUAL "$f"
+map er $$READER "$f"
+map eb $$BOOK_READER "$f"
+
+# Archive Mappings
+map az zip
+map at tar
+map au unarchive
+
+# git bindings
+map ga $/usr/bin/git --git-dir=$HOME/Repos/Dotfiles/ --work-tree=$HOME add "$f"
+
+# Basic Functions
+map . set hidden!
+map <delete> delete
+map p paste
+map d cut
+map y copy
+map <enter> open
+map mf mkfile
+map md mkdir
+map ms $mkscript
+map ch chmod
+map r rename
+map R reload
+map C clear
+map U unselect
+

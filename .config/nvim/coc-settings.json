@@ -1,0 +1,137 @@
+{
+    // vimlsp settings
+    "vimlsp.filetypes": [
+       "vim"
+    ],
+    "vimlsp.trace.server": "off",
+    "vimlsp.debug": true,
+    "vimlsp.indexes.count": 1,
+    "vimlsp.indexes.gap": 500,
+    "vimlsp.diagnostic.enable": false,
+    
+    // clangd settings
+    "clangd.arguments": [],
+    "clangd.fallbackFlags": [],
+    "clangd.disableDiagnostics": false,
+    "clangd.semanticHighlighting": false,
+    "clangd.enabled": true,
+    
+    // suggest settings
+    "suggest.timeout": 1000,
+    "suggest.defaultSortMethod": "length",
+    "suggest.floatEnable": true,
+    "suggest.disableKind": true,
+    "suggest.disableMenu": true,
+    "suggest.maxPreviewWidth": 45,
+    "suggest.labelMaxLength": 80,
+    "suggest.detailMaxLength": 15,
+    "suggest.localityBonus": true,
+    "suggest.enablePreview": true,
+    "suggest.snippetIndicator": "~",
+    "suggest.enablePreselect": false,
+    "suggest.triggerCompletionWait": 100,
+    "suggest.asciiCharactersOnly": true,
+    "suggest.detailField": "preview",
+    "suggest.autoTrigger": "always",
+    "suggest.noselect": true,
+    "suggest.numberSelect": false,
+    "suggest.fixInsertedWord": true,
+    "suggest.echodocSupport": false,
+    "suggest.keepCompleteopt": false,
+    "suggest.minTriggerInputLength": 1,
+    "suggest.languageSourcePriority": 99,
+    "suggest.removeDuplicateItems": false,
+    "suggest.preferCompleteThanJumpPlaceholder": true,
+    "suggest.acceptSuggestionOnCommitCharacter": true,
+   
+    // diagnostic settings
+    "diagnostic.enable": true,
+    "diagnostic.messageTarget": "echo",
+    "diagnostic.enableSign": true,
+    "diagnostic.messageDelay": 500,
+    "diagnostic.virtualText": true,
+    "diagnostic.maxWindowHeight": 3,
+    "diagnostic.maxWindowWidth": 30,
+    "diagnostic.displayByAle": false,
+    "diagnostic.refreshOnInsertMode": true,
+    "diagnostic.format": "%message\n[%source:%code]",
+    "diagnostic.enableHighlightLineNumber": true,
+    "diagnostic.enableMessage": "always",
+    "diagnostic.level": "hint",
+    "diagnostic.errorSign": ">>",
+    "diagnostic.refreshAfterSave": false,
+    "diagnostic.checkCurrentLine": true,
+    "diagnostic.separateRelatedInformationAsDiagnostics": true,
+    "diagnostic.joinMessageLines": true,
+
+    // coc preferences
+    "coc.preferences.hoverTarget": "float",
+    "coc.preferences.messageLevel": "more",
+    "coc.preferences.colorSupport": false,
+    "coc.preferences.formatOnType": false,
+    "coc.preferences.highlightTimeout": 250,
+    "coc.preferences.previewAutoClose": true,
+    "coc.preferences.formatOnSaveFiletypes": [],
+    "coc.preferences.formatOnTypeFiletypes": [],
+    "coc.preferences.bracketEnterImprove": true,
+    "coc.preferences.formatOnInsertLeave": false,
+    "coc.preferences.enableFloatHighlight": true,
+
+    // list
+    "list.maxHeight": 8,
+    "list.autoResize": true,
+    "list.limitLines": 10000,
+    "list.maxPreviewHeight": 12,
+    "list.previewSplitRight": true,
+    "list.indicator": ">",
+    "list.signOffset": 900,
+    "list.normalMappings": {},
+    "list.insertMappings": {},
+    "list.nextKeymap": "<C-j>",
+    "list.previousKeymap": "<C-k>",
+    "list.selectedSignText": "*",
+    "list.extendedSearchMode": true,
+    "list.source.symbols.defaultOptions": [
+        "--interactive"
+    ],
+    "list.source.actions.defaultArgs": [],
+    "list.source.marketplace.defaultOptions": [],
+    "list.interactiveDebounceTime": 50,
+    "list.previewHighlightGroup": "Search",
+
+    // signature settings
+    "signature.hideOnTextChange": true,
+    "signature.target": "float",
+    "signature.enable": true,
+    "signature.floatMaxWidth": 40,
+    "signature.maxWindowHeight": 4,
+    "signature.preferShownAbove": true,
+    "signature.triggerSignatureWait": 100,
+    
+
+    // go settings
+    "go.tags": {},
+    "go.tests": {},
+    "go.goplsArgs": [],
+    "go.trace.server": "off",
+    "go.enable": true,
+    "go.goplsOptions": {},
+
+    // pyright settings
+    "pyright.typeCheckingMode": "strict",
+    "pyright.disableCompletion": false,
+    "pyright.disableLanguageServices": false,
+    "pyright.useLibraryCodeForTypes": false,
+
+    // coc settings
+    "coc.preferences.rootPatterns": [
+        ".git",
+        ".hg",
+        ".projections.json"
+    ],
+    "coc.preferences.snippetStatusText": "SNIP",
+    "coc.source.around.firstMatch": true,
+    "coc.source.buffer.firstMatch": true,
+    "coc.preferences.maxFileSize": "1GB"
+
+}

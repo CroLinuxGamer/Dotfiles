@@ -1,0 +1,103 @@
+{
+    "dl": {
+        "chunk_size": "10",
+        "download_dir": "Videos/Anime",
+        "external_downloader": "{aria2}",
+        "fallback_qualities": [
+            "720p",
+            "480p",
+            "360p"
+        ],
+        "file_format": "{anime_title}/{anime_title}_{ep_no}",
+        "force_download": false,
+        "player": null,
+        "provider": "animepahe",
+        "quality": "1080p",
+        "skip_download": false,
+        "url": false
+    },
+    "siteconfig": {
+        "animeflix": {
+            "fallback_servers": [
+                "FastStream"
+            ],
+            "server": "AUEngine",
+            "version": "sub"
+        },
+        "animeflv": {
+            "server": "natsuki",
+            "version": "subbed"
+        },
+        "animekisa": {
+            "fallback_servers": [
+                "mp4upload",
+                "vidstream"
+            ],
+            "server": "gcloud"
+        },
+        "animerush": {
+            "fallback_servers": [
+                "MP4Upload",
+                "Mp4upload Video",
+                "Youruploads Video"
+            ],
+            "server": "Mp4uploadHD Video"
+        },
+        "animesimple": {
+            "server": "trollvid",
+            "version": "subbed"
+        },
+        "anistream.xyz": {
+            "version": "subbed"
+        },
+        "dreamanime": {
+            "server": "trollvid",
+            "version": "subbed"
+        },
+        "gogoanime": {
+            "server": "cdn"
+        },
+        "kickass": {
+            "ext_fallback_servers": [
+                "Mp4Upload",
+                "Vidcdn",
+                "Vidstreaming"
+            ],
+            "fallback_servers": [
+                "ORIGINAL-QUALITY-V2",
+                "HTML5-HQ",
+                "HTML5",
+                "A-KICKASSANIME",
+                "BETAPLAYER",
+                "KICKASSANIME",
+                "DEVSTREAM"
+            ],
+            "server": "A-KICKASSANIME"
+        },
+        "nineanime": {
+            "server": "mp4upload"
+        },
+        "ryuanime": {
+            "server": "trollvid",
+            "version": "subbed"
+        },
+        "watchmovie": {
+            "fallback_servers": [
+                "fembed",
+                "yourupload",
+                "mp4upload"
+            ],
+            "server": "gcloud"
+        }
+    },
+    "watch": {
+        "fallback_qualities": [
+            "720p",
+            "480p",
+            "360p"
+        ],
+        "log_level": "INFO",
+        "provider": "twist.moe",
+        "quality": "1080p"
+    }
+}
