@@ -4,7 +4,7 @@
     "coc-go": ">=0.7.0",
     "coc-json": ">=1.2.6",
     "coc-marketplace": ">=1.7.0",
-    "coc-pyright": ">=1.1.37",
+    "coc-pyright": ">=1.1.39",
     "coc-sh": ">=0.4.0",
     "coc-tabnine": ">=1.2.2",
     "coc-tasks": ">=0.0.7",
