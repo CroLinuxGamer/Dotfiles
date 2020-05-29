@@ -133,5 +133,4 @@
     "coc.source.around.firstMatch": true,
     "coc.source.buffer.firstMatch": true,
     "coc.preferences.maxFileSize": "1GB"
-
 }

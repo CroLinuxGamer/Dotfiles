@@ -3,8 +3,8 @@
 status=$(mpc status | sed -n '/playing/p' | cut -c2-8 | sed 's/^[ \t]*//')
 
 if [ "$status" = "playing" ]; then # If mpd is playing
-    printf "契"
-else
     printf ""
+else
+    printf "契"
 fi
 
