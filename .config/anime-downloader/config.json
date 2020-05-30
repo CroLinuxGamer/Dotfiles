@@ -1,5 +1,6 @@
 {
     "dl": {
+        "aria2c_for_torrents": false,
         "chunk_size": "10",
         "download_dir": "Videos/Anime",
         "external_downloader": "{aria2}",
@@ -17,6 +18,11 @@
         "url": false
     },
     "siteconfig": {
+        "animedaisuki": {
+            "servers": [
+                "official"
+            ]
+        },
         "animeflix": {
             "fallback_servers": [
                 "FastStream"
@@ -53,6 +59,14 @@
         "dreamanime": {
             "server": "trollvid",
             "version": "subbed"
+        },
+        "dubbedanime": {
+            "servers": [
+                "vidstream",
+                "mp4upload",
+                "trollvid"
+            ],
+            "version": "dubbed"
         },
         "gogoanime": {
             "server": "cdn"
