@@ -181,8 +181,8 @@ let g:asyncrun_rootmarks = ['.git', '.svn', '.root', '.project', '.hg']     " se
 let g:asynctasks_term_pos = 'tab'
 let g:asynctasks_term_reuse = 1
 let g:asynctasks_system = 'linux'
-map <F10> :CocList tasks<CR>
-
+map <leader>b :AsyncTask file-build<CR>
+map <leader>r :AsyncTask file-run<CR>
 
 " map
 map <F2> :NERDTreeToggle<CR>

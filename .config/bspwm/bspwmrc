@@ -12,6 +12,7 @@ killall picom
 picom --experimental-backends &
 killall xfce4-power-manager
 xfce4-power-manager &
+mouse_detect.sh
 ###---MONITORS---###
 bspc monitor -d 1 2 3 4 5 6 7 8 9
 
