@@ -2,16 +2,14 @@
 call plug#begin()
 Plug 'junegunn/vim-plug' " I made it so that it updates it self with PlugUpdate command
 Plug 'kaicataldo/material.vim' " material color scheme
-Plug 'dense-analysis/ale' " basic diagnostics plugin
 Plug 'mhinz/vim-startify' " nice startup screen
 Plug 'haya14busa/incsearch.vim' " inc search on steroids
 Plug 'scrooloose/nerdcommenter' " easy comment big chunks of code
 Plug 'jiangmiao/auto-pairs' " auto pairs
 Plug 'luochen1990/rainbow' " the rainbow is my
 Plug 'lambdalisue/suda.vim' " Edit and write system files
-Plug 'neoclide/coc.nvim', {'branch': 'release'} " fast completion plugin
 Plug 'fatih/vim-go' " go support (syntax, compile and diagnostics)
-Plug 'sheerun/vim-polyglot' " advances c++ syntax
+Plug 'sheerun/vim-polyglot' " advances syntax for multiple languanges
 Plug 'octol/vim-cpp-enhanced-highlight' " advances c++ syntax
 Plug 'skywind3000/asynctasks.vim' " task manager
 Plug 'skywind3000/asyncrun.vim' " task runner
@@ -46,7 +44,6 @@ set statusline+=\ %f\                                                   " file n
 set statusline+=[%n/                                                    " buffer number
 set statusline+=%{len(filter(range(1,bufnr('$')),'buflisted(v:val)'))}] " Opened buffer count
 set statusline+=%m\                                                     " does something
-set statusline+=%{coc#status()}%{get(b:,'coc_current_function','')}     " coc.nvim status
 set statusline+=%=                                                      " moves the rest to the right side
 set statusline+=%#CursorColumn#                                         " colorings
 set statusline+=\ %y                                                    " filetype
@@ -155,24 +152,6 @@ let g:rainbow_active = 1
 let g:suda_smart_edit = 1
 let g:suda#prefix = ['suda://', 'sudo://', '_://']
 let g:suda#prompt = 'Pass: '
-
-" coc settings
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-
-function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
-
-if exists('*complete_info')
-  inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
-else
-  inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-endif
 
 " go settings
 au FileType go nmap <leader>i <Plug>(go-install)
