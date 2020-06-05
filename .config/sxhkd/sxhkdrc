@@ -94,41 +94,33 @@ Print
 super + d
     rofi -modi drun -show drun -show-icons -display-drun "" -font "hack 10" -lines 15 -width 30
 
-# run rofi with only games showing
-super + g
-    games
-
-# run my custom launcher
-super + r
-    $TERMINAL --class "cli-programs","cli-programs" -e cli-programs
-
 # run my gui programs
-super + {Return,b,t}
-    {$TERMINAL,$BROWSER,trackma-qt}
+super + {Return,b,t,v}
+    {$TERMINAL,$BROWSER,trackma-qt,$VISUAL}
+
+# terminal programs
+super + {m,f,p,w,h,e}
+    $TERMINAL -e {ncmpcpp,lf,pacui,adl,htop,$EDITOR}
 
 # some more programs
 super + shift + {f,c,s,d,g}
     {pcmanfm,stacer,steam,discord,lutris}
 
-# And some more
-super + ctrl + f
-    gparted
-
 # run cli programs
 super + shift + {w ,t}
     $TERMINAL -e {adl -d ,transmission-remote-cli}
 
-# and some more
-super + {m,f,p,w,h}
-    $TERMINAL -e {ncmpcpp,lf,pacui,adl,htop}
-
-# ffmpeg recording with audio
-super + shift + KP_Subtract
-    game-rec
+# system programs
+super + ctrl + f
+    gparted
 
 # ffmpeg recording without audio
 super + KP_Subtract     
     desktop-rec
+
+# ffmpeg recording with audio
+super + shift + KP_Subtract
+    game-rec
 
 # stop ffmpeg recording
 super + ctrl + KP_Subtract

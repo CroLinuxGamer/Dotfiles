@@ -1,6 +1,6 @@
 # Path export
 typeset -U PATH path
-path=("$HOME/Bin/polybar" "$HOME/Bin/go/bin" "$HOME/Bin/system" "$HOME/Bin/bspwm" "$HOME/Bin/lf" "$HOME/Bin/launcher" "$path[@]")
+path=("$HOME/Bin/polybar" "$HOME/Bin/go/bin" "$HOME/Bin/system" "$HOME/Bin/bspwm" "$HOME/Bin/lf" "$path[@]")
 export PATH
 export SXHKD_SHELL='/usr/bin/dash'
 export POLYBAR_SHELL='dash'
@@ -15,7 +15,7 @@ export BOOK_READER="foliate"
 export TERMINAL="alacritty"
 export BROWSER="brave"
 export VIDEO="mpv"
-export IMAGE="sxiv"
+export IMAGE="feh"
 export OPENER="xdg-open"
 export PAGER="less"
 export WM="bspwm"

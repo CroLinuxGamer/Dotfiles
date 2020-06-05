@@ -39,6 +39,7 @@ alias grep='grep --color=auto'
 alias tsm='transmission-remote'
 alias tsm-cli='transmission-remote-cli'
 alias vi='nvim'
+alias sublime-text='/opt/sublime_text/sublime_text'
 
 # Function aliases
 alias rm='rm -v'
