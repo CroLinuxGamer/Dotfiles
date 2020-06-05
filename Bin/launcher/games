@@ -1,4 +1,0 @@
-#!/bin/dash
-
-rofi -modi drun -show drun -show-icons -display-drun "Games" -font "hack 10" -lines 15 -width 30 -filter "game " -theme-str '#inputbar { enabled: false; }'
-
