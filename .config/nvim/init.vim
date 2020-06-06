@@ -1,6 +1,5 @@
 " Plug settings
 call plug#begin()
-Plug 'junegunn/vim-plug' " I made it so that it updates it self with PlugUpdate command
 Plug 'kaicataldo/material.vim' " material color scheme
 Plug 'mhinz/vim-startify' " nice startup screen
 Plug 'haya14busa/incsearch.vim' " inc search on steroids
@@ -16,9 +15,6 @@ Plug 'skywind3000/asyncrun.vim' " task runner
 Plug 'preservim/nerdtree' " nerd tree
 Plug 'ryanoasis/vim-devicons' " icons support
 call plug#end()
-
-" Disable PlugUpgrade
-delc PlugUpgrade
 
 " Center when entering instert mode
 autocmd InsertEnter * norm zz

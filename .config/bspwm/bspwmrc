@@ -52,4 +52,3 @@ bspc rule -a Zathura state=fullscreen
 bspc rule -a Foliate state=fullscreen
 bspc rule -a Lutris desktop=^4 follow=on
 bspc rule -a Steam desktop=^4 follow=on
-bspc rule -a cli-programs state=floating
