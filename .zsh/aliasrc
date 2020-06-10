@@ -37,7 +37,7 @@ alias picomconf='${=EDITOR} ~/.config/picom/picom.conf'
 # Program alias
 alias grep='grep --color=auto'
 alias tsm='transmission-remote'
-alias tsm-cli='transmission-remote-cli'
+alias tsm-cli='tremc'
 alias vi='nvim'
 alias sublime-text='/opt/sublime_text/sublime_text'
 
@@ -53,6 +53,8 @@ alias df='pydf -h'
 alias free='free -h'
 alias ls='lsd'
 alias la='lsd -A'
+alias update-mirrors='sudo pacman-mirrors --fasttrack && sudo pacman -Syyu'
+alias update-system='sudo pacman -Sy && sudo powerpill -Su && yay -Su'
 
 # git dotfiles aliases
 alias dot='/usr/bin/git --git-dir=$HOME/Repos/Dotfiles/ --work-tree=$HOME'

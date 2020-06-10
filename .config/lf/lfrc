@@ -5,7 +5,6 @@ set color256 true
 set drawbox true
 set icons true
 set ignorecase true
-
 # Open function
 cmd open ${{
     case $(file --mime-type "$f" -bL) in
@@ -68,6 +67,7 @@ map au unarchive
 
 # git bindings
 map ga $/usr/bin/git --git-dir=$HOME/Repos/Dotfiles/ --work-tree=$HOME add "$f"
+map gr $/usr/bin/git --git-dir=$home/Repos/Dotfiles/ --work-tree=$HOME rm -r "$f"
 
 # Basic Functions
 map . set hidden!
@@ -78,7 +78,6 @@ map y copy
 map <enter> open
 map mf mkfile
 map md mkdir
-map ms $mkscript
 map ch chmod
 map r rename
 map R reload
