@@ -48,6 +48,7 @@ type=custom/script
 exec= mpc current
 interval = 1
 format-prefix=" "
+click-left = $TERMINAL -e ncmpcpp
 
 [module/mpd-status]
 type=custom/ipc
