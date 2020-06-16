@@ -46,10 +46,6 @@ super + {1-9}
 {super,alt} + Tab
 	bspc {desktop,node} -f last
 
-# Rotate all windows {counter-}clockwise by 90 degrees.
-mod3 + {_,shift + }r
-	bspc node @/ --rotate {90,-90}
-
 # Fullscreen toggle
 super + F11
     bspc node -t \~fullscreen
@@ -99,12 +95,12 @@ super + {Return,b,t,v}
     {$TERMINAL,$BROWSER,trackma-qt,$VISUAL}
 
 # terminal programs
-super + {m,f,p,w,h,e}
-    $TERMINAL -e {ncmpcpp,lf,pacui,adl,htop,$EDITOR}
+super + {m,f,w,h,e}
+    $TERMINAL -e {ncmpcpp,lf,adl,htop,$EDITOR}
 
 # some more programs
-super + shift + {f,c,s,d,g}
-    {pcmanfm,stacer,steam,discord,lutris}
+super + shift + {f,c,s,g}
+    {pcmanfm,stacer,steam,lutris}
 
 # run cli programs
 super + shift + {w ,t}
