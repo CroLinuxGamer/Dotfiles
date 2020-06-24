@@ -107,8 +107,8 @@ super + shift + {w ,t}
     $TERMINAL -e {adl -d ,tremc}
 
 # system programs
-super + ctrl + f
-    gparted
+super + ctrl + {f ,t}
+    {gparted ,teams}
 
 # ffmpeg recording without audio
 super + KP_Subtract     

@@ -8,8 +8,7 @@ set ignorecase true
 # Open function
 cmd open ${{
     case $(file --mime-type "$f" -bL) in
-        text/*|application/json/*/application/x-wine-extension-ini) $EDITOR "$f";;
-        video/*|image/*/application/pdf) xdg-open "$f" & disown;;
+        text/*|application/json) $EDITOR "$f";;
         *) xdg-open "$f" ;;
     esac
 }}
