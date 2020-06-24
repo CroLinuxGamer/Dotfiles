@@ -68,13 +68,9 @@ super + shift + l
 super + {ctrl ,shift} + 0
     {xrandr --output eDP --mode 1366x768 ,xrandr --output eDP --mode 640x480}
 
-# Compositor control
+# System look control
 super + {ctrl,shift} + F12
-    {picom ,killall picom}
-
-# System bar control control
-super + {ctrl,shift} + F11
-    {polybar -r top ,killall polybar}
+    {cluter.sh ,clean.sh}
 
 # Screenshots using scrot
 Print
@@ -120,4 +116,4 @@ super + shift + KP_Subtract
 
 # stop ffmpeg recording
 super + ctrl + KP_Subtract
-    killall ffmpeg -INT
+    illall ffmpeg -INT

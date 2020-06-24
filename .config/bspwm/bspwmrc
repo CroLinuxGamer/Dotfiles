@@ -1,18 +1,7 @@
 #!/bin/dash
 
 ###---Autostart---###
-killall floating.sh
-floating.sh &
-feh --no-fehbg --bg-scale ~/Pictures/wallpaper.jpg &
-killall polybar
-polybar -r top &
-killall sxhkd
-sxhkd -c ~/.config/sxhkd/sxhkdrc &
-killall picom
-picom --experimental-backends &
-killall xfce4-power-manager
-xfce4-power-manager &
-mouse_detect.sh
+autostart.sh
 ###---MONITORS---###
 bspc monitor -d 1 2 3 4 5 6 7 8 9
 
