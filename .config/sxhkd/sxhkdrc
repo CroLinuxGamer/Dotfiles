@@ -80,6 +80,9 @@ Print
 {XF86AudioPlay,XF86AudioStop,XF86AudioPrev,XF86AudioNext}
     mpc {toggle,stop,prev,next} && polybar-msg hook mpd-status 1
 
+# turn on floating mode on desktop 4
+super + {ctrl, shift} + F11
+    {killall floating.sh ,floating.sh}
 #---Application Launchers---#
 
 # run rofi
