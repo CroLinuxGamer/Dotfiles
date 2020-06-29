@@ -22,6 +22,8 @@ feh --no-fehbg --bg-scale ~/Pictures/wallpaper.jpg &
 sleep 0.1
 polybar -r top &
 sleep 0.1
+polybar -r bottom &
+sleep 0.1
 sxhkd -c ~/.config/sxhkd/sxhkdrc &
 sleep 0.1
 picom --experimental-backends &
