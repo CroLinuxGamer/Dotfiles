@@ -1,9 +1,9 @@
 #!/bin/dash
 
-###---Autostart---###
-autostart.sh
 ###---MONITORS---###
 bspc monitor -d 1 2 3 4 5 6 7 8 9
+###---Autostart---###
+autostart.sh
 
 ###---Global Settings---###
 bspc config automatic_scheme alternate
