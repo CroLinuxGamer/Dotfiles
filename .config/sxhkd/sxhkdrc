@@ -119,4 +119,4 @@ super + shift + KP_Subtract
 
 # stop ffmpeg recording
 super + ctrl + KP_Subtract
-    illall ffmpeg -INT
+    killall ffmpeg -INT

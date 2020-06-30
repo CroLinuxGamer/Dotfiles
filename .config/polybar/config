@@ -12,7 +12,7 @@ rd = #eb606b
 width = 100%
 height = 16
 radius = 6.0
-fixed-center = false
+fixed-center = true
 enable-ipc=true
 border-size=5
 
@@ -33,7 +33,7 @@ font-1 = HackNerdFont:antialias=true:pixelsize=8;2
 font-2 = IPAGothic:antialias=true:pixelsize=8;2
 
 modules-left = bspwm title
-modules-center = 
+modules-center = mpd-song mpd-prev mpd-status mpd-next
 modules-right = arch-updates filesystem cpu ram xkeyboard
 
 tray-position = right
@@ -68,7 +68,7 @@ font-0 = JetBrainsMonoMedium:antialias=true:pixelsize=8;2
 font-1 = HackNerdFont:antialias=true:pixelsize=8;2
 
 modules-left = menu
-modules-center = mpd-song mpd-prev mpd-status mpd-next
+modules-center = 
 modules-right = volume network backlight battery date power
 
 wm-restack = bspwm
@@ -84,7 +84,7 @@ format-underline = ${colors.fg}
 type = internal/xkeyboard
 format = <label-layout><label-indicator>
 format-underline = ${colors.fg}
-label-layout = %layout%
+label-layout =   %layout%
 label-indicator-on-capslock = " CAPS"
 label-indicator-off-capslock = 
 label-indicator-on-numlock = " NUM"
@@ -99,8 +99,8 @@ format-padding = 1
 
 [module/mpd-song]
 type=custom/script
-exec= mpc current
-interval = 1
+exec= mpc-song
+tail = true
 format-prefix=" "
 click-left = $TERMINAL -e ncmpcpp
 
@@ -175,11 +175,13 @@ interval = 10
 format-underline = ${colors.fg}
 
 [module/ram]
-type = internal/memory
+type = custom/script
+exec = bspram
+label = "%output%"
+click-left = $TERMINAL -e htop &
 interval = 10
-format = <label>
+format-prefix = " "
 format-underline = ${colors.fg}
-label =  %gb_used%/%gb_total%
 
 [module/filesystem]
 type = internal/fs
