@@ -12,7 +12,7 @@ rd = #eb606b
 width = 100%
 height = 16
 radius = 6.0
-fixed-center = true
+fixed-center = false
 enable-ipc=true
 border-size=5
 
@@ -23,7 +23,7 @@ line-size = 1
 line-color = ${colors.bg}
 
 padding-left = 0
-padding-right = 1
+padding-right = 0
 
 module-margin-left = 0
 module-margin-right = 1
@@ -33,8 +33,8 @@ font-1 = HackNerdFont:antialias=true:pixelsize=8;2
 font-2 = IPAGothic:antialias=true:pixelsize=8;2
 
 modules-left = bspwm title
-modules-center = mpd-song mpd-prev mpd-status mpd-next
-modules-right = cpu ram
+modules-center = 
+modules-right = arch-updates filesystem cpu ram xkeyboard
 
 tray-position = right
 tray-padding = 1
@@ -68,11 +68,27 @@ font-0 = JetBrainsMonoMedium:antialias=true:pixelsize=8;2
 font-1 = HackNerdFont:antialias=true:pixelsize=8;2
 
 modules-left = menu
-modules-center =
+modules-center = mpd-song mpd-prev mpd-status mpd-next
 modules-right = volume network backlight battery date power
 
 wm-restack = bspwm
 override-redirect = true
+
+[module/arch-updates]
+type = custom/script
+exec = arch-updates
+interval = 600
+format-underline = ${colors.fg}
+
+[module/xkeyboard]
+type = internal/xkeyboard
+format = <label-layout><label-indicator>
+format-underline = ${colors.fg}
+label-layout = %layout%
+label-indicator-on-capslock = " CAPS"
+label-indicator-off-capslock = 
+label-indicator-on-numlock = " NUM"
+label-indicator-off-numlock = 
 
 [module/title]
 type = internal/xwindow
@@ -159,12 +175,21 @@ interval = 10
 format-underline = ${colors.fg}
 
 [module/ram]
-type = custom/script
-exec = i3memory
-label = "%output%"
-click-left = $TERMINAL -e htop &
+type = internal/memory
 interval = 10
-format-prefix = "🧠 "
+format = <label>
+format-underline = ${colors.fg}
+label =  %gb_used%/%gb_total%
+
+[module/filesystem]
+type = internal/fs
+format-mounted = <label-mounted>
+format-mounted-underline = ${colors.fg}
+label-mounted =  : %used%/%total%
+mount-0 = /
+interval = 300
+fixed-values = true
+spacing = 1
 
 [module/cpu]
 type = internal/cpu
