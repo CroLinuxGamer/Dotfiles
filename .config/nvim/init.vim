@@ -25,8 +25,8 @@ Plug 'skywind3000/asyncrun.vim'
 Plug 'preservim/nerdtree'
 " icons support
 Plug 'ryanoasis/vim-devicons'
-" fzf but with modern look
-Plug 'Yggdroot/LeaderF', { 'do': './install.sh' } 
+" completion engine
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 " Center when entering instert mode
@@ -52,6 +52,7 @@ set statusline+=%#StatusLine#                                           " colori
 set statusline+=\ %f\                                                   " file name
 set statusline+=[%n/                                                    " buffer number
 set statusline+=%{len(filter(range(1,bufnr('$')),'buflisted(v:val)'))}] " Opened buffer count
+set statusline+=\ %{StatusDiagnostic()}                                 " coc.nvim status
 set statusline+=%m\                                                     " does something
 set statusline+=%=                                                      " moves the rest to the right side
 set statusline+=%#CursorColumn#                                         " colorings
@@ -61,6 +62,19 @@ set statusline+=\[%{&fileformat}\]                                      " filefo
 set statusline+=\ %l/%L                                                 " line / all lines
 set statusline+=\ %c                                                    " column
 set statusline+=\                                                       " space
+
+function! StatusDiagnostic() abort
+  let info = get(b:, 'coc_diagnostic_info', {})
+  if empty(info) | return '' | endif
+  let msgs = []
+  if get(info, 'error', 0)
+    call add(msgs, 'E' . info['error'])
+  endif
+  if get(info, 'warning', 0)
+    call add(msgs, 'W' . info['warning'])
+  endif
+  return join(msgs, ' '). ' ' . get(g:, 'coc_status', '')
+endfunction
 
 " set python directories
 let g:python_host_prog = '/usr/bin/python2.7'
@@ -75,6 +89,7 @@ let g:incsearch#auto_nohlsearch = 1
 
 " misc
 set nostartofline
+set signcolumn=yes
 set number
 set showcmd
 set nocompatible
@@ -205,61 +220,9 @@ let g:webdevicons_enable = 1
 let g:webdevicons_enable_nerdtree = 1
 let g:webdevicons_enable_unite = 1
 let g:webdevicons_enable_ctrlp = 1
-let g:webdevicons_enable_startify = 1
+
 let g:WebDevIconsUnicodeGlyphDoubleWidth = 1
 let g:webdevicons_conceal_nerdtree_brackets = 1
 
-" LeaderF tasks intergration
-function! s:lf_task_source(...)
-	let rows = asynctasks#source(&columns * 48 / 100)
-	let source = []
-	for row in rows
-		let name = row[0]
-		let source += [name . '  ' . row[1] . '  : ' . row[2]]
-	endfor
-	return source
-endfunction
-
-
-function! s:lf_task_accept(line, arg)
-	let pos = stridx(a:line, '<')
-	if pos < 0
-		return
-	endif
-	let name = strpart(a:line, 0, pos)
-	let name = substitute(name, '^\s*\(.\{-}\)\s*$', '\1', '')
-	if name != ''
-		exec "AsyncTask " . name
-	endif
-endfunction
-
-function! s:lf_task_digest(line, mode)
-	let pos = stridx(a:line, '<')
-	if pos < 0
-		return [a:line, 0]
-	endif
-	let name = strpart(a:line, 0, pos)
-	return [name, 0]
-endfunction
-
-function! s:lf_win_init(...)
-	setlocal nonumber
-	setlocal nowrap
-endfunction
-
-
-let g:Lf_Extensions = get(g:, 'Lf_Extensions', {})
-let g:Lf_Extensions.task = {
-			\ 'source': string(function('s:lf_task_source'))[10:-3],
-			\ 'accept': string(function('s:lf_task_accept'))[10:-3],
-			\ 'get_digest': string(function('s:lf_task_digest'))[10:-3],
-			\ 'highlights_def': {
-			\     'Lf_hl_funcScope': '^\S\+',
-			\     'Lf_hl_funcDirname': '^\S\+\s*\zs<.*>\ze\s*:',
-			\ },
-		\ }
-
-let g:Lf_CommandMap = {'<C-K>': ['<Up>'], '<C-J>': ['<Down>']}
-let g:Lf_ShowDevIcons = 1
-
-map <F10> :Leaderf --nowrap task<CR>
+" coc settings
+map <F10> :CocList tasks<CR>
