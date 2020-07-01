@@ -169,7 +169,7 @@ format-underline = ${colors.gr}
 
 [module/battery]
 type = custom/script
-exec = bspbatt
+exec = polybatt
 label = "%output%"
 click-left = xfce4-power-manager-settings
 interval = 30
@@ -184,7 +184,7 @@ format-underline = ${colors.gr}
 
 [module/ram]
 type = custom/script
-exec = bspram
+exec = polyram
 label = "%output%"
 click-left = $TERMINAL -e htop &
 interval = 10
