@@ -25,8 +25,8 @@ Plug 'skywind3000/asyncrun.vim'
 Plug 'preservim/nerdtree'
 " icons support
 Plug 'ryanoasis/vim-devicons'
-" completion engine
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" markdown preview
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 call plug#end()
 
 " Center when entering instert mode
@@ -224,5 +224,3 @@ let g:webdevicons_enable_ctrlp = 1
 let g:WebDevIconsUnicodeGlyphDoubleWidth = 1
 let g:webdevicons_conceal_nerdtree_brackets = 1
 
-" coc settings
-map <F10> :CocList tasks<CR>
