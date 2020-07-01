@@ -1,20 +1,32 @@
 " Plug settings
 call plug#begin()
-Plug 'kaicataldo/material.vim' " material color scheme
-Plug 'mhinz/vim-startify' " nice startup screen
-Plug 'haya14busa/incsearch.vim' " inc search on steroids
-Plug 'scrooloose/nerdcommenter' " easy comment big chunks of code
-Plug 'jiangmiao/auto-pairs' " auto pairs
-Plug 'luochen1990/rainbow' " the rainbow is my
-Plug 'lambdalisue/suda.vim' " Edit and write system files
-Plug 'fatih/vim-go' " go support (syntax, compile and diagnostics)
-Plug 'sheerun/vim-polyglot' " advances syntax for multiple languanges
-Plug 'octol/vim-cpp-enhanced-highlight' " advances c++ syntax
-Plug 'skywind3000/asynctasks.vim' " task manager
-Plug 'skywind3000/asyncrun.vim' " task runner
-Plug 'preservim/nerdtree' " nerd tree
-Plug 'ryanoasis/vim-devicons' " icons support
-Plug 'Yggdroot/LeaderF', { 'do': './install.sh' } " fzf but cooler :) 
+" material color scheme
+Plug 'kaicataldo/material.vim'
+" nice startup screen
+Plug 'mhinz/vim-startify'
+" inc search on steroids
+Plug 'haya14busa/incsearch.vim'
+" easy comment big chunks of code
+Plug 'scrooloose/nerdcommenter' 
+" auto pairs
+Plug 'jiangmiao/auto-pairs'
+" the rainbow is mine
+Plug 'luochen1990/rainbow'
+" edit and write system files
+Plug 'lambdalisue/suda.vim'
+" advanced syntac for multiple languanges
+Plug 'sheerun/vim-polyglot'
+" advanced c++ syntax
+Plug 'octol/vim-cpp-enhanced-highlight'
+" async tack runner with a lot of funcionality
+Plug 'skywind3000/asynctasks.vim'
+Plug 'skywind3000/asyncrun.vim'
+" sidebar explorer
+Plug 'preservim/nerdtree'
+" icons support
+Plug 'ryanoasis/vim-devicons'
+" fzf but with modern look
+Plug 'Yggdroot/LeaderF', { 'do': './install.sh' } 
 call plug#end()
 
 " Center when entering instert mode

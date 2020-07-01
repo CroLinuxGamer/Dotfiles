@@ -24,7 +24,7 @@ super + {Left,Down,Up,Right}
 
 #	Send window to desktop
 super + shift + {1-9}
-    bspc node -d {1-9}
+    bspc node -d {1-9} 
 
 # Toggle floating on and off
 super + +shift + space
