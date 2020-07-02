@@ -165,6 +165,10 @@ That is the only reason.
 
 Here is the [config](.config/rofi/config) and here is also the [theme](.config/rofi/theme.rasi). You need to place them in `~/.config/rofi` directory.
 
+> rofi screenshot
+
+![rofi](https://raw.githubusercontent.com/CroLinuxGamer/Photos/master/rofi.png)
+
 ## .ncmpcpp
 
 ## .zsh
