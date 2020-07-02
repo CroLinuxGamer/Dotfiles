@@ -9,12 +9,12 @@ Of course this repository can also serve for anyone else that wants to see what 
 
 ### Main points:
 
-- `linux` only (sorry windows and mac users)
-- Probably made to personal so don't expect to find some gold here
-- This is something that I do for fun
-- Updates are probably gonna be in this fashion: 1 month no updates and then 100 updates in a day
-- There is probably going to be a lot of `broken` english here
-- That is it for the points
+- `linux` only (sorry windows and mac users).
+- Probably made too personal so don't expect to find some gold here.
+- This is something that I do for fun.
+- Updates are probably gonna be in this fashion: 1 month no updates and then 100 updates in a day.
+- There is probably going to be a lot of `broken` english here.
+- That is it for the points.
 
 ### Quick look at the desktop
 
