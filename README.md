@@ -124,6 +124,12 @@ Here is [config](.config/lf/lfrc). To use my `config` you need it's respective p
 
 ![lf](https://raw.githubusercontent.com/CroLinuxGamer/Photos/master/lf.png)
 
+### [Neovim](https://github.com/neovim/neovim)
+
+For information about my neovim config I will create a special repo at a later date.
+
+> Neovim cpp sceenshot
+
 ## .ncmpcpp
 
 ## .zsh
