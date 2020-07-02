@@ -28,6 +28,8 @@ Of course this repository can also serve for anyone else that wants to see what 
     - [bspwm](#bspwm)
     - [dunst](#dunst)
     - [lf](#lf)
+    - [mpd](#mpd)
+    - [nvim](#neovim)
 - [.ncmpcpp](#ncmpcpp)
 - [.zsh](#zsh)
 - [Bin](#bin)
@@ -123,6 +125,12 @@ Here is [config](.config/lf/lfrc). To use my `config` you need it's respective p
 > lf screenshot
 
 ![lf](https://raw.githubusercontent.com/CroLinuxGamer/Photos/master/lf.png)
+
+### mpd
+
+Yes i use mpd for my music. I love mpd because I can play song on my phone while it is on my pc trought network with mpd.
+
+Here my [config](.config/mpd/mpd.conf) (very basic yo can use it right away)
 
 ### [Neovim](https://github.com/neovim/neovim)
 
