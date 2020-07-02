@@ -30,6 +30,7 @@ Of course this repository can also serve for anyone else that wants to see what 
     - [lf](#lf)
     - [mpd](#mpd)
     - [nvim](#neovim)
+    - [picom](#picom)
 - [.ncmpcpp](#ncmpcpp)
 - [.zsh](#zsh)
 - [Bin](#bin)
@@ -139,6 +140,22 @@ For information about my neovim config I will create a special repo at a later d
 > Neovim cpp sceenshot
 
 ![neovim](https://raw.githubusercontent.com/CroLinuxGamer/Photos/master/neovim.png)
+
+### [picom](https://github.com/ibhagwan/picom)
+
+For my compositor I use picom or more correctly ibhagwan's fork.
+
+I use his fork because it has rounded corners and dual_kawase blur and I love them ;).
+
+Here is my [config](.config/picom/picom.conf) (it is heavilly configured so you will also need time to configure it to your needs). You need to place the config in it's respective path: `~/.config/picom/picom.conf`
+
+> I think that there is no need for a screenshot beacuse you have already seen enough
+
+### [polybar](https://github.com/polybar/polybar)
+
+For my system bar I use polybar. In terms of configuration I will make a dedicated repo so that I can better explain some of the modules and confguration.
+
+> I think that there is also no need for polybar screenshot because there already is enough of them
 
 ## .ncmpcpp
 
