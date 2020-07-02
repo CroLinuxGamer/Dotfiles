@@ -23,8 +23,8 @@ Ofcourse this repository can also serve for anyone else that wants to see what k
 - [.config](#.config)
 - [.ncmpcpp](#.ncmpcpp)
 - [.zsh](#.zsh)
-- [Bin](#Bin)
-- [Pictures](#Pictures)
+- [Bin](#bin)
+- [Pictures](#pictures)
 - [.bashrc](#.bashrc)
 - [.p10k.zsh](#.p10k.zsh)
 - [.profile](#.profile)
@@ -47,8 +47,12 @@ Ofcourse this repository can also serve for anyone else that wants to see what k
 
 #### .p10k.zsh
 
+#### .profile
+
 #### .xinitrc
 
 #### .zprofile
+
+#### .zshenv
 
 #### .zshrc
