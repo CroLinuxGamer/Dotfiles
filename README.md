@@ -126,7 +126,7 @@ Here is [config](.config/lf/lfrc). To use my `config` you need it's respective p
 
 ![lf](https://raw.githubusercontent.com/CroLinuxGamer/Photos/master/lf.png)
 
-### mpd
+### [mpd](https://www.musicpd.org/)
 
 Yes i use mpd for my music. I love mpd because I can play song on my phone while it is on my pc trought network with mpd.
 
