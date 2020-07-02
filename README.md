@@ -157,6 +157,14 @@ For my system bar I use polybar. In terms of configuration I will make a dedicat
 
 > I think that there is also no need for polybar screenshot because there already is enough of them
 
+
+### [rofi](https://github.com/davatorium/rofi)
+
+Rofi is my program launcher only because it is really customizable.
+That is the only reason.
+
+Here is the [config](.config/rofi/config) and here is also the [theme](.config/rofi/theme.rasi). You need to place them in `~/.config/rofi` directory.
+
 ## .ncmpcpp
 
 ## .zsh
