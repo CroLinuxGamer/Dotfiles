@@ -52,7 +52,7 @@ Before using I used a lot of treminal emulator like `st`, `urxvt`, `termite` and
 
 Color scheme that I use [Material](https://github.com/alacritty/alacritty/wiki/Color-schemes#material-theme) that I found on the `Alacritty` github page and I fell in love with it.
 
-Here is the `Alacritty` [config](/blob/master/.config/alacritty/alacritty.yml).
+Here is the `Alacritty` [config](.config/alacritty/alacritty.yml).
 
 Here is a quick loot at my terminal color output:
 
