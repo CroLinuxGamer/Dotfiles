@@ -27,6 +27,7 @@ Of course this repository can also serve for anyone else that wants to see what 
     - [anime-downloader](#anime-downloader)
     - [bspwm](#bspwm)
     - [dunst](#dunst)
+    - [lf](#lf)
 - [.ncmpcpp](#ncmpcpp)
 - [.zsh](#zsh)
 - [Bin](#bin)
@@ -69,7 +70,7 @@ A simple commandline tool to for downloading anime from your favourite website.
 
 But in my case I use it with another program [adl](https://github.com/RaitaroH/adl) which makes use of [trackma](https://github.com/z411/trackma) and [mpv](https://mpv.io/) to be able to watch anime from your terminal emulator.
 
-For this combination you will need to first login into trackma with your `mal` or `anilist` account. You will also need to configure your anime-downloader config to use either your favourite or the fastest site for your first. Recommended is anime simple.
+For this combination you will need to first login into trackma with your `mal` or `anilist` account. You will also need to configure your `anime-downloader` config to use either your favourite or the fastest site for your first. Recommended is anime simple.
 
 My config configured for the fastest site in my region so you will need to edit it.
 
@@ -81,23 +82,47 @@ Here is my [config](.config/anime-downloader/config.json). You need to save the 
 
 #### [bspwm](https://github.com/baskerville/bspwm)
 
-For my wm I use bspwm because it is just a wm. I tried i3, xnomad, openbox and more and in the end bspwm is for me because it is just a wm so that means that it only works with windows which make it more modular with differrent programs.
+For my wm I use `bspwm` because it is just a wm. I tried `i3`, `xnomad`, `openbox` and more and in the end `bspwm` is for me because it is just a wm so that means that it only works with windows which make it more modular with differrent programs. And any other functionality is easily configurable with scripts because config for `bspwm` is any programming languange you wan't.
 
-For bspwm I don't really have any special config, only thing worth mentioning is just controling floating windows with my mouse.
+For `bspwm` I don't really have any special config, only thing worth mentioning is just controling floating windows with my mouse.
 
 Rest are mostly scripts which I will name later on.
 
-Here is the [config](.config/bspwm/bspwmrc)
+Here is the [config](.config/bspwm/bspwmrc). Config's need to be placed in ot's respective path: `~/.config/bspwm/bspwmrc`
 
-> sorry for ont providing a screenshot ^-^
+> sorry for not providing a screenshot ^-^
 
 #### [dunst](https://github.com/dunst-project/dunst)
 
-I have a really regular dunst config so I don't think that there is anything special worth mentioning.
+I have a really regular `dunst` config so I don't think that there is anything special worth mentioning.
 
-I use dunst only because it is verry lightweight and easy to configure.
+I use `dunst` only because it is verry lightweight and easy to configure.
 
 Here is [config](.config/dunst/dunstrc)
+
+You also need to pictures for my config to work. [Critical](.config/dunst/critical.png) and [normal](.config/dunst/normal.png).
+
+Config and pictures need to be blaced in `~/.config/dunst/` directory.
+
+> dunst notification screenshot
+
+![dunst](https://raw.githubusercontent.com/CroLinuxGamer/Photos/master/dunst.png)
+
+#### lf
+
+You must have though't that it is going to be `ranger` but no it is `lf`.
+
+I use lf because it is faster and you can program most of the functoins in the config so it makes `lf` more mudular than `ranger`.
+
+I have quite a bit of custom functions so you can just take what you need from them.
+
+I also have a custom preview script about which I will talk about later.
+
+Here is [config](.config/lf/lfrc). To use my `config` you need it's respective path: ` ~/.config/lf/lfrc`.
+
+> lf screenshot
+
+![lf](https://raw.githubusercontent.com/CroLinuxGamer/Photos/master/lf.png)
 
 ## .ncmpcpp
 
