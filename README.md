@@ -88,7 +88,7 @@ For `bspwm` I don't really have any special config, only thing worth mentioning 
 
 Rest are mostly scripts which I will name later on.
 
-Here is the [config](.config/bspwm/bspwmrc). Config's need to be placed in ot's respective path: `~/.config/bspwm/bspwmrc`
+Here is the [config](.config/bspwm/bspwmrc). Config need's to be placed in it's respective path: `~/.config/bspwm/bspwmrc`
 
 > sorry for not providing a screenshot ^-^
 
