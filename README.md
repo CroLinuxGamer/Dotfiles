@@ -182,6 +182,14 @@ For more details I will make a repo on a later date so that can explain shortcut
 
 ## .ncmpcpp
 
+This is my ncmpcpp configuration folder. I use ncmpcpp because it work really good and I can configure it's look with the configuration file (there is also a built in virtualizer).
+
+Here is my [config](.ncmpcpp/config). Config goes into `~/.ncmpcpp` folder.
+
+> ncmpcpp screenshot
+
+![ncmpcpp](https://raw.githubusercontent.com/CroLinuxGamer/Photos/master/ncmpcpp.png)
+
 ## .zsh
 
 ## Bin
