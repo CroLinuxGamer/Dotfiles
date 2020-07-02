@@ -96,13 +96,13 @@ Here is the [config](.config/bspwm/bspwmrc). Config need's to be placed in it's 
 
 I have a really regular `dunst` config so I don't think that there is anything special worth mentioning.
 
-I use `dunst` only because it is verry lightweight and easy to configure.
+I use `dunst` only because it is very lightweight and easy to configure.
 
-Here is [config](.config/dunst/dunstrc)
+Here is my [config](.config/dunst/dunstrc)
 
 You also need to pictures for my config to work. [Critical](.config/dunst/critical.png) and [normal](.config/dunst/normal.png).
 
-Config and pictures need to be blaced in `~/.config/dunst/` directory.
+Config and pictures need to be placed in `~/.config/dunst/` directory.
 
 > dunst notification screenshot
 
