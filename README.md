@@ -56,7 +56,7 @@ Here is the `Alacritty` [config](.config/alacritty/alacritty.yml).
 
 Here is a quick loot at my terminal color output:
 
-![temirnal](https://github.com/CroLinuxGamer/Photos/blob/master/terminal.png?raw=true)
+![temirnal](https://raw.githubusercontent.com/CroLinuxGamer/Photos/master/terminal.png)
 
 ### .ncmpcpp
 
