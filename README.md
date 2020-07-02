@@ -130,6 +130,8 @@ For information about my neovim config I will create a special repo at a later d
 
 > Neovim cpp sceenshot
 
+![neovim](https://raw.githubusercontent.com/CroLinuxGamer/Photos/master/neovim.png)
+
 ## .ncmpcpp
 
 ## .zsh
