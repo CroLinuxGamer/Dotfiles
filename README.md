@@ -108,7 +108,7 @@ Config and pictures need to be placed in `~/.config/dunst/` directory.
 
 ![dunst](https://raw.githubusercontent.com/CroLinuxGamer/Photos/master/dunst.png)
 
-### lf
+### [lf](https://github.com/gokcehan/lf)
 
 You must have though't that it is going to be `ranger` but no it is `lf`.
 
