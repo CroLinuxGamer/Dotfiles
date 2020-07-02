@@ -72,7 +72,7 @@ But in my case I use it with another program [adl](https://github.com/RaitaroH/a
 
 For this combination you will need to first login into trackma with your `mal` or `anilist` account. You will also need to configure your `anime-downloader` config to use either your favourite or the fastest site for your first. Animesimple is recommended.
 
-My config configured for the fastest site in my region so you will need to edit it.
+I configured my config for the fastest site in my region so you will need to edit it.
 
 Here is my [config](.config/anime-downloader/config.json). You need to save the `config` in it's respective path: `~/.config/anime-downloader/config.json`.
 
