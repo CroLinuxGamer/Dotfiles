@@ -12,7 +12,7 @@ Of course this repository can also serve for anyone else that wants to see what 
 - `linux` only (sorry windows and mac users)
 - Probably made to personal so don't expect to find some gold here
 - This is something that I do for fun
-- Updates are probably gonna be in this fachio: 1 month no updates and the 100 updates in a day
+- Updates are probably gonna be in this fashion: 1 month no updates and then 100 updates in a day
 - There is probably going to be a lot of `broken` english here
 - That is it for the points
 
@@ -25,6 +25,8 @@ Of course this repository can also serve for anyone else that wants to see what 
 - [.config](#config)
     - [Alacritty](#alacritty)
     - [anime-downloader](#anime-downloader)
+    - [bspwm](#bspwm)
+    - [dunst](#dunst)
 - [.ncmpcpp](#ncmpcpp)
 - [.zsh](#zsh)
 - [Bin](#bin)
@@ -37,7 +39,7 @@ Of course this repository can also serve for anyone else that wants to see what 
 - [.zshenv](#zshenv)
 - [.zshrc](#zshrc)
 
-### .config
+## .config
 
 My .config folder that most of my programs use.
 
@@ -77,24 +79,44 @@ Here is my [config](.config/anime-downloader/config.json). You need to save the 
 
 ![adl](https://raw.githubusercontent.com/CroLinuxGamer/Photos/master/adl.gif)
 
-### .ncmpcpp
+#### [bspwm](https://github.com/baskerville/bspwm)
 
-### .zsh
+For my wm I use bspwm because it is just a wm. I tried i3, xnomad, openbox and more and in the end bspwm is for me because it is just a wm so that means that it only works with windows which make it more modular with differrent programs.
 
-### Bin
+For bspwm I don't really have any special config, only thing worth mentioning is just controling floating windows with my mouse.
 
-### Pictures
+Rest are mostly scripts which I will name later on.
 
-### .bashrc
+Here is the [config](.config/bspwm/bspwmrc)
 
-### .p10k.zsh
+> sorry for ont providing a screenshot ^-^
 
-### .profile
+#### [dunst](https://github.com/dunst-project/dunst)
 
-### .xinitrc
+I have a really regular dunst config so I don't think that there is anything special worth mentioning.
 
-### .zprofile
+I use dunst only because it is verry lightweight and easy to configure.
 
-### .zshenv
+Here is [config](.config/dunst/dunstrc)
 
-### .zshrc
+## .ncmpcpp
+
+## .zsh
+
+## Bin
+
+## Pictures
+
+## .bashrc
+
+## .p10k.zsh
+
+## .profile
+
+## .xinitrc
+
+## .zprofile
+
+## .zshenv
+
+## .zshrc
