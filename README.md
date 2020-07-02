@@ -46,7 +46,7 @@ My .config folder that most of my programs use.
 
 Now I will individually explain every program that uses this folder and link their respective config and provide a screenshot.
 
-#### [Alacritty](https://github.com/alacritty/alacritty)
+### [Alacritty](https://github.com/alacritty/alacritty)
 
 `Alacritty` is the my terminal emulator of choice because it is very fast on my low spec machine.
 
@@ -54,7 +54,7 @@ With it's gpu support a lot of commands and cli programs are running much faster
 
 Before using I used a lot of treminal emulator like `st`, `urxvt`, `termite` and so on but only `Alacritty` made me want to come back to it.
 
-Color scheme that I use [Material](https://github.com/alacritty/alacritty/wiki/Color-schemes#material-theme) that I found on the `Alacritty` github page and I fell in love with it.
+Color scheme that I use is [Material](https://github.com/alacritty/alacritty/wiki/Color-schemes#material-theme) that I found on the `Alacritty` github page and I fell in love with it.
 
 Here is the `Alacritty` [config](.config/alacritty/alacritty.yml). To be able to use my config you need to save it in this respective path: `~/.config/alacritty/alacritty.yml`
 
@@ -64,7 +64,7 @@ Here is the `Alacritty` [config](.config/alacritty/alacritty.yml). To be able to
 
 For more information about alacritty and configuration options checkout `Alacritty` [github](https://github.com/alacritty/alacritty) page
 
-#### [anime-downloader](https://github.com/vn-ki/anime-downloader)
+### [anime-downloader](https://github.com/vn-ki/anime-downloader)
 
 A simple commandline tool to for downloading anime from your favourite website.
 
@@ -80,7 +80,7 @@ Here is my [config](.config/anime-downloader/config.json). You need to save the 
 
 ![adl](https://raw.githubusercontent.com/CroLinuxGamer/Photos/master/adl.gif)
 
-#### [bspwm](https://github.com/baskerville/bspwm)
+### [bspwm](https://github.com/baskerville/bspwm)
 
 For my wm I use `bspwm` because it is just a wm. I tried `i3`, `xnomad`, `openbox` and more and in the end `bspwm` is for me because it is just a wm so that means that it only works with windows which make it more modular with differrent programs. And any other functionality is easily configurable with scripts because config for `bspwm` is any programming languange you wan't.
 
@@ -92,7 +92,7 @@ Here is the [config](.config/bspwm/bspwmrc). Config's need to be placed in ot's 
 
 > sorry for not providing a screenshot ^-^
 
-#### [dunst](https://github.com/dunst-project/dunst)
+### [dunst](https://github.com/dunst-project/dunst)
 
 I have a really regular `dunst` config so I don't think that there is anything special worth mentioning.
 
@@ -108,7 +108,7 @@ Config and pictures need to be blaced in `~/.config/dunst/` directory.
 
 ![dunst](https://raw.githubusercontent.com/CroLinuxGamer/Photos/master/dunst.png)
 
-#### lf
+### lf
 
 You must have though't that it is going to be `ranger` but no it is `lf`.
 
