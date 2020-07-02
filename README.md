@@ -75,7 +75,7 @@ Here is my [config](.config/anime-downloader/config.json). You need to save the 
 
 > A look at how it works
 
-
+![adl](https://raw.githubusercontent.com/CroLinuxGamer/Photos/master/adl.gif)
 
 ### .ncmpcpp
 
