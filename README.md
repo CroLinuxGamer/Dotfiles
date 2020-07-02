@@ -50,11 +50,13 @@ With it's gpu support a lot of commands and cli programs are running much faster
 
 Before using I used a lot of treminal emulator like `st`, `urxvt`, `termite` and so on but only `Alacritty` made me want to come back to it.
 
-Color scheme that I use [`Material`](https://github.com/alacritty/alacritty/wiki/Color-schemes#material-theme) that I found on the `Alacritty` github page and I fell in love with it.
+Color scheme that I use [Material](https://github.com/alacritty/alacritty/wiki/Color-schemes#material-theme) that I found on the `Alacritty` github page and I fell in love with it.
 
 Here is the `Alacritty` [config](/blob/master/.config/alacritty/alacritty.yml).
 
-Here is a quick loot at my htop
+Here is a quick loot at my terminal color output:
+
+![temirnal](https://github.com/CroLinuxGamer/Photos/blob/master/terminal.png?raw=true)
 
 ### .ncmpcpp
 
