@@ -31,6 +31,9 @@ Of course this repository can also serve for anyone else that wants to see what 
     - [mpd](#mpd)
     - [nvim](#neovim)
     - [picom](#picom)
+    - [polybar](#polybar)
+    - [rofi](#rofi)
+    - [sxhkd](#sxhkd)
 - [.ncmpcpp](#ncmpcpp)
 - [.zsh](#zsh)
 - [Bin](#bin)
@@ -168,6 +171,14 @@ Here is the [config](.config/rofi/config) and here is also the [theme](.config/r
 > rofi screenshot
 
 ![rofi](https://raw.githubusercontent.com/CroLinuxGamer/Photos/master/rofi.png)
+
+### [sxhkd](https://github.com/baskerville/sxhkd)
+
+For my shortcut daemon I use sxhkd because it is has very modular and intuinitive syntax.
+
+For more details I will make a repo on a later date so that can explain shortcuts in a more cleaner way.
+
+> no screenshot sorry :(
 
 ## .ncmpcpp
 
