@@ -70,7 +70,7 @@ A simple commandline tool to for downloading anime from your favourite website.
 
 But in my case I use it with another program [adl](https://github.com/RaitaroH/adl) which makes use of [trackma](https://github.com/z411/trackma) and [mpv](https://mpv.io/) to be able to watch anime from your terminal emulator.
 
-For this combination you will need to first login into trackma with your `mal` or `anilist` account. You will also need to configure your `anime-downloader` config to use either your favourite or the fastest site for your first. Recommended is anime simple.
+For this combination you will need to first login into trackma with your `mal` or `anilist` account. You will also need to configure your `anime-downloader` config to use either your favourite or the fastest site for your first. Animesimple is recommended.
 
 My config configured for the fastest site in my region so you will need to edit it.
 
