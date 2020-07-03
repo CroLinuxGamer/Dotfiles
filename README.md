@@ -132,7 +132,7 @@ Here is [config](.config/lf/lfrc). To use my `config` you need it's respective p
 
 ### [mpd](https://www.musicpd.org/)
 
-Yes i use mpd for my music. I love mpd because I can play song on my phone while it is on my pc trought network with mpd.
+Yes i use `mpd` for my music. I love `mpd` because I can play song on my phone while it is on my pc trought network with `mpd`.
 
 Here my [config](.config/mpd/mpd.conf) (very basic yo can use it right away). You need to place config in it's respective place: `~/.config/mpd/mpd.conf`
 
