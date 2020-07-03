@@ -300,3 +300,22 @@ Here is [config](.zshrc). You need to save the file in your home folder.
 
 
 ## Aditional info
+
+- Icon theme: [papirus dark](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
+- Gtk theme: [adapta notko](https://github.com/adapta-project/adapta-gtk-theme)
+- Browser: [brave](https://brave.com/)
+- Program open: [xdg-open](https://github.com/freedesktop/xdg-utils)
+- Visual code editor: [sublime text](https://www.sublimetext.com/)
+- Games: [steam](https://store.steampowered.com/) and [lutris](https://lutris.net/)
+- File manager gui: [pcmanfm](https://wiki.archlinux.org/index.php/PCManFM)
+- Gtk themer: [lxappearance](https://wiki.lxde.org/en/LXAppearance)
+- Partition editor: [gparted](https://gparted.org/)
+- Archive tool: [atool](https://www.nongnu.org/atool/) and [xarchiver](http://xarchiver.sourceforge.net/)
+- Power manager: [xfce 4 power manager](https://docs.xfce.org/xfce/xfce4-power-manager/start)
+- Brigthness tool: [light](https://github.com/haikarainen/light)
+- Ebook reader: [foliate](https://github.com/johnfactotum/foliate)
+- Pdf reader: [Zathura](https://github.com/pwmt/zathura)
+- Qt5: [qt5ct](https://github.com/RomanVolak/qt5ct) using gtk2 setting
+- Junk cleaner: [stacer](https://github.com/oguzhaninan/Stacer)
+- Screenshot tool: [scrot](https://github.com/dreamer/scrot)
+- Screen recorder: [ffmpeg](https://ffmpeg.org/)
