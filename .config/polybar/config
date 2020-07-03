@@ -79,7 +79,7 @@ override-redirect = true
 [module/arch-updates]
 type = custom/script
 exec = arch-updates
-interval = 600
+interval = 3600
 format-underline = ${colors.gr}
 
 [module/xkeyboard]
@@ -197,7 +197,7 @@ format-mounted = <label-mounted>
 format-mounted-underline = ${colors.gr}
 label-mounted =  : %used%/%total%
 mount-0 = /
-interval = 300
+interval = 3600
 fixed-values = true
 spacing = 1
 
