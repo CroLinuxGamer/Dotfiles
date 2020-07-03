@@ -176,8 +176,9 @@ Here is the [config](.config/rofi/config) and here is also the [theme](.config/r
 
 For my shortcut daemon I use sxhkd because it is has very modular and intuinitive syntax.
 
-For more details I will make a repo on a later date so that can explain shortcuts in a more cleaner way.
+In term of my `config` it has comments for everything so it is pretty easy to understand.
 
+Here is my [config](.config/sxhkd/sxhkdrc). You need to save config in it's respective path: `~/.config/sxhkd/sxhkdrc`
 > no screenshot sorry :(
 
 ## .ncmpcpp
@@ -192,13 +193,41 @@ Here is my [config](.ncmpcpp/config). Config goes into `~/.ncmpcpp` folder.
 
 ## .zsh
 
+As you can see I use zsh as my shell and love it because of it modularity.
+
+In this forlder a store my folder which has all my aliases in it.
+
+Here is the [config](.zsh/aliasrc). If you wan't use to my aliases you need to make your zshrc load aliasrc file on your own.
+
+> here is an example
+
+```
+[ -f "$HOME/.zsh/aliasrc" ] && source "$HOME/.zsh/aliasrc"
+```
+
+You can change the path where you save them but i like it this way.
+
 ## Bin
+
+This is my folder that I use for all my scripts.
+
+For all scripts I will make a repository so that I can explain them in more detail so you will need to wait for it a bit.
 
 ## Pictures
 
+Just a folder where I have my wallpaper saved
+
 ## .bashrc
 
+A simple bash config just so that it is there ;)
+
+Here is [bashrc](.bashrc). You need to save the file in your home directory.
+
 ## .p10k.zsh
+
+My configuration for powerlevel10k zsh theme that I love.
+
+I made it's configuration to look similar to `pure` zsh theme.
 
 ## .profile
 
