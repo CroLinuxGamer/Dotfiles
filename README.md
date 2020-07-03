@@ -217,11 +217,15 @@ For all scripts I will make a repository so that I can explain them in more deta
 
 Just a folder where I have my wallpaper saved
 
+> I believe there is no need for it to be here
+
 ## .bashrc
 
 A simple bash config just so that it is there ;)
 
 Here is [bashrc](.bashrc). You need to save the file in your home directory.
+
+> no bash here
 
 ## .p10k.zsh
 
@@ -229,12 +233,66 @@ My configuration for powerlevel10k zsh theme that I love.
 
 I made it's configuration to look similar to `pure` zsh theme.
 
+Here is [config](.p10k.zsh). You need to save the file in your home directory.
+
+> you can see the theme clearly in terminal screenshot and in the gif
+
 ## .profile
+
+A very besic .profile that just enables mangohud.
+
+Here is [config](.profile). You need to save it in your home folder.
+
+> no need for screenshot
 
 ## .xinitrc
 
+I use startx for starting my x server so ofcourse that I have `xinitrc`.
+
+I lauch quite a bit of programs with is, so here is the list:
+
+- dunst
+- mpd
+- xsetroot
+- xrandr
+- transmission-daemon
+- polkit
+- bspwm
+
+Here is [config](.xinitrc). You need to save the file in your home folder.
+
+> no screenshot
+
 ## .zprofile
+
+From here I launch startx on boot so you need it if you are going to use startx with my config.
+
+Here is [config](.zprofile). You need to save the file in your home folder.
+
+> no screenshot here either
 
 ## .zshenv
 
+This is where I save all my enviromental variables and export my custom folder to path to be able to use my scrpts like regular commands terminal.
+
+I also export lf icons here so that it can use a lot of different icons.
+
+Here is [config](.zshenv). You need to save the file in your home folder.
+
+> no screenshot
+
 ## .zshrc
+
+My zsh config that I configured completely to my liking.
+
+You will need a couple of zsh plugins so i will list them here:
+
+- zsh-syntax-highlighting.
+- zsh-history-substring-search
+- zsh-theme-powerlevel10k
+
+And it is preferred that you save my or your aliases in `~/.zsh/aliasrc` file with my zsh config.
+
+Here is [config](.zshrc). You need to save the file in your home folder.
+
+> no screenshot
