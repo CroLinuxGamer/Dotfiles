@@ -319,3 +319,4 @@ Here is [config](.zshrc). You need to save the file in your home folder.
 - Junk cleaner: [stacer](https://github.com/oguzhaninan/Stacer)
 - Screenshot tool: [scrot](https://github.com/dreamer/scrot)
 - Screen recorder: [ffmpeg](https://ffmpeg.org/)
+- Font: gtk hack nerd font, terminal SourceCodePro nerd font, [Nerd Fonts](https://www.nerdfonts.com/)
