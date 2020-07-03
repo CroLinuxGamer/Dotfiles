@@ -54,7 +54,7 @@ Now I will individually explain every program that uses this folder and link the
 
 ### [Alacritty](https://github.com/alacritty/alacritty)
 
-`Alacritty` is the my terminal emulator of choice because it is very fast on my low spec machine.
+Alacritty is the my terminal emulator of choice because it is very fast on my low spec machine.
 
 With it's gpu support a lot of commands and cli programs are running much faster for me. The increnase in speed on my system was about 50% - 70%.
 
@@ -88,9 +88,9 @@ Here is my [config](.config/anime-downloader/config.json). You need to save the 
 
 ### [bspwm](https://github.com/baskerville/bspwm)
 
-For my wm I use `bspwm` because it is just a wm. I tried `i3`, `xnomad`, `openbox` and more and in the end `bspwm` is for me because it is just a wm so that means that it only works with windows which make it more modular with differrent programs. And any other functionality is easily configurable with scripts because config for `bspwm` is any programming languange you wan't.
+For my wm I use `bspwm` because it is just a wm. I tried `i3`, `xnomad`, `openbox` and more and in the end `bspwm` is for me because it is just a wm so that means that it only works with windows which make it more modular with differrent programs. And any other functionality is easily configurable with scripts because config for bspwm is any programming languange you wan't.
 
-For `bspwm` I don't really have any special config, only thing worth mentioning is just controling floating windows with my mouse.
+For bspwm I don't really have any special config, only thing worth mentioning is just controling floating windows with my mouse.
 
 Rest are mostly scripts which I will name later on.
 
@@ -100,9 +100,9 @@ Here is the [config](.config/bspwm/bspwmrc). Config need's to be placed in it's 
 
 ### [dunst](https://github.com/dunst-project/dunst)
 
-I have a really regular `dunst` config so I don't think that there is anything special worth mentioning.
+I have a really regular dunst config so I don't think that there is anything special worth mentioning.
 
-I use `dunst` only because it is very lightweight and easy to configure.
+I use dunst only because it is very lightweight and easy to configure.
 
 Here is my [config](.config/dunst/dunstrc)
 
@@ -132,7 +132,7 @@ Here is [config](.config/lf/lfrc). To use my `config` you need it's respective p
 
 ### [mpd](https://www.musicpd.org/)
 
-Yes i use `mpd` for my music. I love `mpd` because I can play song on my phone while it is on my pc trought network with `mpd`.
+Yes i use mpd for my music. I love mpd because I can play song on my phone while it is on my pc trought network with mpd.
 
 Here my [config](.config/mpd/mpd.conf) (very basic yo can use it right away). You need to place config in it's respective place: `~/.config/mpd/mpd.conf`
 
@@ -181,7 +181,7 @@ In term of my `config` it has comments for everything so it is pretty easy to un
 Here is my [config](.config/sxhkd/sxhkdrc). You need to save config in it's respective path: `~/.config/sxhkd/sxhkdrc`
 > no screenshot sorry :(
 
-## .ncmpcpp
+## [.ncmpcpp](https://github.com/ncmpcpp/ncmpcpp)
 
 This is my ncmpcpp configuration folder. I use ncmpcpp because it work really good and I can configure it's look with the configuration file (there is also a built in virtualizer).
 
