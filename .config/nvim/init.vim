@@ -7,7 +7,7 @@ Plug 'mhinz/vim-startify'
 " inc search on steroids
 Plug 'haya14busa/incsearch.vim'
 " easy comment big chunks of code
-Plug 'scrooloose/nerdcommenter' 
+Plug 'preservim/nerdcommenter'
 " auto pairs
 Plug 'jiangmiao/auto-pairs'
 " the rainbow is mine
@@ -52,7 +52,6 @@ set statusline+=%#StatusLine#                                           " colori
 set statusline+=\ %f\                                                   " file name
 set statusline+=[%n/                                                    " buffer number
 set statusline+=%{len(filter(range(1,bufnr('$')),'buflisted(v:val)'))}] " Opened buffer count
-set statusline+=\ %{StatusDiagnostic()}                                 " coc.nvim status
 set statusline+=%m\                                                     " does something
 set statusline+=%=                                                      " moves the rest to the right side
 set statusline+=%#CursorColumn#                                         " colorings
@@ -62,19 +61,6 @@ set statusline+=\[%{&fileformat}\]                                      " filefo
 set statusline+=\ %l/%L                                                 " line / all lines
 set statusline+=\ %c                                                    " column
 set statusline+=\                                                       " space
-
-function! StatusDiagnostic() abort
-  let info = get(b:, 'coc_diagnostic_info', {})
-  if empty(info) | return '' | endif
-  let msgs = []
-  if get(info, 'error', 0)
-    call add(msgs, 'E' . info['error'])
-  endif
-  if get(info, 'warning', 0)
-    call add(msgs, 'W' . info['warning'])
-  endif
-  return join(msgs, ' '). ' ' . get(g:, 'coc_status', '')
-endfunction
 
 " set python directories
 let g:python_host_prog = '/usr/bin/python2.7'
