@@ -45,6 +45,7 @@ Of course this repository can also serve for anyone else that wants to see what 
 - [.zprofile](#zprofile)
 - [.zshenv](#zshenv)
 - [.zshrc](#zshrc)
+- [Aditional info](#aditional-info)
 
 ## .config
 
@@ -296,3 +297,6 @@ And it is preferred that you save my or your aliases in `~/.zsh/aliasrc` file wi
 Here is [config](.zshrc). You need to save the file in your home folder.
 
 > no screenshot
+
+
+## Aditional info
