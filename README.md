@@ -139,7 +139,9 @@ Here my [config](.config/mpd/mpd.conf) (very basic yo can use it right away). Yo
 
 ### [Neovim](https://github.com/neovim/neovim)
 
-For information about my neovim config I will create a special repo at a later date.
+For information about my config you will need to look into my neovim-config repo.
+
+Here is the [link](https://github.com/CroLinuxGamer/neovim-config)
 
 > Neovim cpp sceenshot
 
