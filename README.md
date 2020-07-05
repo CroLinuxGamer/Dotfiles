@@ -158,7 +158,7 @@ Here is my [config](.config/picom/picom.conf) (it is heavilly configured so you 
 
 ### [polybar](https://github.com/polybar/polybar)
 
-For my system bar I use polybar. In terms of configuration I will make a dedicated repo so that I can better explain some of the modules and confguration.
+Here is my [polybar-config](https://github.com/CroLinuxGamer/polybar-config) repo where you will find everything in most detail.
 
 > I think that there is also no need for polybar screenshot because there already is enough of them
 
