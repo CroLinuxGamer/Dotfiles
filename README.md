@@ -215,7 +215,7 @@ You can change the path where you save them but i like it this way.
 
 This is my folder that I use for all my scripts.
 
-For all scripts I will make a repository so that I can explain them in more detail so you will need to wait for it a bit.
+[Bspwm scripts](https://github.com/CroLinuxGamer/bspwm-scripts) repo.
 
 ## Pictures
 
