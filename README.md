@@ -1,7 +1,5 @@
 <h1 align="center"> Welcome to my dotfiles </h1>
 
-> Made by a 16 y/0
-
 ### Introduction
 
 This is my dotfiles repository that I run for easy moving my configuration to another pc.
