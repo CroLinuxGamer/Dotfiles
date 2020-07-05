@@ -217,6 +217,8 @@ This is my folder that I use for all my scripts.
 
 [Bspwm scripts](https://github.com/CroLinuxGamer/bspwm-scripts) repo.
 
+[Lf scripts](https://github.com/CroLinuxGamer/lf-scripts)
+
 ## Pictures
 
 Just a folder where I have my wallpaper saved
