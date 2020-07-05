@@ -93,6 +93,7 @@ For bspwm I don't really have any special config, only thing worth mentioning is
 
 Rest are mostly scripts which I will name later on.
 
+
 Here is the [config](.config/bspwm/bspwmrc). Config need's to be placed in it's respective path: `~/.config/bspwm/bspwmrc`
 
 > sorry for not providing a screenshot ^-^
@@ -178,6 +179,8 @@ Here is the [config](.config/rofi/config) and here is also the [theme](.config/r
 For my shortcut daemon I use sxhkd because it is has very modular and intuinitive syntax.
 
 In term of my `config` it has comments for everything so it is pretty easy to understand.
+
+There are also some specific software that I use which is: `xdo`, `xorg-xkill`, `betterlockscreen`, `pamixer`, `light`, `scrot`, `mpc` and `ffmpeg`.
 
 Here is my [config](.config/sxhkd/sxhkdrc). You need to save config in it's respective path: `~/.config/sxhkd/sxhkdrc`
 > no screenshot sorry :(
