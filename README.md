@@ -219,6 +219,8 @@ This is my folder that I use for all my scripts.
 
 [Lf scripts](https://github.com/CroLinuxGamer/lf-scripts) repo.
 
+[System bar scripts](https://github.com/CroLinuxGamer/system-bar-scripts)
+
 ## Pictures
 
 Just a folder where I have my wallpaper saved
