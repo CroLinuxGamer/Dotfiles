@@ -25,8 +25,6 @@ Plug 'skywind3000/asyncrun.vim'
 Plug 'preservim/nerdtree'
 " icons support
 Plug 'ryanoasis/vim-devicons'
-" markdown preview
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 call plug#end()
 
 " Center when entering instert mode
