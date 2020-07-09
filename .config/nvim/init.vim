@@ -35,6 +35,9 @@ autocmd InsertEnter * norm zz
 " Turn off auto commenting
 autocmd FileType * setlocal formatoptions-=cro
 
+" Disable autointend
+set noautoindent
+
 " Open file at the place where you left
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
@@ -209,14 +212,6 @@ let g:webdevicons_enable_ctrlp = 1
 let g:WebDevIconsUnicodeGlyphDoubleWidth = 1
 let g:webdevicons_conceal_nerdtree_brackets = 1
 
-" markdown preview
-let g:mkdp_auto_start = 0
-let g:mkdp_auto_close = 1
-let g:mkdp_refresh_slow = 1
-let g:mkdp_command_for_global = 1
-
-nmap <C-p> <Plug>MarkdownPreviewToggle
-
 " ditto settings
 au FileType markdown,text,tex DittoOn
 
@@ -232,3 +227,7 @@ au FileType markdown,text,tex nmap <leader>p [s
 au FileType markdown,text,tex nmap <leader>n ]s
 au FileType markdown,text,tex nmap <leader>a zg
 au FileType markdown,text,tex nmap <leader>r zug
+
+" markdown
+au FileType markdown map <leader>g :w! \| AsyncRun pandoc --filter pandoc-crossref "$(VIM_FILEPATH)" -o "$(VIM_PATHNOEXT)".pdf <CR><CR>
+au FileType markdown map <leader>o :AsyncRun zathura "$(VIM_PATHNOEXT)".pdf <CR>
