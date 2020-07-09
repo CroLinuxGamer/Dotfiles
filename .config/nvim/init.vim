@@ -14,20 +14,22 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'luochen1990/rainbow'
 " edit and write system files
 Plug 'lambdalisue/suda.vim'
-" advanced syntac for multiple languanges
+" advanced syntax for multiple languages
 Plug 'sheerun/vim-polyglot'
 " advanced c++ syntax
 Plug 'octol/vim-cpp-enhanced-highlight'
-" async tack runner with a lot of funcionality
+" async tack runner with a lot of functionality
 Plug 'skywind3000/asynctasks.vim'
 Plug 'skywind3000/asyncrun.vim'
 " sidebar explorer
 Plug 'preservim/nerdtree'
 " icons support
 Plug 'ryanoasis/vim-devicons'
+" highlight duplicate words
+Plug 'dbmrq/vim-ditto'
 call plug#end()
 
-" Center when entering instert mode
+" Center when entering insert mode
 autocmd InsertEnter * norm zz
 
 " Turn off auto commenting
@@ -53,9 +55,9 @@ set statusline+=%{len(filter(range(1,bufnr('$')),'buflisted(v:val)'))}] " Opened
 set statusline+=%m\                                                     " does something
 set statusline+=%=                                                      " moves the rest to the right side
 set statusline+=%#CursorColumn#                                         " colorings
-set statusline+=\ %y                                                    " filetype
+set statusline+=\ %y                                                    " file type
 set statusline+=\ %{&fileencoding?&fileencoding:&encoding}              " encoding
-set statusline+=\[%{&fileformat}\]                                      " fileformat
+set statusline+=\[%{&fileformat}\]                                      " file format
 set statusline+=\ %l/%L                                                 " line / all lines
 set statusline+=\ %c                                                    " column
 set statusline+=\                                                       " space
@@ -90,7 +92,6 @@ set whichwrap+=<,>,h,l
 set smartcase
 set mouse=a
 set updatetime=300
-set shortmess+=c
 set signcolumn=yes
 
 " No tmp or swp files
@@ -128,7 +129,7 @@ set re=1
 " tab settings
 set tabstop=4 softtabstop=4 expandtab shiftwidth=4 smarttab
 
-" leader maping
+" leader mapping
 let g:mapleader = ","
 let &t_SI .= "\<Esc>[?2004h"
 let &t_EI .= "\<Esc>[?2004l"
@@ -165,7 +166,7 @@ let g:suda#prompt = 'Pass: '
 au FileType go nmap <leader>i <Plug>(go-install)
 au FileType go nmap <leader>h <Plug>(go-doc-browser)
 
-let g:go_code_completion_enabled = 0 " disable vim-go completion, coc.nvim does better job
+let g:go_code_completion_enabled = 0
 let g:go_updatetime = 400
 let g:go_fold_enable = []
 let g:go_highlight_operators = 1
@@ -175,7 +176,7 @@ let g:go_highlight_function_calls = 1
 let g:go_highlight_types = 1
 let g:go_highlight_fields = 1
 
-" cpp syntax settings
+" c++ syntax settings
 let g:cpp_class_scope_highlight = 1
 let g:cpp_member_variable_highlight = 1
 let g:cpp_class_decl_highlight = 1
@@ -184,7 +185,7 @@ let g:cpp_experimental_template_highlight = 1
 let g:cpp_concepts_highlight = 1
 
 " async run and task settings
-let g:asyncrun_open = 6                                                     " enable quickfix windows
+let g:asyncrun_open = 6                                                     " enable quick fix windows
 let g:asyncrun_rootmarks = ['.git', '.svn', '.root', '.project', '.hg']     " set root marks
 let g:asynctasks_term_pos = 'tab'
 let g:asynctasks_term_reuse = 1
@@ -199,7 +200,7 @@ let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 let NERDTreeQuitOnOpen=1
 
-" devicons settigs
+" devicons settings
 let g:webdevicons_enable = 1
 let g:webdevicons_enable_nerdtree = 1
 let g:webdevicons_enable_unite = 1
@@ -216,3 +217,18 @@ let g:mkdp_command_for_global = 1
 
 nmap <C-p> <Plug>MarkdownPreviewToggle
 
+" ditto settings
+au FileType markdown,text,tex DittoOn
+
+" spell and completion settings
+set spell spelllang=en_us
+set complete+=kspell
+set completeopt=menuone,longest
+set shortmess+=c
+nnoremap <Leader>s ea<C-X><C-S>
+inoremap <expr> <CR> pumvisible() ? "\<C-y><Esc>" : "\<CR>"
+
+nmap <leader>p [s
+nmap <leader>n ]s
+nmap <leader>a zg
+nmap <leader>r zug
