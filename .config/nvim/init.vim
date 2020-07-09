@@ -221,14 +221,14 @@ nmap <C-p> <Plug>MarkdownPreviewToggle
 au FileType markdown,text,tex DittoOn
 
 " spell and completion settings
-set spell spelllang=en_us
-set complete+=kspell
-set completeopt=menuone,longest
-set shortmess+=c
-nnoremap <Leader>s ea<C-X><C-S>
-inoremap <expr> <CR> pumvisible() ? "\<C-y><Esc>" : "\<CR>"
+au FileType markdown,text,tex set spell spelllang=en_us
+au FileType markdown,text,tex set complete+=kspell
+au FileType markdown,text,tex set completeopt=menuone,longest
+au FileType markdown,text,tex set shortmess+=c
+au FileType markdown,text,tex nnoremap <Leader>s ea<C-X><C-S>
+au FileType markdown,text,tex inoremap <expr> <CR> pumvisible() ? "\<C-y><Esc>" : "\<CR>"
 
-nmap <leader>p [s
-nmap <leader>n ]s
-nmap <leader>a zg
-nmap <leader>r zug
+au FileType markdown,text,tex nmap <leader>p [s
+au FileType markdown,text,tex nmap <leader>n ]s
+au FileType markdown,text,tex nmap <leader>a zg
+au FileType markdown,text,tex nmap <leader>r zug
