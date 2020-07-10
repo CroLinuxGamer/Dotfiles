@@ -181,6 +181,7 @@ exec = date '+%d.%m.%Y %H:%M'
 label = "%output%"
 interval = 10
 format-underline = ${colors.gr}
+click-left = $TERMINAL -e calcurse
 
 [module/ram]
 type = custom/script
