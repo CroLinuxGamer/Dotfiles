@@ -27,6 +27,8 @@ Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 " highlight duplicate words
 Plug 'dbmrq/vim-ditto'
+" pandoc markdonw syntax
+Plug 'vim-pandoc/vim-pandoc-syntax'
 call plug#end()
 
 " Center when entering insert mode
@@ -231,3 +233,10 @@ au FileType markdown,text,tex nmap <leader>r zug
 " markdown
 au FileType markdown map <leader>g :w! \| AsyncRun pandoc --filter pandoc-crossref "$(VIM_FILEPATH)" -o "$(VIM_PATHNOEXT)".pdf <CR><CR>
 au FileType markdown map <leader>o :AsyncRun zathura "$(VIM_PATHNOEXT)".pdf <CR>
+
+augroup pandoc_syntax
+    au! BufNewFile,BufFilePre,BufRead *.md set filetype=markdown.pandoc
+augroup END
+
+let g:pandoc#syntax#conceal#urls = 1
+let g:pandoc#syntax#style#use_definition_lists = 0
