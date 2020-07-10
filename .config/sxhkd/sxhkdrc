@@ -94,8 +94,8 @@ super + {Return,b,t,v}
     {$TERMINAL,$BROWSER,trackma-qt,$VISUAL}
 
 # terminal programs
-super + {m,f,w,h,e}
-    $TERMINAL -e {ncmpcpp,lf,adl,htop,$EDITOR}
+super + {m,f,w,h,e,r,k,n}
+    $TERMINAL -e {ncmpcpp,lf,adl,htop,$EDITOR,tuir,calcurse,joplin}
 
 # some more programs
 super + shift + {f,c,s,g}
