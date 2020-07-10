@@ -9,7 +9,7 @@ export GOBIN=$HOME/Bin/go/bin
 
 # Programs export
 export EDITOR="nvim"
-export VISUAL="/opt/sublime_text/sublime_text"
+export VISUAL="nvim"
 export READER="zathura"
 export BOOK_READER="foliate"
 export TERMINAL="alacritty"
