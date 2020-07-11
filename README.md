@@ -55,9 +55,9 @@ Now I will individually explain every program that uses this folder and link the
 
 Alacritty is the my terminal emulator of choice because it is very fast on my low spec machine.
 
-With it's gpu support a lot of commands and cli programs are running much faster for me. The increnase in speed on my system was about 50% - 70%.
+With it's gpu support a lot of commands and cli programs are running much faster for me. The increase in speed on my system was about 50% - 70%.
 
-Before using I used a lot of treminal emulator like `st`, `urxvt`, `termite` and so on but only `Alacritty` made me want to come back to it.
+Before using I used a lot of terminal emulator like `st`, `urxvt`, `termite` and so on but only `Alacritty` made me want to come back to it.
 
 Color scheme that I use is [Material](https://github.com/alacritty/alacritty/wiki/Color-schemes#material-theme) that I found on the `Alacritty` github page and I fell in love with it.
 
@@ -71,11 +71,11 @@ For more information about alacritty and configuration options checkout `Alacrit
 
 ### [anime-downloader](https://github.com/vn-ki/anime-downloader)
 
-A simple commandline tool to for downloading anime from your favourite website.
+A simple command line tool to for downloading anime from your favorite website.
 
 But in my case I use it with another program [adl](https://github.com/RaitaroH/adl) which makes use of [trackma](https://github.com/z411/trackma) and [mpv](https://mpv.io/) to be able to watch anime from your terminal emulator.
 
-For this combination you will need to first login into trackma with your `mal` or `anilist` account. You will also need to configure your `anime-downloader` config to use either your favourite or the fastest site for your first. Animesimple is recommended.
+For this combination you will need to first login into trackma with your `mal` or `anilist` account. You will also need to configure your `anime-downloader` config to use either your favorite or the fastest site for your first. Animesimple is recommended.
 
 I configured my config for the fastest site in my region so you will need to edit it for your own region.
 
@@ -87,14 +87,14 @@ Here is my [config](.config/anime-downloader/config.json). You need to save the 
 
 ### [bspwm](https://github.com/baskerville/bspwm)
 
-For my wm I use `bspwm` because it is just a wm. I tried `i3`, `xnomad`, `openbox` and more and in the end `bspwm` is for me because it is just a wm so that means that it only works with windows which make it more modular with differrent programs. And any other functionality is easily configurable with scripts because config for bspwm is any programming languange you wan't.
+For my wm I use `bspwm` because it is just a wm. I tried `i3`, `xnomad`, `openbox` and more and in the end `bspwm` is for me because it is just a wm so that means that it only works with windows which make it more modular with different programs. And any other functionality is easily configurable with scripts because config for bspwm is any programming language you want.
 
-For bspwm I don't really have any special config, only thing worth mentioning is just controling floating windows with my mouse.
+For bspwm I don't really have any special config, only thing worth mentioning is just controlling floating windows with my mouse.
 
 Rest are mostly scripts which I will name later on.
 
 
-Here is the [config](.config/bspwm/bspwmrc). Config need's to be placed in it's respective path: `~/.config/bspwm/bspwmrc`
+Here is the [config](.config/bspwm/bspwmrc). Config needs to be placed in it's respective path: `~/.config/bspwm/bspwmrc`
 
 > sorry for not providing a screenshot ^-^
 
@@ -116,9 +116,9 @@ Config and pictures need to be placed in `~/.config/dunst/` directory.
 
 ### [lf](https://github.com/gokcehan/lf)
 
-You must have though't that it is going to be `ranger` but no it is `lf`.
+You must have thought that it is going to be `ranger` but no it is `lf`.
 
-I use lf because it is faster and you can program most of the functoins in the config so it makes `lf` more mudular than `ranger`.
+I use lf because it is faster and you can program most of the functions in the config so it makes `lf` more modular than `ranger`.
 
 I have quite a bit of custom functions so you can just take what you need from them.
 
@@ -132,7 +132,7 @@ Here is [config](.config/lf/lfrc). To use my `config` you need it's respective p
 
 ### [mpd](https://www.musicpd.org/)
 
-Yes i use mpd for my music. I love mpd because I can play song on my phone while it is on my pc trought network with mpd.
+Yes I use mpd for my music. I love mpd because I can play song on my phone while it is on my pc over network with mpd.
 
 Here my [config](.config/mpd/mpd.conf) (very basic yo can use it right away). You need to place config in it's respective place: `~/.config/mpd/mpd.conf`
 
@@ -142,7 +142,7 @@ For information about my config you will need to look into my neovim-config repo
 
 Here is the [link](https://github.com/CroLinuxGamer/neovim-config)
 
-> Neovim cpp sceenshot
+> Neovim cpp screenshot
 
 ![neovim](https://raw.githubusercontent.com/CroLinuxGamer/Photos/master/neovim.png)
 
@@ -154,7 +154,7 @@ I use his fork because it has rounded corners and dual_kawase blur and I love th
 
 Here is my [config](.config/picom/picom.conf) (it is heavilly configured so you will also need time to configure it to your needs). You need to place the config in it's respective path: `~/.config/picom/picom.conf`
 
-> I think that there is no need for a screenshot beacuse you have already seen enough
+> I think that there is no need for a screenshot because you have already seen enough
 
 ### [polybar](https://github.com/polybar/polybar)
 
@@ -176,7 +176,7 @@ Here is the [config](.config/rofi/config) and here is also the [theme](.config/r
 
 ### [sxhkd](https://github.com/baskerville/sxhkd)
 
-For my shortcut daemon I use sxhkd because it is has very modular and intuinitive syntax.
+For my shortcut daemon I use sxhkd because it is has very modular and intuitive syntax.
 
 In term of my `config` it has comments for everything so it is pretty easy to understand.
 
@@ -199,9 +199,9 @@ Here is my [config](.ncmpcpp/config). Config goes into `~/.ncmpcpp` folder.
 
 As you can see I use zsh as my shell and love it because of it modularity.
 
-In this forlder a store my folder which has all my aliases in it.
+In this folder a store my folder which has all my aliases in it.
 
-Here is the [config](.zsh/aliasrc). If you wan't use to my aliases you need to make your zshrc load aliasrc file on your own.
+Here is the [config](.zsh/aliasrc). If you want use to my aliases you need to make your zshrc load aliasrc file on your own.
 
 > here is an example
 
@@ -209,7 +209,7 @@ Here is the [config](.zsh/aliasrc). If you wan't use to my aliases you need to m
 [ -f "$HOME/.zsh/aliasrc" ] && source "$HOME/.zsh/aliasrc"
 ```
 
-You can change the path where you save them but i like it this way.
+You can change the path where you save them but I like it this way.
 
 ## Bin
 
@@ -249,7 +249,7 @@ Here is [config](.p10k.zsh). You need to save the file in your home directory.
 
 ## .profile
 
-A very besic .profile that just enables mangohud.
+A very basic .profile that just enables mangohud.
 
 Here is [config](.profile). You need to save it in your home folder.
 
@@ -257,9 +257,9 @@ Here is [config](.profile). You need to save it in your home folder.
 
 ## .xinitrc
 
-I use startx for starting my x server so ofcourse that I have `xinitrc`.
+I use startx for starting my x server so of course that I have `xinitrc`.
 
-I lauch quite a bit of programs with is, so here is the list:
+I launch quite a bit of programs with is, so here is the list:
 
 - dunst
 - mpd
@@ -283,7 +283,7 @@ Here is [config](.zprofile). You need to save the file in your home folder.
 
 ## .zshenv
 
-This is where I save all my enviromental variables and export my custom folder to path to be able to use my scrpts like regular commands terminal.
+This is where I save all my environmental variables and export my custom folder to path to be able to use my scripts like regular commands terminal.
 
 I also export lf icons here so that it can use a lot of different icons.
 
@@ -295,7 +295,7 @@ Here is [config](.zshenv). You need to save the file in your home folder.
 
 My zsh config that I configured completely to my liking.
 
-You will need a couple of zsh plugins so i will list them here:
+You will need a couple of zsh plugins so I will list them here:
 
 - zsh-syntax-highlighting.
 - zsh-history-substring-search
@@ -308,7 +308,7 @@ Here is [config](.zshrc). You need to save the file in your home folder.
 > no screenshot
 
 
-## Aditional info
+## Additional info
 
 - Icon theme: [papirus dark](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
 - Gtk theme: [adapta notko](https://github.com/adapta-project/adapta-gtk-theme)
@@ -321,8 +321,8 @@ Here is [config](.zshrc). You need to save the file in your home folder.
 - Partition editor: [gparted](https://gparted.org/)
 - Archive tool: [atool](https://www.nongnu.org/atool/) and [xarchiver](http://xarchiver.sourceforge.net/)
 - Power manager: [xfce 4 power manager](https://docs.xfce.org/xfce/xfce4-power-manager/start)
-- Brigthness tool: [light](https://github.com/haikarainen/light)
-- Ebook reader: [foliate](https://github.com/johnfactotum/foliate)
+- Brightness tool: [light](https://github.com/haikarainen/light)
+- E-book reader: [foliate](https://github.com/johnfactotum/foliate)
 - Pdf reader: [Zathura](https://github.com/pwmt/zathura)
 - Qt5: [qt5ct](https://github.com/RomanVolak/qt5ct) using gtk2 setting
 - Junk cleaner: [stacer](https://github.com/oguzhaninan/Stacer)

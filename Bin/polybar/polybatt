@@ -24,9 +24,9 @@ fi
 printf "%s" "$symbol"
 
 if [ "$percent" -lt 20 ]; then
-  printf "%%{F#ed0b0b}"
+  printf "%%{F#f6526e}"
 elif [ "$percent" -lt 50 ]; then
-  printf "%%{F#f2e421}";
+  printf "%%{F#ffcb6b}";
 fi
 
 printf "$percent%%"

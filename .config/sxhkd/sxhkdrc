@@ -95,7 +95,7 @@ super + {Return,b,t,v}
 
 # terminal programs
 super + {m,f,w,h,e,r,k,n}
-    $TERMINAL -e {ncmpcpp,lf,adl,htop,$EDITOR,tuir,calcurse,joplin}
+    $TERMINAL -e {ncmpcpp,lf,adl,htop,$EDITOR,tuir,calcurse,newsboat}
 
 # some more programs
 super + shift + {f,c,s,g}
@@ -103,7 +103,7 @@ super + shift + {f,c,s,g}
 
 # run cli programs
 super + shift + {w ,t,n}
-    $TERMINAL -e {adl -d ,tremc,newsboat}
+    $TERMINAL -e {adl -d ,tremc,joplin}
 
 # system programs
 super + ctrl + {f ,t}

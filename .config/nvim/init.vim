@@ -29,6 +29,8 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'dbmrq/vim-ditto'
 " pandoc markdonw syntax
 Plug 'vim-pandoc/vim-pandoc-syntax'
+" coloring in vim
+Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 call plug#end()
 
 " Center when entering insert mode
@@ -240,3 +242,21 @@ augroup END
 
 let g:pandoc#syntax#conceal#urls = 1
 let g:pandoc#syntax#style#use_definition_lists = 0
+
+" Vim hexokinase settings
+let g:Hexokinase_refreshEvents = ['TextChanged','InsertLeave']
+
+let g:Hexokinase_optInPatterns = [
+\     'full_hex',
+\     'triple_hex',
+\     'rgb',
+\     'rgba',
+\     'hsl',
+\     'hsla',
+\     'colour_names'
+\ ]
+
+let g:Hexokinase_highlighters = ['backgroundfull']
+
+autocmd VimEnter * HexokinaseTurnOn
+

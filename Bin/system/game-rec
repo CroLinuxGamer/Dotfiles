@@ -2,5 +2,5 @@
 
 resolution=$(xdpyinfo | awk '/dimensions/{print $2}')
 
-ffmpeg -vaapi_device /dev/dri/renderD128 -f pulse -i 0 -framerate 30 -f x11grab -video_size "$resolution" -i :0 -vf 'hwupload,scale_vaapi=format=nv12' -c:v h264_vaapi -qp 18 ~/Youtube/Recordings/game$(date +%F-%H-%M-%S).mp4
+ffmpeg -threads 1 -vaapi_device /dev/dri/renderD128 -f pulse -i 0 -framerate 30 -f x11grab -video_size "$resolution" -i :0 -vf 'hwupload,scale_vaapi=format=nv12' -c:v h264_vaapi -qp 0 ~/Youtube/Recordings/game$(date +%F-%H-%M-%S).mp4
 
