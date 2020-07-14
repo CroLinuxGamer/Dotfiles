@@ -1,3 +1,11 @@
+" Config by
+  " ____                            _    _         _             _    _
+ " / ___|_ __ ___  _ __  _   _     / \  | | ____ _| |_ ___ _   _| | _(_)
+" | |   | '__/ _ \| '_ \| | | |   / _ \ | |/ / _` | __/ __| | | | |/ / |
+" | |___| | | (_) | | | | |_| |  / ___ \|   < (_| | |_\__ \ |_| |   <| |
+ " \____|_|  \___/|_| |_|\__, | /_/   \_\_|\_\__,_|\__|___/\__,_|_|\_\_|
+                       " |___/
+
 " Plug settings
 call plug#begin()
 " material color scheme
@@ -31,6 +39,8 @@ Plug 'dbmrq/vim-ditto'
 Plug 'vim-pandoc/vim-pandoc-syntax'
 " coloring in vim
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
+" completion
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 " Center when entering insert mode
@@ -59,6 +69,7 @@ set statusline+=%#StatusLine#                                           " colori
 set statusline+=\ %f\                                                   " file name
 set statusline+=[%n/                                                    " buffer number
 set statusline+=%{len(filter(range(1,bufnr('$')),'buflisted(v:val)'))}] " Opened buffer count
+set statusline+=%{coc#status()}
 set statusline+=%m\                                                     " does something
 set statusline+=%=                                                      " moves the rest to the right side
 set statusline+=%#CursorColumn#                                         " colorings
