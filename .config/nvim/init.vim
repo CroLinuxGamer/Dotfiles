@@ -194,8 +194,9 @@ let g:asyncrun_rootmarks = ['.git', '.svn', '.root', '.project', '.hg']     " se
 let g:asynctasks_term_pos = 'tab'
 let g:asynctasks_term_reuse = 1
 let g:asynctasks_system = 'linux'
-map <leader>b :AsyncTask file-build<CR>
-map <leader>r :AsyncTask file-run<CR>
+map <F10> :CocList tasks<CR>
+map <F11> :AsyncTask build<CR>
+map <F12> :AsyncTask run<CR>
 
 " map
 map <F2> :NERDTreeToggle<CR>
@@ -217,9 +218,6 @@ let g:webdevicons_conceal_nerdtree_brackets = 1
 au FileType markdown,text,tex DittoOn
 
 " markdown
-au FileType markdown map <leader>g :w! \| AsyncRun pandoc --filter pandoc-crossref "$(VIM_FILEPATH)" -o "$(VIM_PATHNOEXT)".pdf <CR><CR>
-au FileType markdown map <leader>o :AsyncRun zathura "$(VIM_PATHNOEXT)".pdf <CR>
-
 augroup pandoc_syntax
     au! BufNewFile,BufFilePre,BufRead *.md set filetype=markdown.pandoc
 augroup END
