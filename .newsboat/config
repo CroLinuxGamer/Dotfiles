@@ -1,0 +1,52 @@
+# Config by
+  # ____                            _    _         _             _    _
+ # / ___|_ __ ___  _ __  _   _     / \  | | ____ _| |_ ___ _   _| | _(_)
+# | |   | '__/ _ \| '_ \| | | |   / _ \ | |/ / _` | __/ __| | | | |/ / |
+# | |___| | | (_) | | | | |_| |  / ___ \|   < (_| | |_\__ \ |_| |   <| |
+ # \____|_|  \___/|_| |_|\__, | /_/   \_\_|\_\__,_|\__|___/\__,_|_|\_\_|
+                       # |___/
+
+auto-reload yes
+
+unbind-key j
+unbind-key k
+unbind-key h
+unbind-key H
+unbind-key L
+unbind-key c
+
+bind-key g home
+bind-key G end
+bind-key a toggle-article-read
+bind-key n next-unread
+bind-key N prev-unread
+bind-key D pb-download
+bind-key U show-urls
+bind-key x pb-delete
+
+browser "/usr/bin/brave %u"
+macro m set browser "/usr/bin/mpv %u"; open-in-browser ; set browser "/usr/bin/brave %u"
+
+color background default default
+color listnormal default default
+color listnormal_unread default default
+color listfocus color16 cyan
+color listfocus_unread color16 cyan
+color info default black
+color article default default
+
+highlight article "(^Feed:.*|^Title:.*|^Author:.*)" cyan default bold
+highlight article "(^Link:.*|^Date:.*)" default default
+highlight article "https?://[^ ]+" green default
+
+highlight article "^(Title):.*$" blue default
+highlight article "\\[[0-9][0-9]*\\]" magenta default bold
+highlight article "\\[image\\ [0-9]+\\]" green default bold
+highlight article "\\[embedded flash: [0-9][0-9]*\\]" green default bold
+highlight article ":.*\\(link\\)$" cyan default
+highlight article ":.*\\(image\\)$" blue default
+highlight article ":.*\\(embedded flash\\)$" magenta default
+
+download-path "~/Downloads"
+max-downloads 2
+player "mpd"
