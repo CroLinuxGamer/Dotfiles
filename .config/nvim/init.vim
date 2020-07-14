@@ -169,20 +169,6 @@ let g:suda_smart_edit = 1
 let g:suda#prefix = ['suda://', 'sudo://', '_://']
 let g:suda#prompt = 'Pass: '
 
-" go settings
-au FileType go nmap <leader>i <Plug>(go-install)
-au FileType go nmap <leader>h <Plug>(go-doc-browser)
-
-let g:go_code_completion_enabled = 0
-let g:go_updatetime = 400
-let g:go_fold_enable = []
-let g:go_highlight_operators = 1
-let g:go_highlight_functions = 1
-let g:go_highlight_function_parameters = 1
-let g:go_highlight_function_calls = 1
-let g:go_highlight_types = 1
-let g:go_highlight_fields = 1
-
 " c++ syntax settings
 let g:cpp_class_scope_highlight = 1
 let g:cpp_member_variable_highlight = 1
@@ -218,19 +204,6 @@ let g:webdevicons_conceal_nerdtree_brackets = 1
 
 " ditto settings
 au FileType markdown,text,tex DittoOn
-
-" spell and completion settings
-au FileType markdown,text,tex set spell spelllang=en_us
-au FileType markdown,text,tex set complete+=kspell
-au FileType markdown,text,tex set completeopt=menuone,longest
-au FileType markdown,text,tex set shortmess+=c
-au FileType markdown,text,tex nnoremap <Leader>s ea<C-X><C-S>
-au FileType markdown,text,tex inoremap <expr> <CR> pumvisible() ? "\<C-y><Esc>" : "\<CR>"
-
-au FileType markdown,text,tex nmap <leader>p [s
-au FileType markdown,text,tex nmap <leader>n ]s
-au FileType markdown,text,tex nmap <leader>a zg
-au FileType markdown,text,tex nmap <leader>r zug
 
 " markdown
 au FileType markdown map <leader>g :w! \| AsyncRun pandoc --filter pandoc-crossref "$(VIM_FILEPATH)" -o "$(VIM_PATHNOEXT)".pdf <CR><CR>
