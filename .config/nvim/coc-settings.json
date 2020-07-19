@@ -117,7 +117,7 @@
     "clangd.fallbackFlags": [],
     "clangd.checkUpdates": false,
     "clangd.disableDiagnostics": false,
-    "clangd.semanticHighlighting": false,
+    "clangd.semanticHighlighting": true,
     "clangd.disableSnippetCompletion": false,
     "clangd.showDBChangedNotification": true,
     
