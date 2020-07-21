@@ -111,7 +111,7 @@
     "http.proxyStrictSSL": true,
 
     // clangd
-    "clangd.arguments": [],
+    "clangd.arguments": ["-header-insertion=never", "--suggest-missing-includes"],
     "clangd.enabled": true,
     "clangd.path": "clangd",
     "clangd.fallbackFlags": [],
@@ -230,7 +230,7 @@
     "coc.source.buffer.disableSyntaxes": [],
     "coc.source.file.ignoreHidden": true,
     "coc.preferences.maxFileSize": "25MB",
-    "coc.preferences.extensionUpdateCheck": null,
+    "coc.preferences.extensionUpdateCheck": "never",
     "coc.preferences.jumpCommand": "edit",
     "coc.preferences.formatOnType": false,
     "coc.preferences.currentFunctionSymbolAutoUpdate": false,
