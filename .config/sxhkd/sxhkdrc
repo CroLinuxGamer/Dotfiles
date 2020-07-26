@@ -70,7 +70,7 @@ super + shift + l
 
 # Brightness
 {XF86MonBrightnessUp,XF86MonBrightnessDown}
-    light {-A 10, -U 10} && polybar-msg hook backlight 1
+    light {-A 5, -U 5} && polybar-msg hook backlight 1
 
 # Quick resolution change beetween 1366x768 and 640x480
 super + {ctrl ,shift} + 0

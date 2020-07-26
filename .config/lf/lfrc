@@ -48,7 +48,7 @@ cmd chmod ${{
 
 # Archive
 cmd unarchive ${{
-    aunpack "$f"
+    aunpack "$fx"
 }}
 # Removing some default bindings
 map m
@@ -73,8 +73,8 @@ map at tar
 map au unarchive
 
 # git bindings
-map ga $/usr/bin/git --git-dir=$HOME/Repos/Dotfiles/ --work-tree=$HOME add "$f"
-map gr $/usr/bin/git --git-dir=$home/Repos/Dotfiles/ --work-tree=$HOME rm -r "$f"
+map ga $/usr/bin/git --git-dir=$HOME/Repos/Dotfiles/ --work-tree=$HOME add "$fx"
+map gr $/usr/bin/git --git-dir=$home/Repos/Dotfiles/ --work-tree=$HOME rm -r "$fx"
 
 # Basic Functions
 map . set hidden!
