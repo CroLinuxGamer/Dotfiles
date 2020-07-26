@@ -29,10 +29,6 @@ Plug 'octol/vim-cpp-enhanced-highlight'
 " async tack runner with a lot of functionality
 Plug 'skywind3000/asynctasks.vim'
 Plug 'skywind3000/asyncrun.vim'
-" sidebar explorer
-Plug 'preservim/nerdtree'
-" icons support
-Plug 'ryanoasis/vim-devicons'
 " highlight duplicate words
 Plug 'dbmrq/vim-ditto'
 " pandoc markdonw syntax
@@ -41,6 +37,11 @@ Plug 'vim-pandoc/vim-pandoc-syntax'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 " completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" lf file manager integration
+Plug 'ptzz/lf.vim'
+Plug 'rbgrouleff/bclose.vim'
+" floating terminal
+Plug 'voldikss/vim-floaterm'
 call plug#end()
 
 " Center when entering insert mode
@@ -49,7 +50,7 @@ autocmd InsertEnter * norm zz
 " Turn off auto commenting
 autocmd FileType * setlocal formatoptions-=cro
 
-" Disable autointend
+" Disable auto intend
 set noautoindent
 
 " Open file at the place where you left
@@ -62,7 +63,7 @@ filetype on
 scriptencoding utf-8
 set encoding=utf-8
 
-" statusline format
+" status line format
 set statusline=
 set statusline+=\ \                                                     " space
 set statusline+=%#StatusLine#                                           " coloring
@@ -198,22 +199,6 @@ map <F10> :CocList tasks<CR>
 map <F11> :AsyncTask build<CR>
 map <F12> :AsyncTask run<CR>
 
-" map
-map <F2> :NERDTreeToggle<CR>
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-let g:NERDTreeDirArrowExpandable = '▸'
-let g:NERDTreeDirArrowCollapsible = '▾'
-let NERDTreeQuitOnOpen=1
-
-" devicons settings
-let g:webdevicons_enable = 1
-let g:webdevicons_enable_nerdtree = 1
-let g:webdevicons_enable_unite = 1
-let g:webdevicons_enable_ctrlp = 1
-
-let g:WebDevIconsUnicodeGlyphDoubleWidth = 1
-let g:webdevicons_conceal_nerdtree_brackets = 1
-
 " ditto settings
 au FileType markdown,text,tex DittoOn
 
@@ -243,7 +228,7 @@ let g:Hexokinase_highlighters = ['backgroundfull']
 autocmd VimEnter * HexokinaseTurnOn
 
 " spell and completion settings
-nmap <silent> <F3> :call Spell_check() <CR>
+nmap <silent> <F4> :call Spell_check() <CR>
 
 function! Spell_check()
     set spell spelllang=en_us
@@ -257,3 +242,17 @@ function! Spell_check()
     nnoremap <leader>r zug
     inoremap <buffer> <expr> <CR> pumvisible() ? "\<C-y><Esc>" : "\<CR>"
 endfunction
+
+" lf settings
+let g:lf_map_keys = 0
+nmap <F2> :Lf<CR>
+
+" floaterm settings
+nmap <F3> :FloatermNew lf<CR>
+nmap <leader>t :FloatermNew<CR>
+
+let g:floaterm_height = 0.4
+let g:floaterm_width = 0.4
+let g:floaterm_position = 'topright'
+let g:floaterm_wintitle = 'false'
+let g:floaterm_rootmarkers = ['.project', '.git', '.hg', '.svn', '.root', '.gitignore']
