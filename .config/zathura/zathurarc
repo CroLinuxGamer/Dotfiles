@@ -6,5 +6,45 @@
  /* \____|_|  \___/|_| |_|\__, | /_/   \_\_|\_\__,_|\__|___/\__,_|_|\_\_| */
                        /* |___/ */
 
-set selection-clipboard clipboard
-set first-page-column 1:1
+set completion-group-bg         "#263238"
+set completion-group-fg         "#eeffff"
+set completion-bg               "#263238"
+set completion-fg               "#eeffff"
+set completion-highlight-bg     "#1a2327"
+set completion-highlight-fg     "#eeffff"
+
+set notification-error-bg       "#ff5370"
+set notification-error-fg       "#eeffff"
+set notification-warning-bg     "#ff5370"
+set notification-warning-fg     "#eeffff"
+set notification-bg             "#ff5370"
+set notification-fg             "#eeffff"
+
+set index-bg                    "#2c3b41"
+set index-fg                    "#eeffff"
+set index-active-bg             "#65738e"
+set index-active-fg             "#eeffff"
+
+set inputbar-bg                 "#37474f"
+set inputbar-fg                 "#eeffff"
+
+set statusbar-bg                "#263238"
+set statusbar-fg                "#eeffff"
+
+set highlight-color             "#89ddff"
+set highlight-active-color      "#82aaff"
+
+set default-bg                  "#2c3b41"
+set default-fg                  "#eeffff"
+set recolor-lightcolor          "#263238"
+set recolor-darkcolor           "#eeffff"
+
+set statusbar-h-padding 0
+set statusbar-v-padding 0
+set page-padding 1
+map r reload
+map R rotate
+map + zoom in
+map - zoom out
+map i recolor
+set recolor                     true

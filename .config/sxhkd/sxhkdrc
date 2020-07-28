@@ -102,8 +102,8 @@ super + {Return,b,t,v}
     {$TERMINAL,$BROWSER,trackma-qt,$VISUAL}
 
 # terminal programs
-super + {m,f,w,h,e,r,k,n}
-    $TERMINAL -e {ncmpcpp,lf,adl,htop,$EDITOR,tuir,calcurse,newsboat}
+super + {m,f,w,h,e,k,n}
+    $TERMINAL -e {ncmpcpp,lf,adl,htop,$EDITOR,calcurse,newsboat}
 
 # some more programs
 super + shift + {f,c,s,g}
@@ -114,8 +114,8 @@ super + shift + {w ,t,n}
     $TERMINAL -e {adl -d ,tremc,joplin}
 
 # system programs
-super + ctrl + {f ,t}
-    {gparted ,teams}
+super + ctrl + {f}
+    {gparted}
 
 # ffmpeg recording without audio
 super + KP_Subtract     
