@@ -70,7 +70,7 @@ set statusline+=%#StatusLine#                                           " colori
 set statusline+=\ %f\                                                   " file name
 set statusline+=[%n/                                                    " buffer number
 set statusline+=%{len(filter(range(1,bufnr('$')),'buflisted(v:val)'))}] " Opened buffer count
-set statusline+=%{coc#status()}
+set statusline+=%{coc#status()}                                         " Coc plugins status
 set statusline+=%m\                                                     " does something
 set statusline+=%=                                                      " moves the rest to the right side
 set statusline+=%#CursorColumn#                                         " colorings
@@ -124,11 +124,13 @@ set clipboard+=unnamedplus
 " allow unsaved buffers to be hidden
 set hidden
 
-" some mappings
+" Split bindings
 map <silent> <C-down> <C-W>j
 map <silent> <C-up> <C-W>k
 map <silent> <C-left> <C-W>h
 map <silent> <C-right> <C-W>l
+
+" Buffer bindings
 map <silent> <S-left> :bp<CR>
 map <silent> <S-right> :bn<CR>
 

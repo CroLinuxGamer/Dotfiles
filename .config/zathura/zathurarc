@@ -1,10 +1,10 @@
-/* Config by */
-  /* ____                            _    _         _             _    _ */
- /* / ___|_ __ ___  _ __  _   _     / \  | | ____ _| |_ ___ _   _| | _(_) */
-/* | |   | '__/ _ \| '_ \| | | |   / _ \ | |/ / _` | __/ __| | | | |/ / | */
-/* | |___| | | (_) | | | | |_| |  / ___ \|   < (_| | |_\__ \ |_| |   <| | */
- /* \____|_|  \___/|_| |_|\__, | /_/   \_\_|\_\__,_|\__|___/\__,_|_|\_\_| */
-                       /* |___/ */
+# Config by
+#   ____                            _    _         _             _    _
+#  / ___|_ __ ___  _ __  _   _     / \  | | ____ _| |_ ___ _   _| | _(_)
+# | |   | '__/ _ \| '_ \| | | |   / _ \ | |/ / _` | __/ __| | | | |/ / |
+# | |___| | | (_) | | | | |_| |  / ___ \|   < (_| | |_\__ \ |_| |   <| |
+#  \____|_|  \___/|_| |_|\__, | /_/   \_\_|\_\__,_|\__|___/\__,_|_|\_\_|
+#                        |___/
 
 set completion-group-bg         "#263238"
 set completion-group-fg         "#eeffff"
@@ -48,3 +48,14 @@ map + zoom in
 map - zoom out
 map i recolor
 set recolor                     true
+
+set font "HackNerdFont 9"
+set adjust-open "best-fit"
+set pages-per-row 1
+set scroll-page-aware "true"
+set scroll-full-overlap 0.01
+set scroll-step 100
+
+set recolor-reverse-video "true"
+set render-loading "false"
+
