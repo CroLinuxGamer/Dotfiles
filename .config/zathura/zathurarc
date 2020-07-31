@@ -49,7 +49,7 @@ map - zoom out
 map i recolor
 set recolor                     true
 
-set font "HackNerdFont 9"
+set font "Source Code Pro 11"
 set adjust-open "best-fit"
 set pages-per-row 1
 set scroll-page-aware "true"

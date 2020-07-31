@@ -98,8 +98,8 @@ super + d
     rofi -modi drun -show drun -show-icons -display-drun "" -font "hack 10" -lines 15 -width 30
 
 # run my gui programs
-super + {Return,b,t,g,r}
-    {$TERMINAL,$BROWSER,trackma-qt,lutris,retroarch}
+super + {Return,b,t,g}
+    {$TERMINAL,$BROWSER,trackma-qt,lutris}
 
 # terminal programs
 super + {m,f,w,h,e,k,n}
