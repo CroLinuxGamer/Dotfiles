@@ -110,8 +110,8 @@ super + shift + {f,c,s}
     {pcmanfm,stacer,steam}
 
 # run cli programs
-super + shift + {w ,t,n}
-    $TERMINAL -e {adl -d ,tremc,joplin}
+super + shift + {w ,t}
+    $TERMINAL -e {adl -d ,tremc}
 
 # system programs
 super + ctrl + {f}
