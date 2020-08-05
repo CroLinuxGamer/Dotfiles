@@ -13,12 +13,6 @@ polybar -r bottom &
 sleep 0.1
 transmission-daemon &
 sleep 0.1
-appimagelauncherd &
-sleep 0.1
-appimagelauncherfs &
-sleep 0.1
-xfce4-power-manager &
-sleep 0.1
 bspc config top_padding 21
 bspc config bottom_padding 21
 

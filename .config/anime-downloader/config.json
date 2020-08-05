@@ -12,7 +12,7 @@
         "file_format": "{anime_title}/{anime_title}_{ep_no}",
         "force_download": false,
         "player": null,
-        "provider": "animeout",
+        "provider": "animekisa",
         "quality": "1080p",
         "skip_download": false,
         "url": false

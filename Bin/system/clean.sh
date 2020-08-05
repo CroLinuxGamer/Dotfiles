@@ -12,11 +12,5 @@ killall polybar
 sleep 0.1
 killall transmission-daemon
 sleep 0.1
-killall appimagelauncher
-sleep 0.1
-killall appimagelauncherfs
-sleep 0.1
-killall xfce4-power-manager
-sleep 0.1
 bspc config top_padding 0
 bspc config bottom_padding 0
