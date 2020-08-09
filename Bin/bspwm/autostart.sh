@@ -9,14 +9,11 @@ killall sxhkd
 sleep 0.1
 killall picom
 sleep 0.1
-killall xfce4-power-manager
 
 # programs section
 floating.sh &
 sleep 0.1
 mouse_detect.sh &
-sleep 0.1
-xfce4-power-manager &
 sleep 0.1
 sxhkd -c ~/.config/sxhkd/sxhkdrc &
 sleep 0.1

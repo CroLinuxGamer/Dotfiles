@@ -76,16 +76,6 @@ map au unarchive
 map ga $/usr/bin/git --git-dir=$HOME/Repos/Dotfiles/ --work-tree=$HOME add "$fx"
 map gr $/usr/bin/git --git-dir=$home/Repos/Dotfiles/ --work-tree=$HOME rm -r "$fx"
 
-# dragon command
-cmd dragon %dragon-drag-and-drop -a -x $fx
-cmd dragon-stay %dragon-drag-and-drop -a $fx
-cmd dragon-individual %dragon-drag-and-drop $fx
-
-# dragon mappings
-map cr dragon
-map cs dragon-stay
-map ci dragon-individual
-
 # Basic Functions
 map . set hidden!
 map <delete> delete
