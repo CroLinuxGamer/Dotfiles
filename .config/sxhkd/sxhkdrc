@@ -106,8 +106,8 @@ super + {m,f,w,h,e,k,n}
     $TERMINAL -e {ncmpcpp,lf,adl,htop,$EDITOR,calcurse,newsboat}
 
 # some more programs
-super + shift + {f,c,s}
-    {pcmanfm,stacer,steam}
+super + shift + {f,s}
+    {pcmanfm,steam}
 
 # run cli programs
 super + shift + {w ,t}

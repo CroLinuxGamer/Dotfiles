@@ -74,8 +74,8 @@ colors:
 background_opacity: 0.75
 
 # Shell settings
-shell:
-  program: /bin/zsh
-  args:
-    - --login
+# shell:
+  # program: /bin/zsh
+  # args:
+    # - --login
 
