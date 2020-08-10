@@ -11,8 +11,8 @@
 "query:Starred:flags # \"s\""
 "query:Unread:unread = \"yes\""
 
-# (Manjaro)
-https://forum.manjaro.org/c/announcements/stable-updates.rss  "~Manjaro updates" "(Manjaro)"
+# (Artix)
+https://artixlinux.org/feed.php  "~Artix news" "(Artix)"
 
 # (Otaku)
 https://www.theoasg.com/feed "~TheOASG" "(Otaku Stuff)"

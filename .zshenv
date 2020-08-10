@@ -8,7 +8,7 @@
 
 # Path export
 typeset -U PATH path
-path=("$HOME/Bin/polybar" "$HOME/Bin/system" "$HOME/Bin/bspwm" "$HOME/Bin/lf" "$path[@]")
+path=("$HOME/Bin/polybar" "$HOME/Bin/games" "$HOME/Bin/system" "$HOME/Bin/bspwm" "$HOME/Bin/lf" "$path[@]")
 export PATH
 export SXHKD_SHELL='/usr/bin/dash'
 export POLYBAR_SHELL='dash'
