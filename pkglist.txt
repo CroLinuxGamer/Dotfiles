@@ -3,7 +3,10 @@ adl-git
 alacritty
 albion-online-launcher-bin
 anime-downloader-git
+<<<<<<< HEAD
 atool
+=======
+>>>>>>> cdbff19803d78455e3bb7ffa0830417662ff9384
 betterlockscreen
 brave
 bspwm
