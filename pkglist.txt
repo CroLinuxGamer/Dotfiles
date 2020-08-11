@@ -200,8 +200,6 @@ xcursor-breeze
 xdg-user-dirs
 xdo
 xf86-video-amdgpu
-xf86-video-ati
-xf86-video-vesa
 xfce4-power-manager
 xorg-bdftopcf
 xorg-docs
