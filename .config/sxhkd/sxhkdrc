@@ -111,7 +111,7 @@ super + shift + {f,s}
 
 # run cli programs
 super + shift + {w ,t}
-    $TERMINAL -e {adl -d ,tremc}
+    $TERMINAL -e {adl -d ,tsm-cli}
 
 # system programs
 super + ctrl + {f}

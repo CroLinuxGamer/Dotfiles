@@ -12,9 +12,9 @@ env:
 
 # window settings
 window:
-  padding:
-    x: 3
-    y: 4
+  # padding:
+    # x: 1
+    # y: 1
   dynamic_padding: true
 
 # Scrolling

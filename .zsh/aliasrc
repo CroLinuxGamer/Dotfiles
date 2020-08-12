@@ -43,9 +43,9 @@ alias picomconf='${=EDITOR} ~/.config/picom/picom.conf'
 # Program alias
 alias grep='grep --color=auto'
 alias tsm='transmission-remote'
-alias tsm-cli='tremc'
 alias vi='nvim'
 alias sublime-text='/opt/sublime_text/sublime_text'
+
 
 # Function aliases
 alias rm='rm -v'
