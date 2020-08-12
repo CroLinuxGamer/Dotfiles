@@ -11,6 +11,6 @@ polybar -r top &
 sleep 0.1
 polybar -r bottom &
 sleep 0.1
-bspc config top_padding 21
-bspc config bottom_padding 21
+bspc config top_padding 20
+bspc config bottom_padding 20
 

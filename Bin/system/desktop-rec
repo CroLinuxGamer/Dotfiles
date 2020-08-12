@@ -1,4 +1,0 @@
-#!/usr/bin/dash
-
-ffmpeg -vaapi_device /dev/dri/renderD128 -framerate 30 -f x11grab -video_size 1366x768 -i :0 -vf 'hwupload,scale_vaapi=format=nv12' -c:v h264_vaapi -qp 18 ~/Youtube/Recordings/desktop$(date +%F-%H-%M-%S).mp4
-
