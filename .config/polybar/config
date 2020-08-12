@@ -42,7 +42,7 @@ font-2 = IPAGothic:antialias=true:pixelsize=8;1
 
 modules-left = bspwm title
 modules-center = mpd-song mpd-prev mpd-status mpd-next
-modules-right = arch-updates filesystem cpu ram xkeyboard
+modules-right = arch-updates fs cpu ram xkeyboard
 
 tray-position = right
 tray-padding = 1
@@ -162,10 +162,10 @@ click-left = xfce4-power-manager-settings
 
 [module/volume]
 type = custom/ipc
-hook-0 = pamixer --get-volume-human
+hook-0 = poly-pulse
 click-left = $TERMINAL -e pulsemixer &
 initial = 1
-format-prefix = " "
+; format-prefix = " "
 format-underline = ${colors.gr}
 
 [module/battery]
@@ -193,16 +193,16 @@ interval = 10
 format-prefix = " "
 format-underline = ${colors.gr}
 
-[module/filesystem]
-type = internal/fs
-format-mounted = <label-mounted>
-format-mounted-underline = ${colors.gr}
-label-mounted =  : %used%/%total%
-mount-0 = /home
-mount-1 = /
+[module/fs]
+type = custom/script
+exec = poly-fs
+label = "%output%"
+click-left = gparted
 interval = 3600
-fixed-values = true
-spacing = 1
+format-underline = ${colors.gr}
+
+[module/name]
+type = custom/script
 
 [module/cpu]
 type = internal/cpu
