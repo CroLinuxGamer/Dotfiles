@@ -1,0 +1,5 @@
+#!/bin/dash
+
+transmission-daemon
+tremc
+killall transmission-daemon
