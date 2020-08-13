@@ -7,22 +7,22 @@
                        # |___/
 
 [colors]
-bg1 = #263238
-bg2 = #1a2327
-fg = #eeffff
-rd = #f6526e
-bl = #82aaff
-or = #ffcb6b
-gr = #c3e88d
+bg1 = #282828
+bg2 = #3c3836
+fg = #ebdbb2
+rd = #cc241d
+gr = #98971a
+yl = #d79921
+bl = #458588
 
 # Bar settings
 [bar/top]
 width = 100%
 height = 16
-radius = 5.0
+radius = 0.0
 fixed-center = true
 enable-ipc=true
-border-size=5
+border-size=0
 
 background = ${colors.bg1}
 foreground = ${colors.fg}
@@ -42,7 +42,7 @@ font-2 = IPAGothic:antialias=true:pixelsize=8;1
 
 modules-left = bspwm title
 modules-center = mpd-song mpd-prev mpd-status mpd-next
-modules-right = arch-updates fs cpu ram xkeyboard
+modules-right = arch-updates fs cpu ram
 
 tray-position = right
 tray-padding = 1
@@ -54,10 +54,10 @@ override-redirect = true
 [bar/bottom]
 width = 100%
 height = 16
-radius = 5.0
+radius = 0.0
 fixed-center = true
 enable-ipc=true
-border-size = 5
+border-size = 0
 bottom=true
 
 background = ${colors.bg1}
@@ -94,21 +94,11 @@ exec = poly-connman
 interval = 10
 format-underline = ${colors.gr}
 
-[module/xkeyboard]
-type = internal/xkeyboard
-format = <label-layout><label-indicator>
-format-underline = ${colors.gr}
-label-layout =   %layout%
-label-indicator-on-capslock = " CAPS"
-label-indicator-off-capslock = 
-label-indicator-on-numlock = " NUM"
-label-indicator-off-numlock = 
-
 [module/title]
 type = internal/xwindow
 label = %title:0:25:...%
 format = <label>
-format-foreground = ${colors.or}
+format-foreground = ${colors.yl}
 format-padding = 1
 
 [module/mpd-song]

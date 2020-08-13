@@ -72,7 +72,7 @@
     frame_width = 2
 
     # Defines color of the frame around the notification window.
-    frame_color = "#ffffff"
+    frame_color = "#a89984"
 
     # Define a color for the separator.
     # possible values are:
@@ -282,23 +282,23 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#1e282d"
-    foreground = "#c4c7d1"
+    background = "#282828"
+    foreground = "#ebdbb2"
     timeout = 5
     # Icon for notifications with low urgency, uncomment to enable
     icon = /home/ivica/.config/dunst/normal.png
 
 [urgency_normal]
-    background = "#1e282d"
-    foreground = "#c4c7d1"
+    background = "#282828"
+    foreground = "#ebdbb2"
     timeout = 5
     # Icon for notifications with normal urgency, uncomment to enable
     icon = /home/ivica/.config/dunst/normal.png
 
 [urgency_critical]
-    background = "#eb606b"
-    foreground = "#c4c7d1"
-    frame_color = "#ffffff"
+    background = "#cc241d"
+    foreground = "#ebdbb2"
+    frame_color = "#ebdbb2"
     timeout = 5
     # Icon for notifications with critical urgency, uncomment to enable
     icon = /home/ivica/.config/dunst/critical.png

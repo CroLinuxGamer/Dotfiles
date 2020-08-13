@@ -8,8 +8,8 @@
 
 " Plug settings
 call plug#begin()
-" material color scheme
-Plug 'kaicataldo/material.vim'
+" color scheme
+Plug 'morhetz/gruvbox'
 " nice startup screen
 Plug 'mhinz/vim-startify'
 " inc search on steroids
@@ -42,6 +42,8 @@ Plug 'ptzz/lf.vim'
 Plug 'rbgrouleff/bclose.vim'
 " floating terminal
 Plug 'voldikss/vim-floaterm'
+" I'm speed
+Plug 'easymotion/vim-easymotion'
 call plug#end()
 
 " Center when entering insert mode
@@ -164,10 +166,11 @@ set splitbelow
 syntax on
 
 set background=dark
+set t_Co=256
 set termguicolors
-let g:material_terminal_italics = 1
-let g:material_theme_style = 'default'
-colorscheme material
+let g:gruvbox_italic = 1
+let g:gruvbox_contrast_dark = 'medium'
+colorscheme gruvbox
 
 " nerdcommenter settings
 let g:NERDSpaceDelims = 1
@@ -258,3 +261,10 @@ let g:floaterm_width = 0.4
 let g:floaterm_position = 'topright'
 let g:floaterm_wintitle = 'false'
 let g:floaterm_rootmarkers = ['.project', '.git', '.hg', '.svn', '.root', '.gitignore']
+
+" easymotion settings
+map <leader><leader>. <Plug>(easymotion-repeat)
+map <leader><leader>f <Plug>(easymotion-overwin-f)
+map <leader><leader>j <Plug>(easymotion-overwin-line)
+map <leader><leader>k <Plug>(easymotion-overwin-line)
+map <leader><leader>w <Plug>(easymotion-overwin-w)

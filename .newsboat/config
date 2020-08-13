@@ -24,15 +24,15 @@ bind-key D pb-download
 bind-key U show-urls
 bind-key x pb-delete
 
-browser "/usr/bin/brave %u"
-macro m set browser "/usr/bin/mpv %u"; open-in-browser ; set browser "/usr/bin/brave %u"
+browser "$BROWSER %u"
+macro m set browser "/usr/bin/mpv %u"; open-in-browser ; set browser "$BROWSER %u"
 
 color background default default
 color listnormal default default
 color listnormal_unread default default
-color listfocus color16 cyan
-color listfocus_unread color16 cyan
-color info default black
+color listfocus color16 blue
+color listfocus_unread color16 blue
+color info default white
 color article default default
 
 highlight article "(^Feed:.*|^Title:.*|^Author:.*)" cyan default bold

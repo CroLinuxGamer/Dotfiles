@@ -19,7 +19,7 @@ sxhkd -c ~/.config/sxhkd/sxhkdrc &
 sleep 0.1
 picom --experimental-backends &
 sleep 0.1
-feh --no-fehbg --bg-scale ~/Pictures/wallpaper.jpg &
+feh --no-fehbg --bg-scale ~/Pictures/wallpaper.png &
 sleep 0.1
 polybar -r top &
 sleep 0.1

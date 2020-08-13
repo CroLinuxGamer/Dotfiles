@@ -6,38 +6,46 @@
 #  \____|_|  \___/|_| |_|\__, | /_/   \_\_|\_\__,_|\__|___/\__,_|_|\_\_|
 #                        |___/
 
-set completion-group-bg         "#263238"
-set completion-group-fg         "#eeffff"
-set completion-bg               "#263238"
-set completion-fg               "#eeffff"
-set completion-highlight-bg     "#1a2327"
-set completion-highlight-fg     "#eeffff"
+set notification-error-bg       "#282828" # bg
+set notification-error-fg       "#fb4934" # bright:red
+set notification-warning-bg     "#282828" # bg
+set notification-warning-fg     "#fabd2f" # bright:yellow
+set notification-bg             "#282828" # bg
+set notification-fg             "#b8bb26" # bright:green
 
-set notification-error-bg       "#ff5370"
-set notification-error-fg       "#eeffff"
-set notification-warning-bg     "#ff5370"
-set notification-warning-fg     "#eeffff"
-set notification-bg             "#ff5370"
-set notification-fg             "#eeffff"
+set completion-bg               "#504945" # bg2
+set completion-fg               "#ebdbb2" # fg
+set completion-group-bg         "#3c3836" # bg1
+set completion-group-fg         "#928374" # gray
+set completion-highlight-bg     "#83a598" # bright:blue
+set completion-highlight-fg     "#504945" # bg2
 
-set index-bg                    "#2c3b41"
-set index-fg                    "#eeffff"
-set index-active-bg             "#65738e"
-set index-active-fg             "#eeffff"
+# Define the color in index mode
+set index-bg                    "#504945" # bg2
+set index-fg                    "#ebdbb2" # fg
+set index-active-bg             "#83a598" # bright:blue
+set index-active-fg             "#504945" # bg2
 
-set inputbar-bg                 "#37474f"
-set inputbar-fg                 "#eeffff"
+set inputbar-bg                 "#282828" # bg
+set inputbar-fg                 "#ebdbb2" # fg
 
-set statusbar-bg                "#263238"
-set statusbar-fg                "#eeffff"
+set statusbar-bg                "#504945" # bg2
+set statusbar-fg                "#ebdbb2" # fg
 
-set highlight-color             "#89ddff"
-set highlight-active-color      "#82aaff"
+set highlight-color             "#fabd2f" # bright:yellow
+set highlight-active-color      "#fe8019" # bright:orange
 
-set default-bg                  "#2c3b41"
-set default-fg                  "#eeffff"
-set recolor-lightcolor          "#263238"
-set recolor-darkcolor           "#eeffff"
+set default-bg                  "#282828" # bg
+set default-fg                  "#ebdbb2" # fg
+set render-loading              true
+set render-loading-bg           "#282828" # bg
+set render-loading-fg           "#ebdbb2" # fg
+
+# Recolor book content's color
+set recolor-lightcolor          "#282828" # bg
+set recolor-darkcolor           "#ebdbb2" # fg
+set recolor                     "true"
+set recolor-keephue             "false"      # keep original color
 
 set statusbar-h-padding 0
 set statusbar-v-padding 0
@@ -57,5 +65,5 @@ set scroll-full-overlap 0.01
 set scroll-step 100
 
 set recolor-reverse-video "true"
-set render-loading "false"
+set render-loading "true"
 
