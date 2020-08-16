@@ -42,12 +42,14 @@ Plug 'ptzz/lf.vim'
 Plug 'rbgrouleff/bclose.vim'
 " floating terminal
 Plug 'voldikss/vim-floaterm'
-" I'm speed
-Plug 'easymotion/vim-easymotion'
 call plug#end()
 
 " Center when entering insert mode
 autocmd InsertEnter * norm zz
+
+" Fix indenting visual block
+vmap < <gv
+vmap > >gv
 
 " Turn off auto commenting
 autocmd FileType * setlocal formatoptions-=cro
@@ -261,10 +263,3 @@ let g:floaterm_width = 0.4
 let g:floaterm_position = 'topright'
 let g:floaterm_wintitle = 'false'
 let g:floaterm_rootmarkers = ['.project', '.git', '.hg', '.svn', '.root', '.gitignore']
-
-" easymotion settings
-map <leader><leader>. <Plug>(easymotion-repeat)
-map <leader><leader>f <Plug>(easymotion-overwin-f)
-map <leader><leader>j <Plug>(easymotion-overwin-line)
-map <leader><leader>k <Plug>(easymotion-overwin-line)
-map <leader><leader>w <Plug>(easymotion-overwin-w)
