@@ -11,8 +11,9 @@
 "query:Starred:flags # \"s\""
 "query:Unread:unread = \"yes\""
 
-# (Artix)
-https://artixlinux.org/feed.php  "~Artix news" "(Artix)"
+# (Update news)
+https://artixlinux.org/feed.php  "~Artix news" "(Update news)"
+https://www.archlinux.org/feeds/news/ "~Arch news" "(Update news)"
 
 # (Otaku)
 https://www.theoasg.com/feed "~TheOASG" "(Otaku Stuff)"

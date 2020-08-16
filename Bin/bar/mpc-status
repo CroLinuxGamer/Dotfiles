@@ -1,4 +1,4 @@
-#!/bin/dash
+#!/bin/sh
 
 status=$(mpc status | sed -n '/playing/p' | cut -c2-8 | sed 's/^[ \t]*//')
 

@@ -8,7 +8,7 @@
 
 # Path export
 typeset -U PATH path
-path=("$HOME/Bin/bar" "$HOME/Bin/system" "$HOME/Bin/bspwm" "$HOME/Bin/lf" "$path[@]")
+path=("$HOME/Bin/bar" "$HOME/Bin/lemonbar" "$HOME/Bin/system" "$HOME/Bin/bspwm" "$HOME/Bin/lf" "$path[@]")
 export PATH
 export SXHKD_SHELL='/usr/bin/dash'
 export POLYBAR_SHELL='dash'
@@ -27,6 +27,8 @@ export IMAGE="feh"
 export OPENER="xdg-open"
 export PAGER="less"
 export WM="bspwm"
+export PANEL_FIFO_TOP=/tmp/panel-top-fifo
+export PANEL_FIFO_BOTTOM=/tmp/panel-bottom-fifo
 
 # lf icons
 export LF_ICONS="\

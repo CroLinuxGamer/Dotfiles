@@ -127,7 +127,7 @@ else
             then
                 echo "Rebooting.." >&2
             else
-                sudo reboot &> /dev/null
+                loginctl reboot &> /dev/null
             fi
             ;;
         $shutdown)
@@ -144,7 +144,7 @@ else
             then
                 echo "Shutting down.." >&2
             else
-                sudo poweroff &> /dev/null
+                loginctl poweroff &> /dev/null
             fi
             ;;
         $cancel)

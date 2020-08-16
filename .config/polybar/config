@@ -18,7 +18,7 @@ bl = #458588
 # Bar settings
 [bar/top]
 width = 100%
-height = 16
+height = 20
 radius = 0.0
 fixed-center = true
 enable-ipc=true
@@ -36,13 +36,13 @@ padding-right = 0
 module-margin-left = 0
 module-margin-right = 1
 
-font-0 = JetBrainsMonoMedium:antialias=true:pixelsize=8;1
-font-1 = HackNerdFont:antialias=true:pixelsize=8;1
-font-2 = IPAGothic:antialias=true:pixelsize=8;1
+font-0 = JetBrainsMonoMedium:antialias=true:pixelsize=9;2
+font-1 = HackNerdFont:antialias=true:pixelsize=9;2
+font-2 = IPAGothic:antialias=true:pixelsize=9;2
 
 modules-left = bspwm title
 modules-center = mpd-song mpd-prev mpd-status mpd-next
-modules-right = arch-updates fs cpu ram
+modules-right = arch-updates cpu ram fs
 
 tray-position = right
 tray-padding = 1
@@ -53,7 +53,7 @@ override-redirect = true
 
 [bar/bottom]
 width = 100%
-height = 16
+height = 20
 radius = 0.0
 fixed-center = true
 enable-ipc=true
@@ -72,8 +72,8 @@ padding-right = 1
 module-margin-left = 0
 module-margin-right = 1
 
-font-0 = JetBrainsMonoMedium:antialias=true:pixelsize=8;1
-font-1 = HackNerdFont:antialias=true:pixelsize=8;1
+font-0 = JetBrainsMonoMedium:antialias=true:pixelsize=9;2
+font-1 = HackNerdFont:antialias=true:pixelsize=9;2
 
 modules-left = menu
 modules-center = 
@@ -95,9 +95,9 @@ interval = 10
 format-underline = ${colors.gr}
 
 [module/title]
-type = internal/xwindow
-label = %title:0:25:...%
-format = <label>
+type = custom/script
+exec = xtitle -sf '%s\n' -t 30
+tail = true
 format-foreground = ${colors.yl}
 format-padding = 1
 
@@ -144,11 +144,10 @@ click-left= rofi -show power-menu -modi power-menu:power-menu -show-icons -font 
 
 [module/backlight]
 type = custom/ipc
-hook-0 = "light -G | sed 's/\.[0-9]*//'"
+hook-0 = echo $(light -G | sed 's/\.[0-9]*//')%
 format-prefix = " "
 format-underline = ${colors.gr}
 initial = 1
-click-left = xfce4-power-manager-settings
 
 [module/volume]
 type = custom/ipc
@@ -160,9 +159,8 @@ format-underline = ${colors.gr}
 
 [module/battery]
 type = custom/script
-exec = polybatt
+exec = poly-batt
 label = "%output%"
-click-left = xfce4-power-manager-settings
 interval = 30
 format-underline = ${colors.gr}
 
@@ -176,7 +174,7 @@ click-left = $TERMINAL -e calcurse
 
 [module/ram]
 type = custom/script
-exec = polyram
+exec = poly-ram
 label = "%output%"
 click-left = $TERMINAL -e htop &
 interval = 10
@@ -191,16 +189,12 @@ click-left = gparted
 interval = 3600
 format-underline = ${colors.gr}
 
-[module/name]
-type = custom/script
-
 [module/cpu]
-type = internal/cpu
+type = custom/script
+exec = poly-cpu
 interval = 10
-format = <label>
 format-prefix = " "
 format-underline = ${colors.gr}
-label = %percentage%%
 
 [module/bspwm]
 type = internal/bspwm

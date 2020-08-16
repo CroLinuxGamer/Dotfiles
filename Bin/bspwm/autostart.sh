@@ -1,13 +1,13 @@
-#!/bin/dash
+#!/bin/sh
 
 # kill section for case that you will reset bspwm
 killall floating.sh
 sleep 0.1
-killall polybar
-sleep 0.1
 killall sxhkd
 sleep 0.1
 killall picom
+sleep 0.1
+killall polybar
 sleep 0.1
 
 # programs section
@@ -21,7 +21,5 @@ picom --experimental-backends &
 sleep 0.1
 feh --no-fehbg --bg-scale ~/Pictures/wallpaper.png &
 sleep 0.1
-polybar -r top &
-sleep 0.1
-polybar -r bottom &
-sleep 0.1
+launchlemonade &
+

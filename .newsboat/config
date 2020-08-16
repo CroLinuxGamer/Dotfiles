@@ -33,7 +33,7 @@ color listnormal_unread default default
 color listfocus color16 blue
 color listfocus_unread color16 blue
 color info default white
-color article default default
+color article default black
 
 highlight article "(^Feed:.*|^Title:.*|^Author:.*)" cyan default bold
 highlight article "(^Link:.*|^Date:.*)" default default

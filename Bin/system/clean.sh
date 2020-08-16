@@ -1,4 +1,4 @@
-#!/bin/dash
+#!/bin/sh
 
 # script for leavig my desktop in clean state meaning killing all precesess
 # when I'm some some cpu intensive stuff or using some kind of fullscreen

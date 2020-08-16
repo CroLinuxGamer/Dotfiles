@@ -1,4 +1,4 @@
-#!/bin/dash
+#!/bin/sh
 # Preview script built for use with lf
 LINES=30
 case "$1" in

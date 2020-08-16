@@ -1,6 +1,0 @@
-#!/bin/sh
-
-usedmem=$(free -h --mega | sed -n '/Mem:/p' | awk '{print $3}')
-totalmem=$(free -h --mega | sed -n '/Mem:/p' | awk '{print $2}')
-
-echo $usedmem/$totalmem
