@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/bin/dash
+# change it to #!/bin/sh if you are on debian based distro
 
 status=$(mpc status | sed -n '/playing/p' | cut -c2-8 | sed 's/^[ \t]*//')
 

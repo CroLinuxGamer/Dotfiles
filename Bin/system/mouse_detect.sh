@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/bin/dash
+# change it to #!/bin/sh if you are on debian based distro
 lista=`xinput list | grep -i 'mouse'`
 listb=`xinput list | grep -i 'transceiver' | grep -i 'pointer'`
 listc=`xinput list | grep -i 'receiver' | grep -i 'pointer'`

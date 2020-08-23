@@ -1,6 +1,5 @@
 #!/bin/dash
-
-# Config by:
+# change it to #!/bin/sh if you are on debian based distro
   # ____                            _    _         _             _    _
  # / ___|_ __ ___  _ __  _   _     / \  | | ____ _| |_ ___ _   _| | _(_)
 # | |   | '__/ _ \| '_ \| | | |   / _ \ | |/ / _` | __/ __| | | | |/ / |
@@ -44,7 +43,6 @@ bspc config window_gap 5
 
 ###---Rules---###
 bspc rule -a mpv state=fullscreen 
-bspc rule -a MEGAsync state=floating
 bspc rule -a Zathura state=fullscreen
 bspc rule -a Foliate state=fullscreen
 bspc rule -a Lutris desktop=^4 follow=on

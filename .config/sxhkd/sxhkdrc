@@ -64,15 +64,14 @@ super + shift + l
 
 # Audio Control
 {XF86AudioRaiseVolume,XF86AudioLowerVolume,XF86AudioMute}
-    pamixer {-i 2, -d 2, --toggle} && lemonvol > $PANEL_FIFO_BOTTOM
-
+    pamixer {-i 2, -d 2, --toggle}
 # Brightness
 {XF86MonBrightnessUp,XF86MonBrightnessDown}
     light {-A 5, -U 5} && lemonlight > $PANEL_FIFO_BOTTOM
 
-# Quick resolution change beetween 1366x768 and 640x480
+# Quick resolution change beetween 1366x768 and 800x600
 super + {ctrl ,shift} + 0
-    {xrandr --output eDP --mode 1366x768 ,xrandr --output eDP --mode 640x480}
+    {xrandr --output eDP --mode 1366x768 ,xrandr --output eDP --mode 800x600}
 
 # System look control
 super + {ctrl,shift} + F12
@@ -96,22 +95,21 @@ super + d
     rofi -modi drun -show drun -show-icons -display-drun "" -font "hack 10" -lines 15 -width 30
 
 # run my gui programs
-super + {Return,b}
-    {$TERMINAL,$BROWSER}
+super + {Return,b,g}
+    {$TERMINAL,$BROWSER,lutris}
 
 # terminal programs
-super + {m,f,w,h,e,k,n,t}
-    $TERMINAL -e {ncmpcpp,lf,adl,htop,$EDITOR,calcurse,newsboat,trackma-curses}
+super + {m,f,h,e,k,n,w,t}
+    $TERMINAL -e {ncmpcpp,lf,htop,$EDITOR,calcurse,newsboat,adl,trackma-curses}
 
 # some more programs
 super + shift + {f,s}
     {pcmanfm,steam}
 
 # run cli programs
-super + shift + {w ,t,m}
-    $TERMINAL -e {adl -d ,tsm-cli ,neomutt}
+super + shift + {t,m,w}
+    $TERMINAL -e {tsm-cli,aerc,adl -d}
 
 # system programs
-super + ctrl + {f}
-    {gparted}
-
+super + ctrl + f
+    gparted

@@ -1,4 +1,6 @@
-#!/bin/sh
+#!/bin/dash
+# change it to #!/bin/sh if you are on debian based distro
+
 # Preview script built for use with lf
 LINES=30
 case "$1" in

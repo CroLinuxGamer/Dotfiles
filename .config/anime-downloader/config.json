@@ -1,8 +1,8 @@
 {
     "dl": {
-        "aria2c_for_torrents": true,
+        "aria2c_for_torrents": false,
         "chunk_size": "10",
-        "download_dir": "Videos/Anime",
+        "download_dir": ".",
         "external_downloader": "{aria2}",
         "fallback_qualities": [
             "720p",
@@ -14,10 +14,28 @@
         "player": null,
         "provider": "animekisa",
         "quality": "1080p",
+        "selescrape_browser": null,
+        "selescrape_browser_executable_path": null,
+        "selescrape_driver_binary_path": null,
         "skip_download": false,
+        "speed_limit": 0,
         "url": false
     },
+    "ezdl": {
+        "fallback_providers": [
+            "9anime",
+            "vidstream",
+            "watchmovie"
+        ],
+        "file_format": "{animeinfo_anime_title}/{animeinfo_anime_title}_{provider}_{ep_no}",
+        "provider": "twist.moe",
+        "ratio": 50
+    },
     "siteconfig": {
+        "9anime": {
+            "server": "mp4upload",
+            "version": "subbed"
+        },
         "animedaisuki": {
             "servers": [
                 "official"
@@ -34,6 +52,9 @@
             "server": "natsuki",
             "version": "subbed"
         },
+        "animefrenzy": {
+            "version": "subbed"
+        },
         "animekisa": {
             "fallback_servers": [
                 "mp4upload",
@@ -41,20 +62,58 @@
             ],
             "server": "gcloud"
         },
+        "animeonline360": {
+            "version": "subbed"
+        },
         "animerush": {
-            "fallback_servers": [
+            "servers": [
+                "Mp4uploadHD Video",
                 "MP4Upload",
                 "Mp4upload Video",
                 "Youruploads Video"
-            ],
-            "server": "Mp4uploadHD Video"
+            ]
         },
         "animesimple": {
-            "server": "mp4upload",
+            "servers": [
+                "vidstreaming",
+                "trollvid",
+                "mp4upload",
+                "xstreamcdn"
+            ],
+            "version": "subbed"
+        },
+        "animevibe": {
+            "servers": [
+                "vidstream",
+                "3rdparty",
+                "mp4upload",
+                "hydrax",
+                "gcloud",
+                "fembed"
+            ]
+        },
+        "animixplay": {
+            "server": "vidstream",
             "version": "subbed"
         },
         "anistream.xyz": {
             "version": "subbed"
+        },
+        "darkanime": {
+            "servers": [
+                "mp4upload",
+                "trollvid"
+            ],
+            "version": "subbed"
+        },
+        "dbanimes": {
+            "servers": [
+                "mixdrop",
+                "gounlimited",
+                "vudeo",
+                "fembed",
+                "sendvid"
+            ]
         },
         "dreamanime": {
             "server": "trollvid",
@@ -69,7 +128,8 @@
             "version": "dubbed"
         },
         "gogoanime": {
-            "server": "cdn"
+            "server": "cdn",
+            "version": "subbed"
         },
         "justdubs": {
             "servers": [
@@ -94,8 +154,21 @@
             ],
             "server": "A-KICKASSANIME"
         },
-        "nineanime": {
-            "server": "mp4upload"
+        "kissanime": {
+            "version": "subbed"
+        },
+        "kisscartoon": {
+            "servers": [
+                "mpserver",
+                "yuserver",
+                "oserver",
+                "xserver",
+                "ptserver"
+            ]
+        },
+        "nyaa": {
+            "category": "English-translated",
+            "filter": "Trusted only"
         },
         "ryuanime": {
             "server": "trollvid",
@@ -104,22 +177,41 @@
         "vidstream": {
             "servers": [
                 "vidstream",
+                "vidstream_bk",
                 "gcloud",
                 "mp4upload",
                 "cloud9",
-                "hydrax"
+                "hydrax",
+                "mixdrop"
+            ],
+            "version": "subbed"
+        },
+        "voiranime": {
+            "servers": [
+                "gounlimited"
             ]
         },
+        "vostfree": {
+            "server": "sibnet"
+        },
         "watchmovie": {
-            "fallback_servers": [
-                "fembed",
+            "servers": [
+                "vidstream",
+                "gcloud",
                 "yourupload",
-                "mp4upload"
+                "hydrax"
             ],
-            "server": "gcloud"
+            "version": "subbed"
+        },
+        "yify": {
+            "servers": [
+                "vidstream",
+                "yify"
+            ]
         }
     },
     "watch": {
+        "autoplay_next": true,
         "fallback_qualities": [
             "720p",
             "480p",
