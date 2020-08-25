@@ -1,0 +1,7 @@
+#!/bin/dash
+# change it to #!/bin/sh if you are on debian based distro
+
+usage=$(top -bn1 | grep "Cpu(s)" | sed "s/.*, *\([0-9.]*\)%* id.*/\1/" | awk '{print 100 - $1}')
+
+echo "C $usage"
+

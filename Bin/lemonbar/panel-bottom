@@ -1,0 +1,87 @@
+#!/bin/dash
+# change it to #!/bin/sh if you are on debian based distro
+
+PANEL_FIFO_BOTTOM=/tmp/panel-bottom-fifo
+PANEL_HEIGHT=20
+
+PANEL_FONT_FAMILY="JetBrains Mono Medium"
+ICON_FONT="Hack Nerd Font Mono"
+
+if [ $(pgrep -cx panel-bottom) -gt 1 ] ; then
+  printf "%s\n" "The panel is already running." >&2
+  exit 1
+fi
+
+trap 'trap - TERM; kill 0' INT TERM QUIT EXIT
+
+[ -e "$PANEL_FIFO_BOTTOM" ] && rm "$PANEL_FIFO_BOTTOM"
+mkfifo "$PANEL_FIFO_BOTTOM"
+
+# time and date
+while true;
+do
+    echo "D$(date '+%d.%m.%Y %H:%M')"
+    sleep 20
+done > "$PANEL_FIFO_BOTTOM" &
+
+# battery
+while true;
+do
+    bat_number=0
+    acpi=$(acpi -b 2>/dev/null| grep "Battery $bat_number")
+    ac_adapt=$(acpi -a | awk '{print $2}')
+    mode=$(echo "$acpi" | awk '{print $3}')
+    percent=$(echo "$acpi" | awk '{print $4}'| grep -Eo '[0-9]*')
+    symbol=""
+
+    if [ "$mode" = "Discharging," ]; then
+        symbol=''
+    elif [ "$mode" = "Charging," ]; then
+        symbol=''
+    elif [ "$mode" = "Unknown," ]; then
+        if [ "$ac_adapt" = "on-line," ]; then
+            symbol=''
+        elif [ "$ac_adapt" = "off-line," ]; then
+            symbol=''
+    fi
+    else
+        symbol=''
+    fi
+
+    echo "B$symbol $percent%"
+    sleep 5
+done > "$PANEL_FIFO_BOTTOM" &
+
+# backlight
+lemonlight > "$PANEL_FIFO_BOTTOM" &
+
+# wifi
+while true;
+do
+    state=$(connmanctl state | sed -n '/State/p' | cut -c11-)
+
+    if [ "$state" = "online" ]; then # if connected
+        echo "W直  "
+    else
+        echo "W睊   "
+    fi
+    sleep 10
+done > "$PANEL_FIFO_BOTTOM" &
+
+# volume
+# initial volume
+lemonvol > "$PANEL_FIFO_BOTTOM" &
+# python volume watcher
+lemonvol.py > "$PANEL_FIFO_BOTTOM" &
+
+. panel_colors
+
+bspc config bottom_padding $PANEL_HEIGHT
+
+cat "$PANEL_FIFO_BOTTOM" | panel-bar-bottom | lemonbar -b -g x$PANEL_HEIGHT -f "$PANEL_FONT_FAMILY"-8 -f "$ICON_FONT"-8 -F "$COLOR_FOREGROUND" -B "$COLOR_BACKGROUND" -u 2 | bash &
+
+sleep 1
+# make lemonbar appear below windows
+xdo above -t $(xdo id -n root) $(xdo id -n lemonbar)
+
+wait

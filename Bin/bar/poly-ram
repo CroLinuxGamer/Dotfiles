@@ -1,0 +1,7 @@
+#!/bin/dash
+# change it to #!/bin/sh if you are on debian based distro
+
+usedmem=$(free -h --mega | sed -n '/Mem:/p' | awk '{print $3}')
+totalmem=$(free -h --mega | sed -n '/Mem:/p' | awk '{print $2}')
+
+echo $usedmem/$totalmem

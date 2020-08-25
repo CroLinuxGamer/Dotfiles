@@ -1,0 +1,4 @@
+#!/bin/dash
+# change it to #!/bin/sh if you are on debian based distro
+
+rofi -show power-menu -modi power-menu:power-menu -show-icons -font "hack 10" -lines 2 -width 11 -location 5 -xoffset -5 -yoffset -26

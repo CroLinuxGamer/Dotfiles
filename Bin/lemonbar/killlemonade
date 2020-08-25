@@ -1,0 +1,5 @@
+#!/bin/dash
+
+killall lemonbar
+killall panel-top
+killall panel-bottom

@@ -1,0 +1,38 @@
+#!/bin/dash
+# change it to #!/bin/sh if you are on debian based distro
+
+. panel_colors
+
+PADDING=" "
+SEP="|"
+
+while read -r line ; do
+    case $line in
+        D*)
+            #time and date output
+            date="%{U$COLOR_UNDERLINE}%{+u}${line#?}%{-u}$PADDING"
+            ;;
+        B*)
+            # battery output
+            batt="%{U$COLOR_UNDERLINE}%{+u}${line#?}%{-u}$PADDING"
+            ;;
+        L*)
+            # backlight output
+            light="%{U$COLOR_UNDERLINE}%{+u}${line#?}%{-u}$PADDING"
+            ;;
+        W*)
+            # wifi output
+            wifi="%{U$COLOR_UNDERLINE}%{+u}%{A:connman-gtk:}${line#?}%{A}%{-u}$PADDING"
+            ;;
+        V*)
+            # volume output
+            vol="%{U$COLOR_UNDERLINE}%{+u}${line#?}%{-u}$PADDING"
+            ;;
+    esac
+
+    # applications menu
+    menu="$PADDING%{F$COLOR_UNDERLINE}%{A:lemonmenu:}%{F-}%{A}"
+    power="%{F$COLOR_UNDERLINE}%{A:lemonpower:}%{F-}%{A}$PADDING"
+
+    printf "%s\n" "%{l}${menu}%{r}${wifi}${vol}${light}${batt}${date}${power}"
+done
