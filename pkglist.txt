@@ -27,21 +27,17 @@ epub2txt
 fakeroot
 feh
 ffmpegthumbnailer
-file
-findutils
 flex
 foliate
 frece
 fzf
 gamemode
-gawk
 gcc
-gettext
 git
 glow-bin
 google-chrome
 gparted
-grep
+groff
 grub
 grub-theme-vimix
 gst-libav
@@ -55,7 +51,6 @@ gvfs-gphoto2
 gvfs-mtp
 gvfs-nfs
 gvfs-smb
-gzip
 highlight
 htop
 hugo
@@ -64,8 +59,12 @@ legendary
 lemonbar-xft-git
 lf-git
 lib32-gamemode
+lib32-libva-mesa-driver
+lib32-mesa-vdpau
 lib32-ncurses5-compat-libs
 libstrangle-git
+libtool
+libva-mesa-driver
 libxft
 light
 linux
@@ -81,6 +80,7 @@ m4
 make
 mangohud
 mediainfo
+mesa-vdpau
 mpc
 mpd
 mpv
@@ -117,7 +117,7 @@ powerline-fonts
 powerpill
 proton-ge-custom-legacy-bin
 proton-ge-custom-stable-bin
-protonvpn-cli-ng
+protonvpn-cli-ng-git
 pulseaudio
 pulseaudio-alsa
 pulsemixer
@@ -129,7 +129,6 @@ qtgain
 rofi
 samba
 scrot
-sed
 soundconverter
 stacer
 steam
@@ -148,6 +147,7 @@ ttf-jetbrains-mono
 ttf-symbola
 unrar
 unzip
+update-grub
 vi
 vorbisgain
 vulkan-tools
@@ -166,8 +166,10 @@ xdg-user-dirs
 xdo
 xf86-video-amdgpu
 xf86-video-ati
+xorg-server
 xorg-xinit
 xorg-xkill
+xorg-xsetroot
 xsel
 xtitle-git
 yarn

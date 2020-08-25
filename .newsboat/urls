@@ -12,7 +12,6 @@
 "query:Unread:unread = \"yes\""
 
 # (Update news)
-https://artixlinux.org/feed.php  "~Artix news" "(Update news)"
 https://www.archlinux.org/feeds/news/ "~Arch news" "(Update news)"
 https://bugs.archlinux.org/feed.php?feed_type=rss1&project=1 "~Arch Bug Tracker" "(Update news)"
 

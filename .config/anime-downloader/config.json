@@ -1,8 +1,8 @@
 {
     "dl": {
-        "aria2c_for_torrents": false,
+        "aria2c_for_torrents": true,
         "chunk_size": "10",
-        "download_dir": ".",
+        "download_dir": "~/Videos/Anime",
         "external_downloader": "{aria2}",
         "fallback_qualities": [
             "720p",
@@ -12,7 +12,7 @@
         "file_format": "{anime_title}/{anime_title}_{ep_no}",
         "force_download": false,
         "player": null,
-        "provider": "animekisa",
+        "provider": "kissanimex",
         "quality": "1080p",
         "selescrape_browser": null,
         "selescrape_browser_executable_path": null,
@@ -22,6 +22,7 @@
         "url": false
     },
     "ezdl": {
+        "download_metadata": false,
         "fallback_providers": [
             "9anime",
             "vidstream",
@@ -34,6 +35,9 @@
     "siteconfig": {
         "9anime": {
             "server": "mp4upload",
+            "version": "subbed"
+        },
+        "anime8": {
             "version": "subbed"
         },
         "animedaisuki": {
@@ -155,6 +159,9 @@
             "server": "A-KICKASSANIME"
         },
         "kissanime": {
+            "version": "subbed"
+        },
+        "kissanimex": {
             "version": "subbed"
         },
         "kisscartoon": {

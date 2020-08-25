@@ -127,7 +127,7 @@ else
             then
                 echo "Rebooting.." >&2
             else
-                loginctl reboot &> /dev/null
+                reboot &> /dev/null
             fi
             ;;
         $shutdown)
@@ -144,7 +144,7 @@ else
             then
                 echo "Shutting down.." >&2
             else
-                loginctl poweroff &> /dev/null
+                poweroff &> /dev/null
             fi
             ;;
         $cancel)
