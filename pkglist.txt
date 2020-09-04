@@ -22,9 +22,10 @@ clang
 connman-gtk
 connman-openrc
 dash
+dkms
 dunst
+dxvk-bin
 epub2txt
-etcher-bin
 fakeroot
 feh
 file
@@ -62,6 +63,7 @@ htop
 hugo
 iwd-openrc
 kid3-qt
+legendary
 lemonbar-xft-git
 lf-git
 lib32-alsa-lib
@@ -78,6 +80,7 @@ lib32-libva-mesa-driver
 lib32-libxcomposite
 lib32-libxinerama
 lib32-libxslt
+lib32-mangohud
 lib32-mesa-vdpau
 lib32-mpg123
 lib32-ncurses5-compat-libs
@@ -95,16 +98,22 @@ libva-mesa-driver
 light
 linux
 linux-firmware
+linux-headers
 linux-lts
+linux-lts-headers
 linux-zen
+linux-zen-headers
 lsb-release
 lsd
 lsof
+lutris
 lxappearance
 m4
 make
 man-db
+mangohud
 mediainfo
+megacmd-bin
 mesa-vdpau
 mpc
 mpd
@@ -139,6 +148,8 @@ poppler
 poppler-data
 powerline-fonts
 powerpill
+proton-ge-custom-bin
+proton-ge-custom-legacy-bin
 pulseaudio
 pulseaudio-alsa
 pulsemixer
@@ -155,6 +166,7 @@ scrot
 sed
 soundconverter
 stacer
+steam
 sudo
 sxhkd
 sysstat
@@ -182,6 +194,8 @@ ttf-symbola
 unrar
 unzip
 vi
+virtualbox
+virtualbox-guest-iso
 vkd3d
 vorbisgain
 vulkan-radeon
@@ -192,6 +206,7 @@ which
 wine-gecko
 wine-mono
 wine-staging
+winetricks
 xarchiver
 xclip
 xcursor-breeze
