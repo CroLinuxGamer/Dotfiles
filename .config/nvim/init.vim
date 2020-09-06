@@ -37,9 +37,6 @@ Plug 'vim-pandoc/vim-pandoc-syntax'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 " completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" lf file manager integration
-Plug 'ptzz/lf.vim'
-Plug 'rbgrouleff/bclose.vim'
 " floating terminal
 Plug 'voldikss/vim-floaterm'
 call plug#end()
@@ -61,7 +58,7 @@ set noautoindent
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
 " Plugin settings
-filetype on
+filetype plugin indent on
 
 " Encoding settings
 scriptencoding utf-8
@@ -89,6 +86,7 @@ set statusline+=\                                                       " space
 let g:python_host_prog = '/usr/bin/python2.7'
 let g:python3_host_prog = '/usr/bin/python3'
 
+" search settings
 set hlsearch
 map /  <Plug>(incsearch-forward)
 map ?  <Plug>(incsearch-backward)
@@ -116,6 +114,7 @@ set smartcase
 set mouse=a
 set updatetime=300
 set signcolumn=yes
+set nocursorline
 
 " No tmp or swp files
 set nobackup
@@ -145,7 +144,7 @@ set winminheight=1
 set winminwidth=5
 
 " Some settings
-set lazyredraw    " reduced screen flicker
+set lazyredraw
 set ttyfast
 set backspace=indent,eol,start
 set matchpairs+=<:>
@@ -166,7 +165,6 @@ set splitbelow
 
 " color scheme
 syntax on
-
 set background=dark
 set t_Co=256
 set termguicolors
@@ -219,7 +217,6 @@ let g:pandoc#syntax#style#use_definition_lists = 0
 
 " Vim hexokinase settings
 let g:Hexokinase_refreshEvents = ['TextChanged','InsertLeave']
-
 let g:Hexokinase_optInPatterns = [
 \     'full_hex',
 \     'triple_hex',
@@ -229,9 +226,7 @@ let g:Hexokinase_optInPatterns = [
 \     'hsla',
 \     'colour_names'
 \ ]
-
 let g:Hexokinase_highlighters = ['backgroundfull']
-
 autocmd VimEnter * HexokinaseTurnOn
 
 " spell and completion settings
@@ -250,12 +245,7 @@ function! Spell_check()
     inoremap <buffer> <expr> <CR> pumvisible() ? "\<C-y><Esc>" : "\<CR>"
 endfunction
 
-" lf settings
-let g:lf_map_keys = 0
-nmap <F2> :Lf<CR>
-
 " floaterm settings
-nmap <F3> :FloatermNew lf<CR>
 nmap <leader>t :FloatermNew<CR>
 
 let g:floaterm_height = 0.4
