@@ -10,8 +10,6 @@
 call plug#begin()
 " color scheme
 Plug 'morhetz/gruvbox'
-" nice startup screen
-Plug 'mhinz/vim-startify'
 " inc search on steroids
 Plug 'haya14busa/incsearch.vim'
 " easy comment big chunks of code
@@ -31,7 +29,7 @@ Plug 'skywind3000/asynctasks.vim'
 Plug 'skywind3000/asyncrun.vim'
 " highlight duplicate words
 Plug 'dbmrq/vim-ditto'
-" pandoc markdonw syntax
+" pandoc markdown syntax
 Plug 'vim-pandoc/vim-pandoc-syntax'
 " coloring in vim
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
