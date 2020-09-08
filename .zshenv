@@ -29,6 +29,11 @@ export WM="bspwm"
 export PANEL_FIFO_TOP=/tmp/panel-top-fifo
 export PANEL_FIFO_BOTTOM=/tmp/panel-bottom-fifo
 
+# wine settings
+export WINEESYNC=1
+export WINEFSYNC=1
+export DXVK_HUD=compiler
+
 # lf icons
 export LF_ICONS="\
 di=:\

@@ -35,8 +35,9 @@ Plug 'vim-pandoc/vim-pandoc-syntax'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 " completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" floating terminal
-Plug 'voldikss/vim-floaterm'
+" file explorer
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 " Center when entering insert mode
@@ -159,6 +160,7 @@ let &t_EI .= "\<Esc>[?2004l"
 au FocusGained,BufEnter * checktime
 
 " Windows settings
+set splitright
 set splitbelow
 
 " color scheme
@@ -193,8 +195,8 @@ let g:cpp_experimental_template_highlight = 1
 let g:cpp_concepts_highlight = 1
 
 " async run and task settings
-let g:asyncrun_open = 6                                                     " enable quick fix windows
-let g:asyncrun_rootmarks = ['.git', '.svn', '.root', '.project', '.hg']     " set root marks
+let g:asyncrun_open = 6
+let g:asyncrun_rootmarks = ['.git', '.svn', '.root', '.project', '.hg']
 let g:asynctasks_term_pos = 'tab'
 let g:asynctasks_term_reuse = 1
 let g:asynctasks_system = 'linux'
@@ -243,11 +245,21 @@ function! Spell_check()
     inoremap <buffer> <expr> <CR> pumvisible() ? "\<C-y><Esc>" : "\<CR>"
 endfunction
 
-" floaterm settings
-nmap <leader>t :FloatermNew<CR>
+" terminal settings
+tnoremap <Esc> <C-\><C-n>
+au BufEnter * if &buftype == 'terminal' | :startinsert | endif
+function! OpenTerminal()
+  split term://zsh
+  resize 10
+endfunction
+nnoremap <leader>t :call OpenTerminal()<CR>
 
-let g:floaterm_height = 0.4
-let g:floaterm_width = 0.4
-let g:floaterm_position = 'topright'
-let g:floaterm_wintitle = 'false'
-let g:floaterm_rootmarkers = ['.project', '.git', '.hg', '.svn', '.root', '.gitignore']
+" nerd tree settings
+let g:NERDTreeShowHidden = 1
+let g:NERDTreeMinimalUI = 1
+let g:NERDTreeIgnore = []
+let g:NERDTreeStatusline = ''
+
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+nnoremap <silent> <F2> :NERDTreeToggle<CR>

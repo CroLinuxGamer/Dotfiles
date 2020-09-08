@@ -8,5 +8,3 @@
 
 export MANGOHUD=1
 export QT_QPA_PLATFORMTHEME="qt5ct"
-export MANGOHUD=1
-export ENABLE_VKBASALT=1
