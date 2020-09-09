@@ -8,7 +8,7 @@
 
 # Path export
 typeset -U PATH path
-path=("$HOME/Bin/bar" "$HOME/Bin/go/bin" "$HOME/Bin/lemonbar" "$HOME/Bin/system" "$HOME/Bin/bspwm" "$HOME/Bin/lf" "$path[@]")
+path=("$HOME/Bin/bar" "$HOME/.dotnet/tools" "$HOME/Bin/go/bin" "$HOME/Bin/lemonbar" "$HOME/Bin/system" "$HOME/Bin/bspwm" "$HOME/Bin/lf" "$path[@]")
 export PATH
 export SXHKD_SHELL='/usr/bin/dash'
 export GOPATH=$HOME/Bin/go

@@ -38,6 +38,10 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " file explorer
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'ryanoasis/vim-devicons'
+" syntax checker
+Plug 'dense-analysis/ale'
+" c# support
+Plug 'OmniSharp/Omnisharp-vim'
 call plug#end()
 
 " Center when entering insert mode
@@ -255,7 +259,6 @@ endfunction
 nnoremap <leader>t :call OpenTerminal()<CR>
 
 " nerd tree settings
-let g:NERDTreeShowHidden = 1
 let g:NERDTreeMinimalUI = 1
 let g:NERDTreeIgnore = []
 let g:NERDTreeStatusline = ''
@@ -263,3 +266,13 @@ let g:NERDTreeStatusline = ''
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 nnoremap <silent> <F2> :NERDTreeToggle<CR>
+
+" coc settings
+let g:coc_global_extensions=[ 'coc-word', 'coc-utils', 'coc-tasks', 'coc-tabnine', 'coc-marketplace', 'coc-json', 'coc-clangd' ]
+
+" omnisharp
+let g:OmniSharp_highlighting = 0
+let g:OmniSharp_popup_options = {
+\ 'winblend': 30,
+\ 'winhl': 'Normal:Normal'
+\}
