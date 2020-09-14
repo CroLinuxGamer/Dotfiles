@@ -28,6 +28,7 @@ export PAGER="less"
 export WM="bspwm"
 export PANEL_FIFO_TOP=/tmp/panel-top-fifo
 export PANEL_FIFO_BOTTOM=/tmp/panel-bottom-fifo
+export LD_PRELOAD=/usr/lib/libGL.so
 
 # wine settings
 export WINEESYNC=1
