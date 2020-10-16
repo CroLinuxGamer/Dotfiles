@@ -43,11 +43,11 @@ done > "$PANEL_FIFO" &
 # disk usage
 while true;
 do
-    rootsize=$(df -hT / | grep 'sda3' | awk '{print $3}' | sed 's/G//')
-    rootused=$(df -hT / | grep 'sda3' | awk '{print $4}' | sed 's/G//')
+    rootsize=$(df -hT / | grep 'nvme0n1p7' | awk '{print $3}' | sed 's/G//')
+    rootused=$(df -hT / | grep 'nvme0n1p7' | awk '{print $4}' | sed 's/G//')
 
-    homesize=$(df -hT /home | grep 'sda4' | awk '{print $3}' | sed 's/G//')
-    homeused=$(df -hT /home | grep 'sda4' | awk '{print $4}' | sed 's/G//')
+    homesize=$(df -hT /home | grep 'nvme0n1p8' | awk '{print $3}' | sed 's/G//')
+    homeused=$(df -hT /home | grep 'nvme0n1p8' | awk '{print $4}' | sed 's/G//')
 
     printf  "%s\n"  "D : /=$rootused/$rootsize GB || /home=$homeused/$homesize GB"
     sleep 1h

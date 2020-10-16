@@ -9,7 +9,6 @@
 # Basic Settings
 set preview true
 set previewer preview
-set color256 true
 set drawbox true
 set icons true
 set ignorecase true
