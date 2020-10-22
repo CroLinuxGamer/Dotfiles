@@ -1,0 +1,9 @@
+#!/bin/sh
+
+gpu=$(optimus-manager --print-mode | cut -c20-)
+
+if [ "$gpu" = "integrated" ]; then
+    printf "%s\n" "GiGPU"
+else
+    printf "%s\n" "GdGPU  "
+fi
