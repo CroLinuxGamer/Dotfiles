@@ -13,11 +13,8 @@ binutils
 bison
 brave-nightly-bin
 bspwm
-calcurse
 clang
-connman-gtk
 dash
-dkms
 dunst
 epub2txt
 fakeroot
@@ -126,8 +123,6 @@ unrar
 unzip
 vi
 vorbisgain
-vulkan-radeon
-vulkan-tools
 w3m
 wget
 which

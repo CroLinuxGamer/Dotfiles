@@ -55,6 +55,17 @@ done > "$PANEL_FIFO_BOTTOM" &
 # backlight
 lemonlight > "$PANEL_FIFO_BOTTOM" &
 
+# gpu used
+lemongpu > "$PANEL_FIFO_BOTTOM" &
+
+# cpu temp
+while true;
+do
+    temp=$(sensors | grep "Tdie" | sed "s/Tdie: *+//;s/°C *//")
+    echo "T $temp C°"
+    sleep 10
+done > "$PANEL_FIFO_BOTTOM" &
+
 # wifi
 while true;
 do

@@ -8,9 +8,13 @@
 
 #---BSPWM Bindings---#
 
-# Quit bspwm
+# System turn off
 super + shift + e
     rofi -show power-menu -modi power-menu:power-menu -show-icons -font "hack 10" -lines 2 -width 11
+
+# Quit bsowm
+super + ctrl + e
+    bspc quit
 
 # Restart bspwm
 super + shift + r

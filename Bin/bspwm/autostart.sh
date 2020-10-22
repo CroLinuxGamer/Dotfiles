@@ -7,7 +7,7 @@ killall sxhkd
 sleep 0.1
 killall picom
 sleep 0.1
-killall polybar
+killlemonade
 sleep 0.1
 
 # programs section
@@ -22,4 +22,3 @@ sleep 0.1
 feh --no-fehbg --bg-scale ~/Pictures/wallpaper.png &
 sleep 0.1
 launchlemonade &
-

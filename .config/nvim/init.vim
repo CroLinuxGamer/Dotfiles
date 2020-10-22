@@ -40,8 +40,10 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'ryanoasis/vim-devicons'
 " syntax checker
 Plug 'dense-analysis/ale'
-" c# support
-Plug 'OmniSharp/Omnisharp-vim'
+" emmet
+Plug 'mattn/emmet-vim'
+" closing html tags
+Plug 'alvan/vim-closetag'
 call plug#end()
 
 " Center when entering insert mode
@@ -154,7 +156,7 @@ set matchpairs+=<:>
 set re=1
 
 " tab settings
-set tabstop=4 softtabstop=4 expandtab shiftwidth=4 smarttab
+set tabstop=4 expandtab shiftwidth=4
 
 " leader mapping
 let g:mapleader = ","
@@ -201,7 +203,7 @@ let g:cpp_concepts_highlight = 1
 " async run and task settings
 let g:asyncrun_open = 6
 let g:asyncrun_rootmarks = ['.git', '.svn', '.root', '.project', '.hg']
-let g:asynctasks_term_pos = 'tab'
+let g:asynctasks_term_pos = 'bottom'
 let g:asynctasks_term_reuse = 1
 let g:asynctasks_system = 'linux'
 map <F10> :CocList tasks<CR>
@@ -269,10 +271,3 @@ nnoremap <silent> <F2> :NERDTreeToggle<CR>
 
 " coc settings
 let g:coc_global_extensions=[ 'coc-word', 'coc-utils', 'coc-tasks', 'coc-tabnine', 'coc-marketplace', 'coc-json', 'coc-clangd' ]
-
-" omnisharp
-let g:OmniSharp_highlighting = 0
-let g:OmniSharp_popup_options = {
-\ 'winblend': 30,
-\ 'winhl': 'Normal:Normal'
-\}

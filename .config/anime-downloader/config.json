@@ -1,6 +1,7 @@
 {
     "dl": {
         "aria2c_for_torrents": true,
+        "aria2c_log_level": "error",
         "chunk_size": "10",
         "download_dir": "~/Videos/Anime",
         "external_downloader": "{aria2}",
@@ -32,12 +33,30 @@
         "provider": "twist.moe",
         "ratio": 50
     },
+    "gui": {
+        "player": "mpv"
+    },
     "siteconfig": {
         "9anime": {
+            "domain_extension": "to",
             "server": "mp4upload",
             "version": "subbed"
         },
         "anime8": {
+            "include_special_eps": false,
+            "servers": [
+                "fserver",
+                "fdserver",
+                "oserver"
+            ],
+            "version": "subbed"
+        },
+        "animebinge": {
+            "servers": [
+                "mp4upload",
+                "xstreamcdn",
+                "trollvid"
+            ],
             "version": "subbed"
         },
         "animedaisuki": {
@@ -54,6 +73,13 @@
         },
         "animeflv": {
             "server": "natsuki",
+            "servers": [
+                "stape",
+                "natsuki",
+                "gocdn",
+                "yu",
+                "fembed"
+            ],
             "version": "subbed"
         },
         "animefrenzy": {
@@ -86,6 +112,23 @@
             ],
             "version": "subbed"
         },
+        "animesuge": {
+            "servers": [
+                "mp4upload",
+                "streamtape"
+            ],
+            "version": "subbed"
+        },
+        "animetake": {
+            "servers": [
+                "gstore",
+                "hydrax",
+                "fembed",
+                "vidstreaming",
+                "mixdrop"
+            ],
+            "version": "subbed"
+        },
         "animevibe": {
             "servers": [
                 "vidstream",
@@ -98,6 +141,10 @@
         },
         "animixplay": {
             "server": "vidstream",
+            "v5-servers": [
+                "mp4up",
+                "stape"
+            ],
             "version": "subbed"
         },
         "anistream.xyz": {
@@ -176,6 +223,13 @@
         "nyaa": {
             "category": "English-translated",
             "filter": "Trusted only"
+        },
+        "putlockers": {
+            "servers": [
+                "eplay",
+                "mixdrop"
+            ],
+            "version": "dubbed"
         },
         "ryuanime": {
             "server": "trollvid",

@@ -8,6 +8,8 @@
 
 export QT_QPA_PLATFORMTHEME="qt5ct"
 export MANGOHUD=1
+# enable optimus
+sudo /usr/bin/prime-switch
 # startx
 [[ $(fgconsole 2>/dev/null) == 1 ]] && exec startx -- vt1 &> /dev/null
 

@@ -9,14 +9,9 @@ pkill mpd
 sleep 0.1
 pkill picom
 sleep 0.1
-pkill lemonbar
-sleep 0.1
-pkill panel-top
-sleep 0.1
-pkill panel-bottom
+killlemonade
 sleep 0.1
 bspc config top_padding 0
 bspc config bottom_padding 0
 sxhkd &
 floating.sh &
-
