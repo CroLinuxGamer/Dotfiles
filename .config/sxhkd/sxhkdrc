@@ -14,7 +14,7 @@ super + shift + e
 
 # Quit bsowm
 super + ctrl + e
-    bspc quit
+    quit.sh
 
 # Restart bspwm
 super + shift + r
