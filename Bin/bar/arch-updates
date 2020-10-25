@@ -1,5 +1,4 @@
-#!/bin/dash
-# change it to #!/bin/sh if you are on debian based distro
+#!/bin/sh
 
 if ! updates_arch=$(checkupdates 2> /dev/null | wc -l ); then
     updates_arch=0

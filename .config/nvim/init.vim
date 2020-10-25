@@ -44,6 +44,8 @@ Plug 'dense-analysis/ale'
 Plug 'mattn/emmet-vim'
 " closing html tags
 Plug 'alvan/vim-closetag'
+" latex live preview
+Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 call plug#end()
 
 " Center when entering insert mode
@@ -270,4 +272,10 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 nnoremap <silent> <F2> :NERDTreeToggle<CR>
 
 " coc settings
-let g:coc_global_extensions=[ 'coc-word', 'coc-utils', 'coc-tasks', 'coc-tabnine', 'coc-marketplace', 'coc-json', 'coc-clangd' ]
+let g:coc_global_extensions=[ 'coc-word', 'coc-utils', 'coc-tasks', 'coc-tabnine', 'coc-marketplace', 'coc-json', 'coc-clangd', 'coc-texlab' ]
+
+" latex preview
+let g:livepreview_previewer = 'zathura'
+let g:livepreview_use_biber = 1
+let g:livepreview_cursorhold_recompile = 0
+

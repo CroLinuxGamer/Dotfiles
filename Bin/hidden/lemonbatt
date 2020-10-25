@@ -1,5 +1,4 @@
-#!/bin/dash
-# change it to #!/bin/sh if you are on debian based distro
+#!/bin/sh
 
 bat_number=0
 acpi=$(acpi -b 2>/dev/null| grep "Battery $bat_number")

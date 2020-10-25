@@ -1,5 +1,4 @@
-#!/bin/dash
-# change it to #!/bin/sh if you are on debian based distro
+#!/bin/sh
 
 # this script is literally just a reverse of clean.sh
 # where it just starts everything back again

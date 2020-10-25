@@ -1,5 +1,4 @@
-#!/bin/dash
-# change it to #!/bin/sh if you are on debian based distro
+#!/bin/sh
 
 # Preview script built for use with lf
 LINES=30

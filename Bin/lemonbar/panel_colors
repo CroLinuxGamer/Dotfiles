@@ -1,5 +1,4 @@
-#!/bin/dash
-# change it to #!/bin/sh if you are on debian based distro
+#!/bin/sh
 
 COLOR_FOREGROUND="#ebdbb2"
 COLOR_BACKGROUND="#282828"

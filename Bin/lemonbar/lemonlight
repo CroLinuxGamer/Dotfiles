@@ -1,5 +1,4 @@
-#!/bin/dash
-# change it to #!/bin/sh if you are on debian based distro
+#!/bin/sh
 
 lightness=$(light -G | sed 's/\.[0-9]*//')
 

@@ -19,6 +19,9 @@ https://bugs.archlinux.org/feed.php?feed_type=rss1&project=1 "~Arch Bug Tracker"
 https://honeysanime.com/feed/ "~Honey's Anime" "(Anime)"
 https://www.animenewsnetwork.com/newsfeed/rss.xml?ann-edition=us "~AnimeNewsNetwork" "(Anime)"
 
+# (GitHub Projects)
+https://github.com/anime-dl/anime-downloader/releases.atom "~anime-downloader" "(GitHub Projects)"
+
 # (Lightnovels)
 https://thatnovelcorner.com/feed/ "~That Novel Corner" "(Light novels)"
 
@@ -27,6 +30,7 @@ https://www.tecmint.com/feed/ "~Tecmint" "(Blogs)"
 https://linuxscoop.com/feed "~Linux Scoop" "(Blogs)"
 
 # (Youtube)
+https://www.youtube.com/feeds/videos.xml?channel_id=UC7YOGHUfC1Tb6E4pudI9STA "~Mental Outlaw" "(YouTube)"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC1ZgW943nENJ6I-hrTvmG1g "~Tindanime" "(YouTube)"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "~Luke Smith" "(YouTube)"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCDmXLiZTBaFuCOXjy6mdw5w "~FlightlessMango" "(YouTube)"
