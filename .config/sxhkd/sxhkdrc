@@ -10,7 +10,7 @@
 
 # System turn off
 super + shift + e
-    rofi -show power-menu -modi power-menu:power-menu -show-icons -font "hack 10" -lines 2 -width 11
+    rofi -show power-menu -modi power-menu:power-menu -show-icons -font "hack 16" -lines 2 -width 12%
 
 # Quit bsowm
 super + ctrl + e
@@ -96,7 +96,7 @@ super + {ctrl, shift} + F11
 
 # run rofi
 super + d
-    rofi -modi drun -show drun -show-icons -display-drun "" -font "hack 10" -lines 15 -width 30
+    rofi -modi drun -show drun -show-icons -display-drun "" -font "hack 14" -lines 12 -width 25
 
 # run my gui programs
 super + {Return,b,g}

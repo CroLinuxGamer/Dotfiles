@@ -8,8 +8,6 @@
 
 " Plug settings
 call plug#begin()
-" color scheme
-Plug 'morhetz/gruvbox'
 " inc search on steroids
 Plug 'haya14busa/incsearch.vim'
 " easy comment big chunks of code
@@ -40,20 +38,20 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'ryanoasis/vim-devicons'
 " syntax checker
 Plug 'dense-analysis/ale'
-" emmet
-Plug 'mattn/emmet-vim'
 " closing html tags
 Plug 'alvan/vim-closetag'
-" latex live preview
+" nord theme
+Plug 'arcticicestudio/nord-vim'
+" airline
+Plug 'vim-airline/vim-airline'
+" git status
+Plug 'tpope/vim-fugitive'
+" A Vim Plugin for Lively Previewing LaTeX PDF Output
 Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
 call plug#end()
 
 " Center when entering insert mode
 autocmd InsertEnter * norm zz
-
-" Fix indenting visual block
-vmap < <gv
-vmap > >gv
 
 " Turn off auto commenting
 autocmd FileType * setlocal formatoptions-=cro
@@ -70,24 +68,6 @@ filetype plugin indent on
 " Encoding settings
 scriptencoding utf-8
 set encoding=utf-8
-
-" status line format
-set statusline=
-set statusline+=\ \                                                     " space
-set statusline+=%#StatusLine#                                           " coloring
-set statusline+=\ %f\                                                   " file name
-set statusline+=[%n/                                                    " buffer number
-set statusline+=%{len(filter(range(1,bufnr('$')),'buflisted(v:val)'))}] " Opened buffer count
-set statusline+=%{coc#status()}                                         " Coc plugins status
-set statusline+=%m\                                                     " does something
-set statusline+=%=                                                      " moves the rest to the right side
-set statusline+=%#CursorColumn#                                         " colorings
-set statusline+=\ %y                                                    " file type
-set statusline+=\ %{&fileencoding?&fileencoding:&encoding}              " encoding
-set statusline+=\[%{&fileformat}\]                                      " file format
-set statusline+=\ %l/%L                                                 " line / all lines
-set statusline+=\ %c                                                    " column
-set statusline+=\                                                       " space
 
 " set python directories
 let g:python_host_prog = '/usr/bin/python2.7'
@@ -110,7 +90,7 @@ set nocompatible
 set modelines=0
 set novisualbell
 set noerrorbells
-set scrolloff=3
+set scrolloff=5
 set wrap
 set linebreak
 set nolist
@@ -120,8 +100,10 @@ set whichwrap+=<,>,h,l
 set smartcase
 set mouse=a
 set updatetime=300
-set signcolumn=yes
-set nocursorline
+set cursorline
+set cursorcolumn
+set noshowmode
+set hidden
 
 " No tmp or swp files
 set nobackup
@@ -130,9 +112,6 @@ set noswapfile
 
 " System clipboard
 set clipboard+=unnamedplus
-
-" allow unsaved buffers to be hidden
-set hidden
 
 " Split bindings
 map <silent> <C-down> <C-W>j
@@ -176,9 +155,12 @@ syntax on
 set background=dark
 set t_Co=256
 set termguicolors
-let g:gruvbox_italic = 1
-let g:gruvbox_contrast_dark = 'medium'
-colorscheme gruvbox
+colorscheme nord
+let g:nord_uniform_status_lines = 1
+let g:nord_uniform_diff_background = 1
+let g:nord_italic = 1
+let g:nord_italic_comments = 1
+let g:nord_underline = 1
 
 " nerdcommenter settings
 let g:NERDSpaceDelims = 1
@@ -253,15 +235,6 @@ function! Spell_check()
     inoremap <buffer> <expr> <CR> pumvisible() ? "\<C-y><Esc>" : "\<CR>"
 endfunction
 
-" terminal settings
-tnoremap <Esc> <C-\><C-n>
-au BufEnter * if &buftype == 'terminal' | :startinsert | endif
-function! OpenTerminal()
-  split term://zsh
-  resize 10
-endfunction
-nnoremap <leader>t :call OpenTerminal()<CR>
-
 " nerd tree settings
 let g:NERDTreeMinimalUI = 1
 let g:NERDTreeIgnore = []
@@ -272,10 +245,16 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 nnoremap <silent> <F2> :NERDTreeToggle<CR>
 
 " coc settings
-let g:coc_global_extensions=[ 'coc-word', 'coc-utils', 'coc-tasks', 'coc-tabnine', 'coc-marketplace', 'coc-json', 'coc-clangd', 'coc-texlab' ]
+let g:coc_global_extensions=[ 'coc-word', 'coc-utils', 'coc-tasks', 'coc-tabnine', 'coc-marketplace', 'coc-json', 'coc-clangd', 'coc-texlab', 'coc-git' ]
 
-" latex preview
+" latex
 let g:livepreview_previewer = 'zathura'
 let g:livepreview_use_biber = 1
 let g:livepreview_cursorhold_recompile = 0
+
+au! BufNewFile,BufFilePre,BufRead *.tex set filetype=latex
+" airline settings
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+let g:airline_theme='nord'
 
