@@ -73,10 +73,6 @@ super + shift + l
 {XF86MonBrightnessUp,XF86MonBrightnessDown}
     light {-A 5, -U 5} && lemonlight > $PANEL_FIFO_BOTTOM
 
-# Quick resolution change beetween 1366x768 and 800x600
-super + {ctrl ,shift} + 0
-    {xrandr --output eDP --mode 1366x768 ,xrandr --output eDP --mode 800x600}
-
 # System look control
 super + {ctrl,shift} + F12
     {cluter.sh ,clean.sh}
@@ -89,9 +85,6 @@ Print
 {XF86AudioPlay,XF86AudioStop,XF86AudioPrev,XF86AudioNext}
     mpc {toggle,stop,prev,next} && lemonsong-status > $PANEL_FIFO_TOP
 
-# turn on floating mode on desktop 4
-super + {ctrl, shift} + F11
-    {killall floating.sh ,floating.sh}
 #---Application Launchers---#
 
 # run rofi
@@ -117,3 +110,9 @@ super + shift + {t,m,w}
 # system programs
 super + ctrl + f
     gparted
+
+# usb keyboard settings
+
+# turn on led
+Scroll_Lock
+    kbd-light-toogle

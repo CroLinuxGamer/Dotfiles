@@ -102,7 +102,7 @@ colors:
     white: '#aeb3bb'
 
 # Opacity
-background_opacity: 1
+background_opacity: 0.75
 
 # Shell settings
 # shell:
