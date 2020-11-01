@@ -1,0 +1,9 @@
+#!/bin/sh
+
+status=$(xset q | grep LED | awk '{print $10}')
+
+if [ "$status" = "00000000" ]; then
+    xset led on
+else
+    xset led off
+fi
