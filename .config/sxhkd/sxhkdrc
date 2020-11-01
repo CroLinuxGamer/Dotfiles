@@ -77,10 +77,6 @@ super + shift + l
 super + {ctrl,shift} + F12
     {cluter.sh ,clean.sh}
 
-# Screenshots using scrot
-Print
-    scrot -q 100 -p '%d-%m-%Y_%H:%M:%S_$wx$h_scrot.png' -e 'mv $f ~/Pictures/screenshots'
-
 # mpd control keybindings
 {XF86AudioPlay,XF86AudioStop,XF86AudioPrev,XF86AudioNext}
     mpc {toggle,stop,prev,next} && lemonsong-status > $PANEL_FIFO_TOP
@@ -111,8 +107,26 @@ super + shift + {t,m,w}
 super + ctrl + f
     gparted
 
-# usb keyboard settings
+#---Keyboard bindings---#
 
 # turn on led
 Scroll_Lock
     kbd-light-toogle
+
+#--Dmenu bindings---#
+
+# dmenu usb mount and unmount
+super + {shift,ctrl} + u
+    {dmenumount,dmenuumount}
+
+# dmenu pdf mans
+super + ctrl + m
+    dmenuman
+
+# dmenu light novels dir
+super + l
+    dmenulightnovels
+
+# dmenu screenshot menu
+Print
+    dmenuscreenshot

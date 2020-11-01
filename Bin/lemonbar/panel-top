@@ -25,10 +25,9 @@ xtitle -sf 'T%s\n\n' -t 30 > "$PANEL_FIFO" &
 # ram
 while true;
 do
-    usedmem=$(free -h --mega | sed -n '/Mem:/p' | awk '{print $3}')
-    totalmem=$(free -h --mega | sed -n '/Mem:/p' | awk '{print $2}')
+    mem=$(free -h --mega | awk '/^Mem:/ {print $3 "/" $2}')
 
-    printf  "%s\n" "R $usedmem/$totalmem"
+    printf  "%s\n" "R $mem"
     sleep 9
 done > "$PANEL_FIFO"  &
 

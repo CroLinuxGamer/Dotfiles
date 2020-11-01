@@ -8,11 +8,8 @@
 
 # Path export
 typeset -U PATH path
-path=("$HOME/Bin/bar" "$HOME/.dotnet/tools" "$HOME/Bin/go/bin" "$HOME/Bin/lemonbar" "$HOME/Bin/system" "$HOME/Bin/bspwm" "$HOME/Bin/lf" "$HOME/.local/bin" "$path[@]")
+path=("$HOME/Bin/bar" "$HOME/Bin/dmenu" "$HOME/.dotnet/tools" "$HOME/Bin/go/bin" "$HOME/Bin/lemonbar" "$HOME/Bin/system" "$HOME/Bin/bspwm" "$HOME/Bin/lf" "$HOME/.local/bin" "$path[@]")
 export PATH
-export SXHKD_SHELL='/usr/bin/dash'
-export GOPATH=$HOME/Bin/go
-export GOBIN=$HOME/Bin/go/bin
 
 # Programs export
 export EDITOR="nvim"
@@ -29,11 +26,33 @@ export WM="bspwm"
 export PANEL_FIFO_TOP=/tmp/panel-top-fifo
 export PANEL_FIFO_BOTTOM=/tmp/panel-bottom-fifo
 export LD_PRELOAD=/usr/lib/libGL.so
+export SUDO_ASKPASS="$HOME/Bin/dmenu/dmenupass"
+
+# clean up
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CACHE_HOME="$HOME/.cache"
+export NOTMUCH_CONFIG="${XDG_CONFIG_HOME:-$HOME/.config}/notmuch-config"
+export GTK2_RC_FILES="${XDG_CONFIG_HOME:-$HOME/.config}/gtk-2.0/gtkrc-2.0"
+export LESSHISTFILE="-"
+export WGETRC="${XDG_CONFIG_HOME:-$HOME/.config}/wget/wgetrc"
+export INPUTRC="${XDG_CONFIG_HOME:-$HOME/.config}/inputrc"
+export ZDOTDIR="${XDG_CONFIG_HOME:-$HOME/.config}/zsh"
+#export GNUPGHOME="$XDG_DATA_HOME/gnupg"
+export WINEPREFIX="${XDG_DATA_HOME:-$HOME/.local/share}/wineprefixes/default"
+export KODI_DATA="${XDG_DATA_HOME:-$HOME/.local/share}/kodi"
+export PASSWORD_STORE_DIR="${XDG_DATA_HOME:-$HOME/.local/share}/password-store"
+export ANDROID_SDK_HOME="${XDG_CONFIG_HOME:-$HOME/.config}/android"
+export CARGO_HOME="${XDG_DATA_HOME:-$HOME/.local/share}/cargo"
+export GOPATH="${XDG_DATA_HOME:-$HOME/.local/share}/go"
+export HISTFILE="${XDG_DATA_HOME:-$HOME/.local/share}/history"
+export CCACHE_DIR="${XDG_CACHE_HOME:-$HOME/.cache}/ccache"
 
 # wine settings
 export WINEESYNC=1
 export WINEFSYNC=1
 export DXVK_HUD=compiler
+export WINEPREFIX="$HOME/.local/share/wineprefixes/default"
 
 # lf icons
 export LF_ICONS="\

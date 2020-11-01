@@ -26,28 +26,22 @@ done > "$PANEL_FIFO_BOTTOM" &
 # battery
 while true;
 do
-    bat_number=0
-    acpi=$(acpi -b 2>/dev/null| grep "Battery $bat_number")
-    ac_adapt=$(acpi -a | awk '{print $2}')
-    mode=$(echo "$acpi" | awk '{print $3}')
-    percent=$(echo "$acpi" | awk '{print $4}'| grep -Eo '[0-9]*')
-    symbol=""
+    for battery in /sys/class/power_supply/BAT?
+    do
+        mode=$(cat "$battery"/status)
+        percent=$(cat "$battery"/capacity)
+        symbol=""
 
-    if [ "$mode" = "Discharging," ]; then
-        symbol=''
-    elif [ "$mode" = "Charging," ]; then
-        symbol=''
-    elif [ "$mode" = "Unknown," ]; then
-        if [ "$ac_adapt" = "on-line," ]; then
+        if [ "$mode" = "Discharging" ]; then
             symbol=''
-        elif [ "$ac_adapt" = "off-line," ]; then
+        elif [ "$mode" = "Charging" ]; then
             symbol=''
-    fi
-    else
-        symbol=''
-    fi
+        else
+            symbol=''
+        fi
 
-    echo "B$symbol $percent%"
+        echo "B$symbol $percent"
+    done
     sleep 5
 done > "$PANEL_FIFO_BOTTOM" &
 
@@ -60,8 +54,8 @@ lemongpu > "$PANEL_FIFO_BOTTOM" &
 # cpu temp
 while true;
 do
-    temp=$(sensors | grep "Tdie" | sed "s/Tdie: *+//;s/°C *//")
-    echo "T $temp C°"
+    temp=$(sensors | awk '/^Tdie:/ {print $2}')
+    echo "T $temp"
     sleep 10
 done > "$PANEL_FIFO_BOTTOM" &
 

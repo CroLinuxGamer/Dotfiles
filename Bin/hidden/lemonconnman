@@ -1,9 +1,0 @@
-#!/bin/sh
-
-state=$(connmanctl state | sed -n '/State/p' | cut -c11-)
-
-if [ "$state" = "online" ]; then # if connected
-    echo "W直  "
-else
-    echo "W睊  "
-fi
