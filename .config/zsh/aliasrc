@@ -58,6 +58,7 @@ alias mvi='mv -i'
 alias free='free -h'
 alias update-mirrors='sudo pacman-mirrors --fasttrack && sudo pacman -Syyu'
 alias update-system='sudo pacman -Sy && sudo powerpill -Su && yay -Sua'
+alias yta='youtube-dl -x -f bestaudio --audio-quality 0 --audio-format vorbis'
 
 # git dotfiles aliases
 alias dot='/usr/bin/git --git-dir=$HOME/Repos/Dotfiles/ --work-tree=$HOME'

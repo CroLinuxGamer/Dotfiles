@@ -62,16 +62,42 @@ done > "$PANEL_FIFO_BOTTOM" &
 # wifi
 while true;
 do
-    state=$(connmanctl state | sed -n '/State/p' | cut -c11-)
+    for wifi in /sys/class/net/w*
+    do
+        state=$(cat "$wifi"/operstate)
 
-    if [ "$state" = "online" ]; then # if connected
-        echo "W直  "
-    else
-        echo "W睊   "
-    fi
+        if [ "$state" = "up" ]; then # if connected
+            echo "W直  "
+        else
+            echo "W睊   "
+        fi
+    done
     sleep 10
 done > "$PANEL_FIFO_BOTTOM" &
 
+# network traffic
+while true;
+do
+    update() {
+    sum=0
+    for arg; do
+        read -r i < "$arg"
+        sum=$(( sum + i ))
+    done
+    cache=${XDG_CACHE_HOME:-$HOME/.cache}/${1##*/}
+    [ -f "$cache" ] && read -r old < "$cache" || old=0
+    printf %d\\n "$sum" > "$cache"
+    printf %d\\n $(( sum - old ))
+    }
+
+    rx=$(update /sys/class/net/[ew]*/statistics/rx_bytes)
+    tx=$(update /sys/class/net/[ew]*/statistics/tx_bytes)
+
+    printf "N%4sB 祝%4sB\\n" $(numfmt --to=iec $rx) $(numfmt --to=iec $tx)
+    sleep 5
+done > "$PANEL_FIFO_BOTTOM" &
+
+# 
 # volume
 # initial volume
 lemonvol > "$PANEL_FIFO_BOTTOM" &

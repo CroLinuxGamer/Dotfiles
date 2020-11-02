@@ -9,6 +9,8 @@ killall picom
 sleep 0.1
 killlemonade
 sleep 0.1
+killall slideshow
+sleep 0.1
 
 # programs section
 floating.sh &
@@ -19,6 +21,6 @@ sxhkd -c ~/.config/sxhkd/sxhkdrc &
 sleep 0.1
 picom --experimental-backends &
 sleep 0.1
-feh --no-fehbg --bg-scale ~/Pictures/wallpaper.png &
+slideshow &
 sleep 0.1
 launchlemonade &

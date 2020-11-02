@@ -21,7 +21,7 @@ while read -r line ; do
             ;;
         W*)
             # wifi output
-            wifi="%{U$COLOR_UNDERLINE}%{+u}%{A:connman-gtk:}${line#?}%{A}%{-u}$PADDING"
+            wifi="%{U$COLOR_UNDERLINE}%{+u}${line#?}%{-u}$PADDING"
             ;;
         V*)
             # volume output
@@ -34,11 +34,15 @@ while read -r line ; do
         T*)
             # cpu temperature
             temp="%{U$COLOR_UNDERLINE}%{+u}${line#?}%{-u}$PADDING"
+            ;;
+        N*)
+            # network traffic
+            net="%{u$COLOR_UNDERLINE}%{+u}${line#?}%{-u}$PADDING"
     esac
 
     # applications menu
     menu="$PADDING%{F$COLOR_UNDERLINE}%{A:lemonmenu:}%{F-}%{A}"
     power="%{F$COLOR_UNDERLINE}%{A:lemonpower:}%{F-}%{A}$PADDING"
 
-    printf "%s\n" "%{l}${menu}%{r}${temp}${gpu}${wifi}${vol}${light}${batt}${date}${power}"
+    printf "%s\n" "%{l}${menu}%{r}${temp}${gpu}${wifi}${net}${vol}${light}${batt}${date}${power}"
 done
