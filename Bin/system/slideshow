@@ -1,0 +1,9 @@
+#!/bin/sh
+
+#simple script to set a random wallpaper every 5 mins
+
+while true;
+do
+    feh --bg-fill --recursive --randomize ~/Pictures/wallpapers
+    sleep 300
+done
