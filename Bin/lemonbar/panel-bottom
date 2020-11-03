@@ -93,7 +93,7 @@ do
     rx=$(update /sys/class/net/[ew]*/statistics/rx_bytes)
     tx=$(update /sys/class/net/[ew]*/statistics/tx_bytes)
 
-    printf "N%4sB 祝%4sB\\n" $(numfmt --to=iec $rx) $(numfmt --to=iec $tx)
+    printf "N%5sB 祝%5sB\\n" $(numfmt --to=iec $rx) $(numfmt --to=iec $tx)
     sleep 5
 done > "$PANEL_FIFO_BOTTOM" &
 

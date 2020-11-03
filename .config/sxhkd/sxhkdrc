@@ -62,10 +62,6 @@ super + F11
 
 #---System Control---#
 
-# Lock the screen
-super + shift + l
-    betterlockscreen -l dimblur
-
 # Audio Control
 {XF86AudioRaiseVolume,XF86AudioLowerVolume,XF86AudioMute}
     pamixer {-i 2, -d 2, --toggle}
@@ -92,12 +88,12 @@ super + {Return,b,g}
     {$TERMINAL,$BROWSER,lutris}
 
 # terminal programs
-super + {m,f,h,e,k,n,w,t,r}
-    $TERMINAL -e {ncmpcpp,lf,htop,$EDITOR,calcurse,newsboat,adl,trackma-curses,tuir}
+super + {m,f,h,e,n,w,t}
+    $TERMINAL -e {ncmpcpp,lf,htop,$EDITOR,newsboat,adl,trackma-curses}
 
 # some more programs
 super + shift + {f,s,n}
-    {pcmanfm,steam,connman-gtk}
+    {pcmanfm,steam,cmst}
 
 # run cli programs
 super + shift + {t,m,w}
