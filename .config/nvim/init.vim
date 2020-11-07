@@ -46,8 +46,8 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'vim-airline/vim-airline'
 " git status
 Plug 'tpope/vim-fugitive'
-" A Vim Plugin for Lively Previewing LaTeX PDF Output
-Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
+" nice startup screen
+Plug 'mhinz/vim-startify'
 call plug#end()
 
 " Center when entering insert mode
@@ -248,11 +248,8 @@ nnoremap <silent> <F2> :NERDTreeToggle<CR>
 let g:coc_global_extensions=[ 'coc-word', 'coc-utils', 'coc-tasks', 'coc-tabnine', 'coc-marketplace', 'coc-json', 'coc-clangd', 'coc-texlab', 'coc-git' ]
 
 " latex
-let g:livepreview_previewer = 'zathura'
-let g:livepreview_use_biber = 1
-let g:livepreview_cursorhold_recompile = 0
+au! BufNewFile,BufFilePre,BufRead *.tex set filetype=tex
 
-au! BufNewFile,BufFilePre,BufRead *.tex set filetype=latex
 " airline settings
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1

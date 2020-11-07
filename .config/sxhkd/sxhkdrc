@@ -120,8 +120,8 @@ super + ctrl + m
     dmenuman
 
 # dmenu light novels dir
-super + l
-    dmenulightnovels
+super + {l,s,v}
+    {dmenulightnovels,dmenuschool,dmenuvideos}
 
 # dmenu screenshot menu
 Print

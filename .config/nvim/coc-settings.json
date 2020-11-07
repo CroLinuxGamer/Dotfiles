@@ -253,6 +253,6 @@
     "latex.lint.onSave": true,
     "latex.build.onSave": true,
     "latex.lint.onChange": true,
-    "latex.build.executable": "latexmk",
+    "latex.build.executable": "pdflatex",
     "latex.forwardSearch.executable": "zathura"
 }

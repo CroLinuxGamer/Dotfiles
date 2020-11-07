@@ -9,7 +9,7 @@ case "$(printf "copy url\\nmpv\\nmpv (loop)\\nqueue download\\nqueue youtube-dl\
 	"mpv (loop)") mpv -quiet --loop "$1" ;;
 	"queue download") tsp curl -LO "$1" ;;
 	"queue youtube-dl") tsp youtube-dl --write-metadata -ic "$1";;
-	browser) setsid -f "$BROWSER" "$1";;
+	browser) "$BROWSER" "$1" > /dev/null;;
 	sxiv)  sxiv "$1";;
 	w3m) w3m "$1";;
 esac
