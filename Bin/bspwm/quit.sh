@@ -6,6 +6,6 @@ killall mpd
 killall /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 killlemonade
 killall floating.sh
-killall sxhkd
+killall dxhd
 killall picom
 bspc quit

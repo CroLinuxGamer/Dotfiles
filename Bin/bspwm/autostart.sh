@@ -3,7 +3,7 @@
 # kill section for case that you will reset bspwm
 killall floating.sh
 sleep 0.1
-killall sxhkd
+killall dxhd
 sleep 0.1
 killall picom
 sleep 0.1
@@ -17,7 +17,7 @@ floating.sh &
 sleep 0.1
 mouse_detect.sh &
 sleep 0.1
-sxhkd -c ~/.config/sxhkd/sxhkdrc &
+dxhd &
 sleep 0.1
 picom --experimental-backends &
 sleep 0.1

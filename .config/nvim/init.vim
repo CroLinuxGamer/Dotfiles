@@ -245,10 +245,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 nnoremap <silent> <F2> :NERDTreeToggle<CR>
 
 " coc settings
-let g:coc_global_extensions=[ 'coc-word', 'coc-utils', 'coc-tasks', 'coc-tabnine', 'coc-marketplace', 'coc-json', 'coc-clangd', 'coc-texlab', 'coc-git' ]
-
-" latex
-au! BufNewFile,BufFilePre,BufRead *.tex set filetype=tex
+let g:coc_global_extensions=[ 'coc-word', 'coc-utils', 'coc-tasks', 'coc-tabnine', 'coc-marketplace', 'coc-json', 'coc-clangd', 'coc-git' ]
 
 " airline settings
 let g:airline#extensions#tabline#enabled = 1

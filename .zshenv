@@ -8,7 +8,7 @@
 
 # Path export
 typeset -U PATH path
-path=("$HOME/Bin/bar" "$HOME/Bin/dmenu" "$HOME/.dotnet/tools" "$HOME/Bin/go/bin" "$HOME/Bin/lemonbar" "$HOME/Bin/system" "$HOME/Bin/bspwm" "$HOME/Bin/lf" "$HOME/.local/bin" "$path[@]")
+path=("$HOME/Bin/bar" "$HOME/Bin/games" "$HOME/Bin/dmenu" "$HOME/.dotnet/tools" "$HOME/Bin/go/bin" "$HOME/Bin/lemonbar" "$HOME/Bin/system" "$HOME/Bin/bspwm" "$HOME/Bin/lf" "$HOME/.local/bin" "$path[@]")
 export PATH
 
 # Programs export

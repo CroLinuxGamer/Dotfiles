@@ -241,18 +241,5 @@
     // misc
     "marketplace.npmsio": false,
     "languageserver": {},
-    "npm.binPath": "npm",
-
-    // latex
-    "texlab.trace.server": "off",
-    "latex.build.args": [
-        "-pdf",
-        "-interaction=nonstopmode",
-        "-synctex=1"
-    ],
-    "latex.lint.onSave": true,
-    "latex.build.onSave": true,
-    "latex.lint.onChange": true,
-    "latex.build.executable": "pdflatex",
-    "latex.forwardSearch.executable": "zathura"
+    "npm.binPath": "npm"
 }
