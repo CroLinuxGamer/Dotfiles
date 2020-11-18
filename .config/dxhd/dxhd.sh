@@ -20,7 +20,7 @@ rofi -show power-menu -modi power-menu:power-menu -show-icons -font "hack 16" -l
 quit.sh
 
 ## Restart bspwm
-#super + ctrl + r
+#super + shift + r
 bspc wm -r
 
 ## Close Window
@@ -47,10 +47,6 @@ bspc node focused.tiled -t floating || bspc node focused.floating -t tiled
 #super + shift + {Left,Down,Up,Right}
 bspc node -s {west,south,north,east}
 
-## Rotate all windows {counter-}clockwise by 90 degrees.
-#super + {_,shift + }r
-bspc node @/ --rotate {90,-90}
-
 ## Focus on desktop
 #super + {1-9}
 bspc desktop -f {1-9}
@@ -60,8 +56,8 @@ bspc desktop -f {1-9}
 bspc {desktop,node} -f last
 
 ## Cycle trought windows/workspaces
-#{super,alt} + {_,shift +} space
-bspc {desktop,node} -f {next,prev}.local
+#{super,alt} + space
+bspc {desktop,node} -f next.local
 
 ## Fullscreen toggle
 #super + F11
