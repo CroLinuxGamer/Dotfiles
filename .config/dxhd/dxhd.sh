@@ -88,8 +88,8 @@ mpc {toggle,stop,prev,next} && lemonsong-status > $PANEL_FIFO_TOP
 rofi -modi drun -show drun -show-icons -display-drun "" -font "hack 14" -lines 12 -width 25
 
 ## run my gui programs
-#super + {Return,b}
-{$TERMINAL,$BROWSER}
+#super + {Return,b,g}
+{$TERMINAL,$BROWSER,lutris}
 
 ## terminal programs
 #super + {m,f,h,e,n,w,t}
@@ -123,7 +123,7 @@ kbd-light-toogle
 #super + ctrl + m
 dmenuman
 
-## dmenu light novels dir
+## dmenu list directories
 #super + {l,s,v}
 {dmenulightnovels,dmenuschool,dmenuvideos}
 

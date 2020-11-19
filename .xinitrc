@@ -1,4 +1,3 @@
-/usr/bin/prime-offload
 transmission-daemon &
 dunst  &
 mpd &

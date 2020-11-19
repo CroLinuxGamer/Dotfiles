@@ -32,6 +32,7 @@ fakeroot
 feh
 file
 findutils
+flare-game
 flex
 foliate
 frece
@@ -68,6 +69,7 @@ i2c-tools
 itch
 iw
 iwd
+katawa-shoujo-bin
 kid3-qt
 laptop-mode-tools
 legendary
@@ -151,7 +153,6 @@ olive-community-effects-git
 olive-git
 onlyoffice-bin
 openarena
-optimus-manager-git
 os-prober
 otf-ipaexfont
 otf-ipafont
@@ -179,6 +180,7 @@ python-cairo
 python-pidfile
 python-pip
 python-pulsectl
+python-py3nvml
 python-pyqt5
 python-urwid
 python2-pip
@@ -204,6 +206,7 @@ texinfo
 trackma-git
 transmission-cli
 tremc-git
+tremulous
 ttf-charis-sil
 ttf-dejavu
 ttf-droid

@@ -48,9 +48,6 @@ done > "$PANEL_FIFO_BOTTOM" &
 # backlight
 lemonlight > "$PANEL_FIFO_BOTTOM" &
 
-# gpu used
-lemongpu > "$PANEL_FIFO_BOTTOM" &
-
 # cpu temp
 while true;
 do
