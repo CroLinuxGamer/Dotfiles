@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# a quick scripts that checks my video folder and lists them
+
+find ~/Videos | dmenu -l 30 | xargs -I {} xdg-open "{}"

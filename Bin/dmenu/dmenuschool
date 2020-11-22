@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# a quick scripts that list all my school related files
+
+find ~/Documents/School | dmenu -l 30 | xargs -I {} xdg-open "{}"
