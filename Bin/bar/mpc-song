@@ -1,7 +1,0 @@
-#!/bin/sh
-while true
-do
-    song=$(mpc current)
-    echo "$song"
-    mpc idle player > /dev/null 2>&1
-done
