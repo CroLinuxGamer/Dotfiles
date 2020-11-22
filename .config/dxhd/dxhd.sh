@@ -71,7 +71,7 @@ pamixer {-i 2, -d 2, --toggle}
 
 ## Brightness
 #{XF86MonBrightnessUp,XF86MonBrightnessDown}
-light {-A 5, -U 5} && lemonlight > $PANEL_FIFO_BOTTOM
+light {-A 10, -U 10} && lemonlight > $PANEL_FIFO_BOTTOM
 
 ## System look control
 #super + {ctrl,shift} + F12

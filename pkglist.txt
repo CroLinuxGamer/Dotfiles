@@ -1,8 +1,11 @@
+0ad
 acpid
 aerc
 alacritty
 alsa-oss
 alsa-utils
+amd-ucode
+android-tools
 atool
 audacity
 autoconf
@@ -62,6 +65,7 @@ gvfs-mtp
 gvfs-nfs
 gvfs-smb
 gzip
+handbrake
 highlight
 htop
 hugo
@@ -70,6 +74,7 @@ itch
 iw
 iwd
 katawa-shoujo-bin
+kdenlive
 kid3-qt
 laptop-mode-tools
 legendary
@@ -149,11 +154,11 @@ nvidia-prime
 nvidia-settings
 obs-studio
 ocl-icd
-olive-community-effects-git
-olive-git
 onlyoffice-bin
 openarena
+optimus-manager-git
 os-prober
+osu-lazer
 otf-ipaexfont
 otf-ipafont
 otf-ipamjfont
@@ -203,6 +208,7 @@ sxiv
 sysstat
 teams
 texinfo
+tlauncher
 trackma-git
 transmission-cli
 tremc-git
