@@ -1,0 +1,3 @@
+#!/bin/sh
+
+rofi -modi drun -show drun -show-icons -location 7 -yoffset -26 -xoffset 5 -lines 12 -width 25 -display-drun "" -font "hack 14"

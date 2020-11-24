@@ -25,6 +25,7 @@ cronie
 dash
 dashbinsh
 dkms
+downgrade
 dunst
 dxhd-git
 efibootmgr
@@ -182,6 +183,7 @@ pulseaudio
 pulseaudio-alsa
 pulsemixer
 python-cairo
+python-pdftotext
 python-pidfile
 python-pip
 python-pulsectl

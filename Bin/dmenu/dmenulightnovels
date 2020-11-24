@@ -1,2 +1,0 @@
-#!/bin/sh
-find ~/Lightnovels | dmenu -l 30 | xargs -I {} xdg-open "{}"

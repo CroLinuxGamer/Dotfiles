@@ -1,5 +1,0 @@
-#!/bin/sh
-
-lightness=$(light -G | sed 's/\.[0-9]*//')
-
-printf "%s\n" "L $lightness%"

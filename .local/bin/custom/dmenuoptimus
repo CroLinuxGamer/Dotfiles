@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# It lets you
+# choose the kind of screenshot to take, including copying the image or even
+# highlighting an area to copy. scrotcucks on suicidewatch right now.
+
+case "$(printf "integrated\\nhybrid\\nnvidia" | dmenu -l 3 -p "Choose gpu mode?")" in
+	integrated) optimus-auto integrated ;;
+	hybrid) optimus-auto hybrid ;;
+	nvidia) optimus-auto nvidia ;;
+esac

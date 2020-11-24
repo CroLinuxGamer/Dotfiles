@@ -1,0 +1,12 @@
+#!/bin/sh
+
+gpu=$(optimus-manager --print-mode | cut -c20-)
+
+if [ "$gpu" = "integrated" ]; then # If intergrated gpu is used
+    echo "GiGPU"
+elif [ "$gpu" = "hybrid" ]; then
+    echo "GHYBRID"
+else
+    echo "GdGPU"
+fi
+

@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# feed the script with your videos folder path
+# and open video with your preferred video player
+
+find "$1" | dmenu -l 30 | xargs -I {} xdg-open "{}"

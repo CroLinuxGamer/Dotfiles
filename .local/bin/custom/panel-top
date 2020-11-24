@@ -1,0 +1,73 @@
+#!/bin/sh
+
+PANEL_FIFO=/tmp/panel-top-fifo
+PANEL_HEIGHT=20
+
+PANEL_FONT_FAMILY="JetBrains Mono Medium"
+ICON_FONT2="IPAGothic"
+ICON_FONT="Hack Nerd Font Mono"
+
+# setup
+if [ $(pgrep -cx panel-top) -gt 1 ] ; then
+  printf "%s\n" "The panel is already running." >&2 
+  exit 1
+fi
+
+trap 'trap - TERM; kill 0' INT TERM QUIT EXIT
+
+[ -e "$PANEL_FIFO" ] && rm "$PANEL_FIFO"
+mkfifo "$PANEL_FIFO"
+
+bspc subscribe report > "$PANEL_FIFO" &
+# find out how to make this scroll
+xtitle -sf 'T%s\n\n' -t 30 > "$PANEL_FIFO" &
+
+# ram
+while true;
+do
+    mem=$(free -h --mega | awk '/^Mem:/ {print $3 "/" $2}')
+
+    printf  "%s\n" "R $mem"
+    sleep 9
+done > "$PANEL_FIFO"  &
+
+# cpu
+while true;
+do
+    lemoncpu > "$PANEL_FIFO"
+    sleep 11
+done > "$PANEL_FIFO" &
+
+# disk usage
+while true;
+do
+    rootsize=$(df -hT / | grep 'nvme0n1p9' | awk '{print $3}' | sed 's/G//')
+    rootused=$(df -hT / | grep 'nvme0n1p9' | awk '{print $4}' | sed 's/G//')
+
+    homesize=$(df -hT /home | grep 'nvme0n1p10' | awk '{print $3}' | sed 's/G//')
+    homeused=$(df -hT /home | grep 'nvme0n1p10' | awk '{print $4}' | sed 's/G//')
+
+    printf  "%s\n"  "D : /=$rootused/$rootsize GB || /home=$homeused/$homesize GB"
+    sleep 1h
+done > "$PANEL_FIFO" &
+
+# mpc song status
+lemonsong-status > "$PANEL_FIFO" &
+
+# mpc playing song
+while true
+do
+    song=$(mpc current)
+    printf "%s\n" "M $song" > "$PANEL_FIFO"
+    mpc idle player > /dev/null 2>&1
+done &
+
+. panel_colors
+
+cat "$PANEL_FIFO" | panel_bar-top | lemonbar -g x$PANEL_HEIGHT -f "$PANEL_FONT_FAMILY"-8 -f "$ICON_FONT"-9 -f "$ICON_FONT2"-7 -F "$COLOR_FOREGROUND" -B "$COLOR_BACKGROUND" -u 2 | bash &
+
+sleep 1
+xdo above -t $(xdo id -n root) $(xdo id -n lemonbar)
+
+wait
+

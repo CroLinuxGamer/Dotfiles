@@ -119,13 +119,13 @@ kbd-light-toogle
 #super + {shift,ctrl} + u
 {dmenumount,dmenuumount}
 
-## dmenu pdf mans
-#super + ctrl + m
-dmenuman
-
 ## dmenu list directories
 #super + {l,s,v}
-{dmenulightnovels,dmenuschool,dmenuvideos}
+{dmenulightnovels ~/Lightnovels,dmenuschool ~/Documents/School,dmenuvideos ~/Videos}
+
+## dmenu optimus gpu mode change
+#super + shift + g
+dmenuoptimus
 
 ## dmenu screenshot menu
 #Print
