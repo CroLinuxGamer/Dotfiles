@@ -1,11 +1,11 @@
 #!/bin/sh
 
 PANEL_FIFO=/tmp/panel-top-fifo
-PANEL_HEIGHT=20
+PANEL_HEIGHT=18
 
 PANEL_FONT_FAMILY="JetBrains Mono Medium"
 ICON_FONT2="IPAGothic"
-ICON_FONT="Hack Nerd Font Mono"
+ICON_FONT="SauceCodePro Nerd Font Mono"
 
 # setup
 if [ $(pgrep -cx panel-top) -gt 1 ] ; then
@@ -26,7 +26,7 @@ xtitle -sf 'X%s\n\n' -t 30 > "$PANEL_FIFO" &
 while true;
 do
     echo "D$(date '+%d.%m.%Y %H:%M')"
-    sleep 1
+    sleep 10
 done > "$PANEL_FIFO" &
 
 # battery
@@ -48,7 +48,7 @@ do
 
         echo "B$symbol $percent%"
     done
-    sleep 1
+    sleep 10
 done > "$PANEL_FIFO" &
 
 # backlight
@@ -78,7 +78,7 @@ do
             echo "N睊   "
         fi
     done
-    sleep 10
+    sleep 5
 done > "$PANEL_FIFO" &
 
 # volume
@@ -93,14 +93,14 @@ do
     mem=$(free -h --mega | awk '/^Mem:/ {print $3 "/" $2}')
 
     printf  "%s\n" "R $mem"
-    sleep 9
+    sleep 10
 done > "$PANEL_FIFO"  &
 
 # cpu
 while true;
 do
     lemoncpu > "$PANEL_FIFO"
-    sleep 11
+    sleep 5
 done > "$PANEL_FIFO" &
 
 # mpc song status
@@ -116,7 +116,7 @@ done &
 
 . panel_colors
 
-cat "$PANEL_FIFO" | panel_bar-top | lemonbar -g x$PANEL_HEIGHT -f "$PANEL_FONT_FAMILY"-8 -f "$ICON_FONT"-9 -f "$ICON_FONT2"-7 -F "$COLOR_FOREGROUND" -B "$COLOR_BACKGROUND" -u 2 | bash &
+cat "$PANEL_FIFO" | panel_bar-top | lemonbar -g x$PANEL_HEIGHT -o -1 -f "$PANEL_FONT_FAMILY"-8 -f "$ICON_FONT"-9 -f "$ICON_FONT2"-7 -F "$COLOR_FOREGROUND" -B "$COLOR_BACKGROUND" -u  2 | sh &
 
 sleep 1
 xdo above -t $(xdo id -n root) $(xdo id -n lemonbar)

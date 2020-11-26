@@ -18,11 +18,11 @@ while read -r line ; do
             ;;
         S*)
             # mpc song status
-            state="%{F$COLOR_UNDERLINE}${line#?}%{F-}$PADDING"
+            state="%{F$COLOR_OCCUPIED_UNDERLINE}${line#?}%{F-}$PADDING"
             ;;
         M*)
             # mpc current song
-            song="%{F$COLOR_UNDERLINE}${line#?}%{F-}$PADDING"
+            song="%{F$COLOR_OCCUPIED_UNDERLINE}${line#?}%{F-}$PADDING"
             ;;
         X*)
             # xtitle output
@@ -30,7 +30,7 @@ while read -r line ; do
             ;;
         D*)
             #time and date output
-            date="%{U$COLOR_UNDERLINE}%{+u}${line#?}%{-u}$PADDING"
+            date="%{U$COLOR_UNDERLINE}%{+u}${line#?}%{-u}"
             ;;
         B*)
             # battery output
