@@ -16,10 +16,6 @@ while read -r line ; do
             #cpu output
             cpu="%{U$COLOR_UNDERLINE}%{+u}%{A:lemoncpu-notify:}${line#?}%{A}%{-u}$PADDING"
             ;;
-        D*)
-            # disk usage output
-            disk="%{U$COLOR_UNDERLINE}%{+u}${line#?}%{-u}$PADDING"
-            ;;
         S*)
             # mpc song status
             state="%{F$COLOR_UNDERLINE}${line#?}%{F-}$PADDING"
@@ -28,9 +24,37 @@ while read -r line ; do
             # mpc current song
             song="%{F$COLOR_UNDERLINE}${line#?}%{F-}$PADDING"
             ;;
-        T*)
+        X*)
             # xtitle output
             title="$PADDING%{F$COLOR_TITLE}${line#?}%{F-}"
+            ;;
+        D*)
+            #time and date output
+            date="%{U$COLOR_UNDERLINE}%{+u}${line#?}%{-u}$PADDING"
+            ;;
+        B*)
+            # battery output
+            batt="%{U$COLOR_UNDERLINE}%{+u}${line#?}%{-u}$PADDING"
+            ;;
+        L*)
+            # backlight output
+            light="%{U$COLOR_UNDERLINE}%{+u}${line#?}%{-u}$PADDING"
+            ;;
+        G*)
+            # gpu mode
+            gpu="%{U$COLOR_UNDERLINE}%{+u}${line#?}%{-u}$PADDING"
+            ;;
+        T*)
+            # cpu temperature
+            temp="%{U$COLOR_UNDERLINE}%{+u}${line#?}%{-u}$PADDING"
+            ;;
+        N*)
+            # wifi output
+            wifi="%{U$COLOR_UNDERLINE}%{+u}${line#?}%{-u}$PADDING"
+            ;;
+        V*)
+            # volume output
+            vol="%{U$COLOR_UNDERLINE}%{+u}${line#?}%{-u}$PADDING"
             ;;
         W*)
           # bspwm internal state
@@ -82,5 +106,5 @@ while read -r line ; do
             done
             ;;
         esac
-        printf "%s\n" "%{l}${wm_infos}${SEP}${title}%{c}${song}${state}%{r}${updates}${cpu}${ram}${disk}"
+        printf "%s\n" "%{l}${wm_infos}${SEP}${title}%{c}${song}${state}%{r}${gpu}${temp}${cpu}${ram}${wifi}${vol}${light}${batt}${date}"
 done

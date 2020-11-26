@@ -4,10 +4,5 @@ pkill lemonbar
 sleep 0.1
 pkill panel-top
 sleep 0.1
-pkill panel-bottom
-sleep 0.1
 
-panel-top &
-sleep 0.1
-panel-bottom
-sleep 0.1
+panel-top

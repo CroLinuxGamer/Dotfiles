@@ -13,7 +13,7 @@
 
 ## System turn off
 #super + shift + e
-rofi -show power-menu -modi power-menu:power-menu -show-icons -font "hack 16" -lines 2 -width 12%
+dmenupowermenu
 
 ## Quit bsowm
 #super + ctrl + e
@@ -23,13 +23,9 @@ quit.sh
 #super + shift + r
 bspc wm -r
 
-## Close Window
+## Close current window
 #super + shift + q
 xdo close
-
-## Kill Window
-#ctrl + alt + Escape
-xkill
 
 ## Focus on window in direction
 #super + {Left,Down,Up,Right}
@@ -71,11 +67,7 @@ pamixer {-i 2, -d 2, --toggle}
 
 ## Brightness
 #{XF86MonBrightnessUp,XF86MonBrightnessDown}
-light {-A 10, -U 10} && lemonlight > $PANEL_FIFO_BOTTOM
-
-## System look control
-#super + {ctrl,shift} + F12
-{cluter.sh ,clean.sh}
+light {-A 10, -U 10} && lemonlight > $PANEL_FIFO_TOP
 
 ## mpd control keybindings
 #{XF86AudioPlay,XF86AudioStop,XF86AudioPrev,XF86AudioNext}

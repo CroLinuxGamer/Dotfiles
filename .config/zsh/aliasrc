@@ -42,23 +42,15 @@ alias picomconf='${=EDITOR} ~/.config/picom/picom.conf'
 
 # Program alias
 alias grep='grep --color=auto'
-alias tsm='transmission-remote'
 alias vi='nvim'
 alias sublime-text='/opt/sublime_text/sublime_text'
 
 
 # Function aliases
-alias rm='rm -v'
-alias rmdir='rmdir -v'
-alias rmi='rm -i -v'
-alias rmdiri='rmdir -i -v'
-alias rmd='rm -r -v'
-alias cpi='cp -i'
-alias mvi='mv -i'
 alias free='free -h'
-alias update-mirrors='sudo pacman-mirrors --fasttrack && sudo pacman -Syyu'
 alias update-system='sudo pacman -Sy && sudo powerpill -Su && yay -Sua'
 alias yta='youtube-dl -x -f bestaudio --audio-quality 0 --audio-format vorbis'
+alias tdown='aria2c --follow-torrent=mem'
 
 # git dotfiles aliases
 alias dot='/usr/bin/git --git-dir=$HOME/Repos/Dotfiles/ --work-tree=$HOME'
@@ -69,4 +61,3 @@ alias dot-p='/usr/bin/git --git-dir=$HOME/Repos/Dotfiles/ --work-tree=$HOME push
 alias dot-pl='/usr/bin/git --git-dir=$HOME/Repos/Dotfiles/ --work-tree=$HOME pull'
 alias dot-rm='/usr/bin/git --git-dir=$HOME/Repos/Dotfiles/ --work-tree=$HOME rm'
 alias dot-rs='/usr/bin/git --git-dir=$HOME/Repos/Dotfiles/ --work-tree=$HOME restore'
-alias dot-al="/usr/bin/git --git-dir=$HOME/Repos/Dotfiles/ --work-tree=$HOME add '*'"

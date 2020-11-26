@@ -25,6 +25,7 @@ cronie
 dash
 dashbinsh
 dkms
+dmenu-clg-git
 downgrade
 dunst
 dxhd-git
@@ -173,6 +174,7 @@ pcmanfm
 pfetch-git
 picom-tryone-git
 pkgconf
+polkit-dumb-agent-git
 polkit-gnome
 poppler
 poppler-data
@@ -212,8 +214,6 @@ teams
 texinfo
 tlauncher
 trackma-git
-transmission-cli
-tremc-git
 tremulous
 ttf-charis-sil
 ttf-dejavu
@@ -222,6 +222,7 @@ ttf-inconsolata
 ttf-jetbrains-mono
 ttf-symbola
 ufw
+unclutter
 unrar
 unzip
 update-grub
@@ -253,7 +254,6 @@ xorg-server
 xorg-xev
 xorg-xinit
 xorg-xinput
-xorg-xkill
 xorg-xsetroot
 xsel
 xtitle-git

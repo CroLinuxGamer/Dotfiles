@@ -21,6 +21,9 @@ bind-key N prev-unread
 bind-key D pb-download
 bind-key U show-urls
 bind-key x pb-delete
+auto-reload yes
+auto-reload yes
+reload-threads 100
 
 browser "dmenulinkhandler %u"
 
