@@ -7,7 +7,7 @@
                        # |___/
 
 export QT_QPA_PLATFORMTHEME="qt5ct"
-export MANGOHUD=1
+# export MANGOHUD=1
 # enable optimus
 sudo /usr/bin/prime-switch
 # startx

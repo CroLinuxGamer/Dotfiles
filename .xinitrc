@@ -1,4 +1,4 @@
-/usr/bin/prime-offload
+# /usr/bin/prime-offload
 dunst  &
 mpd &
 unclutter --timeout 3 &

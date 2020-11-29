@@ -88,12 +88,12 @@ rofi -modi drun -show drun -show-icons -display-drun "" -font "hack 14" -lines 1
 $TERMINAL -e {ncmpcpp,lf,htop,$EDITOR,newsboat,adl,trackma-curses}
 
 ## some more programs
-#super + shift + {f,n}
-{pcmanfm,connman-gtk}
+#super + shift + {f}
+{pcmanfm}
 
 ## run cli programs
-#super + shift + {t,m,w}
-$TERMINAL -e {tremc,aerc,adl -d}
+#super + shift + {t,m,w,n}
+$TERMINAL -e {tremc,aerc,adl -d,nmtui}
 
 ## system programs
 #super + ctrl + f
@@ -114,10 +114,6 @@ kbd-light-toogle
 ## dmenu list directories
 #super + {l,s,v}
 {dmenulightnovels ~/Lightnovels,dmenuschool ~/Documents/School,dmenuvideos ~/Videos}
-
-## dmenu optimus gpu mode change
-#super + shift + g
-dmenuoptimus
 
 ## dmenu screenshot menu
 #Print

@@ -1,4 +1,0 @@
-#!/bin/sh
-
-optimus-manager --switch "$1" > /dev/null
-quit.sh > /dev/null
