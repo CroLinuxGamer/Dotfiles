@@ -1,4 +1,4 @@
-# /usr/bin/prime-offload
+xrandr --output eDP --set TearFree on
 dunst  &
 mpd &
 unclutter --timeout 3 &
