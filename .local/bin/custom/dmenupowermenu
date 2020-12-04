@@ -1,0 +1,6 @@
+#!/bin/sh
+
+case "$(printf "shutdown\\nreboot" | dmenu -l 2 -p "Open link with what program?")" in
+	"shutdown") loginctl shutdown ;;
+	"reboot") loginctl reboot ;;
+esac
