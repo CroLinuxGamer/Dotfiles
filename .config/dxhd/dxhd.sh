@@ -35,6 +35,10 @@ bspc node -f {west,south,north,east}
 #super + shift + {1-9}
 bspc node -d {1-9} 
 
+## Send window to desktop and swap to desktop
+#super + control + {1-9}
+bspwm_send {1-9}
+
 ## Toggle floating on and off
 #super + shift + space
 bspc node focused.tiled -t floating || bspc node focused.floating -t tiled
@@ -45,7 +49,7 @@ bspc node -s {west,south,north,east}
 
 ## Focus on desktop
 #super + {1-9}
-bspc desktop -f {1-9}
+bspwm_desktop {1-9}
 
 ## Last used workspace/window
 #{super,alt} + Tab
@@ -84,8 +88,8 @@ rofi -modi drun -show drun -show-icons -display-drun "" -font "hack 14" -lines 1
 {$TERMINAL,$BROWSER}
 
 ## terminal programs
-#super + {m,f,h,e,n,w,t}
-$TERMINAL -e {ncmpcpp,lf,htop,$EDITOR,newsboat,adl,trackma-curses}
+#super + {m,f,h,n,w,t}
+$TERMINAL -e {ncmpcpp,lf,htop,newsboat,adl,trackma-curses}
 
 ## some more programs
 #super + shift + {f}
