@@ -80,8 +80,8 @@ mpc {toggle,stop,prev,next} && lemonsong-status > $PANEL_FIFO_TOP
 rofi -modi drun -show drun -show-icons -display-drun "" -font "hack 14" -lines 12 -width 25
 
 ## run my gui programs
-#super + {Return,b,g}
-{$TERMINAL,$BROWSER,lutris}
+#super + {Return,b}
+{$TERMINAL,$BROWSER}
 
 ## terminal programs
 #super + {m,f,h,e,n,w,t}
@@ -92,8 +92,8 @@ $TERMINAL -e {ncmpcpp,lf,htop,$EDITOR,newsboat,adl,trackma-curses}
 {pcmanfm}
 
 ## run cli programs
-#super + shift + {t,m,w,n}
-$TERMINAL -e {tremc,aerc,adl -d,nmtui}
+#super + shift + {m,w,n}
+$TERMINAL -e {aerc,adl -d,nmtui}
 
 ## system programs
 #super + ctrl + f
@@ -112,8 +112,8 @@ kbd-light-toogle
 {dmenumount,dmenuumount}
 
 ## dmenu list directories
-#super + {l,s,v}
-{dmenulightnovels ~/Lightnovels,dmenuschool ~/Documents/School,dmenuvideos ~/Videos}
+#super + {l}
+{dmenulightnovels ~/Lightnovels}
 
 ## dmenu screenshot menu
 #Print
