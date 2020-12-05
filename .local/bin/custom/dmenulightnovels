@@ -1,7 +1,0 @@
-#!/bin/sh
-
-# feed the script with your lightnovels folder path
-# and it will list all your lightnovels and open them
-# in your prefered program with xdg-open
-
-find "$1" | dmenu -l 30 | xargs -I {} xdg-open "{}"

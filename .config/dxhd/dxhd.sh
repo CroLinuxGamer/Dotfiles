@@ -117,7 +117,7 @@ kbd-light-toogle
 
 ## dmenu list directories
 #super + {l}
-{dmenulightnovels ~/Lightnovels}
+{dmenufilehandler ~/Lightnovels}
 
 ## dmenu screenshot menu
 #Print

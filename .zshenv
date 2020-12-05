@@ -48,6 +48,17 @@ export CCACHE_DIR="${XDG_CACHE_HOME:-$HOME/.cache}/ccache"
 # wine settings
 export WINEPREFIX="$HOME/.local/share/wineprefixes/default"
 
+# bspwm section
+export BSPWM_D1="1"
+export BSPWM_D2="2"
+export BSPWM_D3="3"
+export BSPWM_D4="4"
+export BSPWM_D5="5"
+export BSPWM_D6="6"
+export BSPWM_D7="7"
+export BSPWM_D8="8"
+export BSPWM_D9="9"
+
 # lf icons
 export LF_ICONS="\
 di=:\
