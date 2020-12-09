@@ -8,7 +8,7 @@
 
 # Path export
 typeset -U PATH path
-path=("$HOME/.dotnet/tools" "$HOME/.local/bin" "$HOME/.local/bin/custom" "$path[@]")
+path=("$HOME/.dotnet/tools" "$HOME/.dotnet/tools" "$HOME/.local/bin" "$HOME/.local/bin/custom" "$path[@]")
 export PATH
 
 # Programs export
@@ -44,6 +44,7 @@ export CARGO_HOME="${XDG_DATA_HOME:-$HOME/.local/share}/cargo"
 export GOPATH="${XDG_DATA_HOME:-$HOME/.local/share}/go"
 export HISTFILE="${XDG_DATA_HOME:-$HOME/.local/share}/history"
 export CCACHE_DIR="${XDG_CACHE_HOME:-$HOME/.cache}/ccache"
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
 # wine settings
 export WINEPREFIX="$HOME/.local/share/wineprefixes/default"

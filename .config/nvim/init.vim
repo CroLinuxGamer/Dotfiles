@@ -46,6 +46,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-fugitive'
 " nice startup screen
 Plug 'mhinz/vim-startify'
+" pulse after search
+Plug 'inside/vim-search-pulse'
 call plug#end()
 
 " Center when entering insert mode
@@ -243,10 +245,29 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 nnoremap <silent> <F2> :NERDTreeToggle<CR>
 
 " coc settings
-let g:coc_global_extensions=[ 'coc-word', 'coc-tasks', 'coc-tabnine', 'coc-marketplace', 'coc-json', 'coc-clangd', 'coc-git', 'coc-html' ]
+let g:coc_global_extensions=[ 'coc-word', 'coc-tasks', 'coc-tabnine', 'coc-marketplace', 'coc-json', 'coc-clangd', 'coc-git', 'coc-html', 'coc-omnisharp', 'coc-sh' ]
 
 " airline settings
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline_theme='nord'
+
+" incsearch and vim search pulse
+let g:vim_search_pulse_disable_auto_mappings = 1
+let g:incsearch#auto_nohlsearch = 1
+map / <Plug>(incsearch-forward)
+map ? <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)
+
+" Next or previous match is followed by a Pulse
+map n <Plug>(incsearch-nohl-n)<Plug>Pulse
+map N <Plug>(incsearch-nohl-N)<Plug>Pulse
+map * <Plug>(incsearch-nohl-*)<Plug>Pulse
+map # <Plug>(incsearch-nohl-#)<Plug>Pulse
+map g* <Plug>(incsearch-nohl-g*)<Plug>Pulse
+map g# <Plug>(incsearch-nohl-g#)<Plug>Pulse
+
+" Pulses the first match after hitting the enter keyan
+autocmd! User IncSearchExecute
+autocmd User IncSearchExecute :call search_pulse#Pulse()
 
