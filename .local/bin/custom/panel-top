@@ -25,8 +25,8 @@ xtitle -sf 'X%s\n\n' -t 30 > "$PANEL_FIFO" &
 # time and date
 while true;
 do
-    echo "D$(date '+%d.%m.%Y %H:%M')"
-    sleep 10
+    echo "D$(date '+%d.%m.%Y %H:%M:%S')"
+    sleep 1
 done > "$PANEL_FIFO" &
 
 # battery

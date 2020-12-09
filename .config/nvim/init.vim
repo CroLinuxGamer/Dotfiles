@@ -38,8 +38,6 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'ryanoasis/vim-devicons'
 " syntax checker
 Plug 'dense-analysis/ale'
-" closing html tags
-Plug 'alvan/vim-closetag'
 " nord theme
 Plug 'arcticicestudio/nord-vim'
 " airline
@@ -245,7 +243,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 nnoremap <silent> <F2> :NERDTreeToggle<CR>
 
 " coc settings
-let g:coc_global_extensions=[ 'coc-word', 'coc-utils', 'coc-tasks', 'coc-tabnine', 'coc-marketplace', 'coc-json', 'coc-clangd', 'coc-git' ]
+let g:coc_global_extensions=[ 'coc-word', 'coc-tasks', 'coc-tabnine', 'coc-marketplace', 'coc-json', 'coc-clangd', 'coc-git', 'coc-html' ]
 
 " airline settings
 let g:airline#extensions#tabline#enabled = 1

@@ -241,5 +241,77 @@
     // misc
     "marketplace.npmsio": false,
     "languageserver": {},
-    "npm.binPath": "npm"
+    "npm.binPath": "npm",
+
+    // html
+    "html.filetypes": [
+        "html",
+        "handlebars",
+        "htmldjango",
+        "blade"
+    ],
+    "html.execArgv": [],
+    "html.trace.server": "off",
+    "html.enable": true,
+    "html.format.enable": true,
+    "html.suggest.ionic": true,
+    "html.suggest.html5": true,
+    "html.validate.html": true,
+    "html.format.wrapAttributes": "auto",
+    "html.validate.styles": true,
+    "html.suggest.angular1": true,
+    "html.validate.scripts": true,
+    "html.autoClosingTags": true,
+    "html.experimental.custom.tags": [],
+    "html.format.unformatted": "wbr",
+    "html.format.wrapLineLength": 120,
+    "html.format.endWithNewline": false,
+    "html.format.indentInnerHtml": false,
+    "html.format.preserveNewLines": true,
+    "html.format.indentHandlebars": false,
+    "html.experimental.custom.attributes": [],
+    "html.format.maxPreserveNewLines": null,
+    "html.format.extraLiners": "head, body, /html",
+    "html.format.contentUnformatted": "pre,code,textarea",
+
+    // git
+    "git.gitlab.hosts": [
+        "gitlab.com"
+    ],
+    "git.command": "git",
+    "git.signOffset": 99,
+    "git.diffRevision": "",
+    "git.issueFormat": "#%i",
+    "git.enableGutters": true,
+    "git.pushArguments": null,
+    "git.addedSign.text": "+",
+    "git.remoteName": "origin",
+    "git.branchCharacter": "",
+    "git.stagedDecorator": "●",
+    "git.changedDecorator": "*",
+    "git.realtimeGutters": true,
+    "git.changedSign.text": "~",
+    "git.removedSign.text": "_",
+    "git.semanticCommit.filetypes": [
+        "gitcommit",
+        "gina-commit"
+    ],
+    "git.blameUseRealTime": false,
+    "git.untrackedDecorator": "…",
+    "git.conflictedDecorator": "x",
+    "git.enableGlobalStatus": true,
+    "git.topRemovedSign.text": "‾",
+    "git.virtualTextPrefix": "     ",
+    "git.semanticCommit.scope": true,
+    "git.addGBlameToBufferVar": false,
+    "git.changeRemovedSign.text": "≃",
+    "git.showCommitInFloating": false,
+    "git.addedSign.hlGroup": "DiffAdd",
+    "git.addGBlameToVirtualText": false,
+    "git.splitWindowCommand": "above sp",
+    "git.changedSign.hlGroup": "DiffChange",
+    "git.removedSign.hlGroup": "DiffDelete",
+    "git.topRemovedSign.hlGroup": "DiffDelete",
+    "git.changeRemovedSign.hlGroup": "DiffChange"
+
 }
