@@ -7,6 +7,8 @@
                        # |___/
 
 export QT_QPA_PLATFORMTHEME="qt5ct"
-# startx
-[[ $(fgconsole 2>/dev/null) == 1 ]] && exec startx -- vt1 &> /dev/null
+# bspwm tty1
+if [[ "$(tty)" = "/dev/tty1" ]]; then
+    pgrep bspwm || startx "$XDG_CONFIG_HOME/xinit/startbspwmx"
+fi
 
