@@ -1,6 +1,6 @@
 #!/bin/sh
 
-case "$(printf "shutdown\\nreboot" | dmenu -l 2 -p "Open link with what program?")" in
+case "$(printf "shutdown\\nreboot" | dmenu -l 2 -p "Choose your poison")" in
 	"shutdown") loginctl poweroff ;;
 	"reboot") loginctl reboot ;;
 esac
