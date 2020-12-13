@@ -23,8 +23,6 @@ export IMAGE="feh"
 export OPENER="xdg-open"
 export PAGER="less"
 export WM="bspwm"
-export PANEL_FIFO_TOP=/tmp/panel-top-fifo
-export PANEL_FIFO_BOTTOM=/tmp/panel-bottom-fifo
 export SUDO_ASKPASS="$HOME/Bin/dmenu/dmenupass"
 
 # clean up
@@ -48,17 +46,6 @@ export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
 # wine settings
 export WINEPREFIX="$HOME/.local/share/wineprefixes/default"
-
-# bspwm section
-export BSPWM_D1="1"
-export BSPWM_D2="2"
-export BSPWM_D3="3"
-export BSPWM_D4="4"
-export BSPWM_D5="5"
-export BSPWM_D6="6"
-export BSPWM_D7="7"
-export BSPWM_D8="8"
-export BSPWM_D9="9"
 
 # lf icons
 export LF_ICONS="\
