@@ -49,7 +49,7 @@ bspc node -s {west,south,north,east}
 
 ## Focus on desktop
 #super + {1-9}
-bspwm_desktop {1-9}
+bspc desktop -f {1-9}
 
 ## Last used workspace/window
 #{super,alt} + Tab

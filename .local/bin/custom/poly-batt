@@ -1,0 +1,19 @@
+#!/bin/sh
+
+for battery in /sys/class/power_supply/BAT?
+do
+    mode=$(cat "$battery"/status)
+    percent=$(cat "$battery"/capacity)
+    symbol=""
+
+    if [ "$mode" = "Discharging" ]; then
+        symbol=''
+    elif [ "$mode" = "Charging" ]; then
+        symbol=''
+    else
+        symbol=''
+    fi
+
+    echo "$symbol $percent%"
+done
+
