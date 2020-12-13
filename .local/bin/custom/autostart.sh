@@ -7,7 +7,7 @@ killall dxhd
 sleep 0.1
 killall picom
 sleep 0.1
-killlemonade
+killall polybar
 sleep 0.1
 killall slideshow
 sleep 0.1
@@ -23,4 +23,4 @@ picom --experimental-backends &
 sleep 0.1
 slideshow ~/Pictures/wallpapers &
 sleep 0.1
-launchlemonade &
+polybar top -r

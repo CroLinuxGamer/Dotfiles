@@ -67,21 +67,21 @@ bspc node -t \~fullscreen
 
 ## Audio Control
 #{XF86AudioRaiseVolume,XF86AudioLowerVolume,XF86AudioMute}
-pamixer {-i 2, -d 2, --toggle}
+pamixer {-i 2, -d 2, --toggle} && polybar-msg hook volume 1
 
 ## Brightness
 #{XF86MonBrightnessUp,XF86MonBrightnessDown}
-light {-A 10, -U 10} && lemonlight > $PANEL_FIFO_TOP
+light {-A 10, -U 10} && polybar-msg hook backlight 1
 
 ## mpd control keybindings
 #{XF86AudioPlay,XF86AudioStop,XF86AudioPrev,XF86AudioNext}
-mpc {toggle,stop,prev,next} && lemonsong-status > $PANEL_FIFO_TOP
+mpc {toggle,stop,prev,next} && polybar-msg hook mpd-status 1
 
 ##---Application Launchers---##
 
 ## run rofi
 #super + d
-rofi -modi drun -show drun -show-icons -display-drun "" -font "hack 14" -lines 12 -width 25
+rofi -modi drun -show drun -show-icons -display-drun "" -font "hack 18" -lines 20 -width 30
 
 ## run my gui programs
 #super + {Return,b}
