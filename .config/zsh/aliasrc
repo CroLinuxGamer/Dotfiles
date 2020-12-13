@@ -44,7 +44,7 @@ alias picomconf='${=EDITOR} ~/.config/picom/picom.conf'
 alias grep='grep --color=auto'
 alias vi='nvim'
 alias sublime-text='/opt/sublime_text/sublime_text'
-
+alias pipes='bash-pipes -p 10 -t 1 -f 100 -s 15 -r 0 -R'
 
 # Function aliases
 alias free='free -h'

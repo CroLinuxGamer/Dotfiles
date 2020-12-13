@@ -9,7 +9,7 @@
 
 ###---MONITORS---###
 # i use environment variables to setup my desktops so that I can easily setup one of my scripts
-bspc monitor -d $BSPWM_D1 $BSPWM_D2 $BSPWM_D3 $BSPWM_D4 $BSPWM_D5 $BSPWM_D6 $BSPWM_D7 $BSPWM_D8 $BSPWM_D9
+bspc monitor -d 1 2 3 4 5 6 7 8 9
 ###---Autostart---###
 autostart.sh &
 
