@@ -13,7 +13,7 @@ export PATH
 
 # Programs export
 export EDITOR="nvim"
-export VISUAL="nvim"
+export VISUAL="code"
 export READER="zathura"
 export BOOK_READER="foliate"
 export TERMINAL="alacritty"
@@ -33,7 +33,6 @@ export NOTMUCH_CONFIG="${XDG_CONFIG_HOME:-$HOME/.config}/notmuch-config"
 export LESSHISTFILE="-"
 export WGETRC="${XDG_CONFIG_HOME:-$HOME/.config}/wget/wgetrc"
 export INPUTRC="${XDG_CONFIG_HOME:-$HOME/.config}/inputrc"
-export ZDOTDIR="${XDG_CONFIG_HOME:-$HOME/.config}/zsh"
 export WINEPREFIX="${XDG_DATA_HOME:-$HOME/.local/share}/wineprefixes/default"
 export KODI_DATA="${XDG_DATA_HOME:-$HOME/.local/share}/kodi"
 export PASSWORD_STORE_DIR="${XDG_DATA_HOME:-$HOME/.local/share}/password-store"

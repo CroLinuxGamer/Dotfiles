@@ -22,6 +22,6 @@ sleep 0.1
 picom --experimental-backends &
 sleep 0.1
 slideshow ~/Pictures/wallpapers &
-# feh --bg-fill --no-fehbg ~/Pictures/background.png
+# feh --bg-fill --no-fehbg ~/Pictures/wallpaper.png
 sleep 0.1
 polybar top -r

@@ -81,11 +81,11 @@ mpc {toggle,stop,prev,next} && polybar-msg hook mpd-status 1
 
 ## run rofi
 #super + d
-rofi -modi drun -show drun -show-icons -display-drun "" -font "hack 18" -lines 20 -width 30
+rofi -modi drun -show drun -show-icons -display-drun "" -lines 15 -width 25
 
 ## run my gui programs
-#super + {Return,b}
-{$TERMINAL,$BROWSER}
+#super + {Return,b,v}
+{$TERMINAL,$BROWSER,$VISUAL}
 
 ## terminal programs
 #super + {m,f,h,n,w,t}
@@ -116,8 +116,8 @@ kbd-light-toogle
 {dmenumount,dmenuumount}
 
 ## dmenu list directories
-#super + {l}
-{dmenufilehandler ~/Lightnovels}
+#super + {l,F12}
+{dmenufilehandler ~/Lightnovels,dmenuryzenadj}
 
 ## dmenu screenshot menu
 #Print

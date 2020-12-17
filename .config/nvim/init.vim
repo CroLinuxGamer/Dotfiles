@@ -38,8 +38,8 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'ryanoasis/vim-devicons'
 " syntax checker
 Plug 'dense-analysis/ale'
-" nord theme
-Plug 'arcticicestudio/nord-vim'
+" dracula theme
+Plug 'dracula/vim', { 'as': 'dracula' }
 " airline
 Plug 'vim-airline/vim-airline'
 " git status
@@ -155,12 +155,7 @@ syntax on
 set background=dark
 set t_Co=256
 set termguicolors
-colorscheme nord
-let g:nord_uniform_status_lines = 1
-let g:nord_uniform_diff_background = 1
-let g:nord_italic = 1
-let g:nord_italic_comments = 1
-let g:nord_underline = 1
+colorscheme dracula
 
 " nerdcommenter settings
 let g:NERDSpaceDelims = 1
@@ -250,7 +245,7 @@ let g:coc_global_extensions=[ 'coc-word', 'coc-tasks', 'coc-tabnine', 'coc-marke
 " airline settings
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-let g:airline_theme='nord'
+let g:airline_theme='dracula'
 
 " incsearch and vim search pulse
 let g:vim_search_pulse_disable_auto_mappings = 1
