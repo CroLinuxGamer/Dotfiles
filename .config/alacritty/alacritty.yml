@@ -125,7 +125,7 @@ colors:
 # ...
 
 # Opacity
-background_opacity: 0.75
+background_opacity: 0.85
 
 # Shell settings
 # shell:
