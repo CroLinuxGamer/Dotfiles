@@ -1,4 +1,36 @@
 {
+    // diagnostic
+    "diagnostic.enable": true,
+    "diagnostic.level": "hint",
+    "diagnostic.messageTarget":"echo",
+    "diagnostic.enableMessage":"jump",
+    "diagnostic.infoSign": ">>",
+    "diagnostic.hintSign": "??",
+    "diagnostic.errorSign": "!!",
+    "diagnostic.enableSign": true,
+    "diagnostic.signPriority": 10,
+    "diagnostic.showUnused": true,
+    "diagnostic.messageDelay": 200,
+    "diagnostic.virtualText":false,
+    "diagnostic.warningSign": "⚠",
+    "diagnostic.virtualTextLines": 3,
+    "diagnostic.showDeprecated": true,
+    "diagnostic.refreshOnInsertMode": true,
+    "diagnostic.enableHighlightLineNumber": true,
+    "diagnostic.format": "%message\n[%source:%code]",
+
+    //  suggest
+    "suggest.detailField": "preview",
+    "suggest.autoTrigger": "none",
+    "suggest.timeout": 5000,
+    "suggest.noselect": true,
+    "suggest.defaultSortMethod":"length",
+    "suggest.floatEnable": true,
+    "suggest.enablePreview": true,
+    "suggest.fixInsertedWord": true,
+    "suggest.languageSourcePriority": 99,
+    "suggest.removeDuplicateItems": true,
+
     // Json
     "json.enable": true,
     "json.schemas": [],
@@ -114,5 +146,18 @@
     "sh.commandPath": "",
     "sh.globPattern": "",
     "sh.explainshellEndpoint": "",
-    "sh.highlightParsingErrors": false
+    "sh.highlightParsingErrors": false,
+
+    // python
+    "jedi.trace.server": "off",
+    "jedi.enable": true,
+    "jedi.executable.args": [],
+    "jedi.markupKindPreferred":"markdown",
+    "jedi.startupMessage": false,
+    "jedi.diagnostics.enable":true,
+    "jedi.diagnostics.didOpen":true,
+    "jedi.diagnostics.didSave": true,
+    "jedi.executable.command": "jedi-language-server",
+    "jedi.diagnostics.didChange":true,
+    "jedi.completion.disableSnippets": true
 }

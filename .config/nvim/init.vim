@@ -14,8 +14,6 @@ Plug 'haya14busa/incsearch.vim'
 Plug 'preservim/nerdcommenter'
 " auto pairs
 Plug 'jiangmiao/auto-pairs'
-" the rainbow is mine
-Plug 'luochen1990/rainbow'
 " edit and write system files
 Plug 'lambdalisue/suda.vim'
 " advanced syntax for multiple languages
@@ -39,7 +37,7 @@ Plug 'ryanoasis/vim-devicons'
 " syntax checker
 Plug 'dense-analysis/ale'
 " dracula theme
-Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'chuling/equinusocio-material.vim'
 " airline
 Plug 'vim-airline/vim-airline'
 " git status
@@ -155,13 +153,9 @@ syntax on
 set background=dark
 set t_Co=256
 set termguicolors
-let g:dracula_bold = 1
-let g:dracula_italic = 1
-let g:dracula_underline = 1
-let g:dracula_undercurl = 1
-let g:dracula_inverse = 1
-let g:dracula_colorterm = 1
-colorscheme dracula
+let g:equinusocio_material_style = 'default'
+set fillchars+=vert:│
+colorscheme equinusocio_material
 
 " nerdcommenter settings
 let g:NERDSpaceDelims = 1
@@ -251,7 +245,7 @@ let g:coc_global_extensions=[ 'coc-word', 'coc-tasks', 'coc-tabnine', 'coc-marke
 " airline settings
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-let g:airline_theme='dracula'
+let g:airline_theme = 'equinusocio_material'
 
 " incsearch and vim search pulse
 let g:vim_search_pulse_disable_auto_mappings = 1
