@@ -8,4 +8,4 @@
 
 export QT_QPA_PLATFORMTHEME="qt5ct"
 # bspwm tty1
-[[ $(fgconsole 2>/dev/null) == 1 ]] && exec startx "$XDG_CONFIG_HOME/xinit/startbspwmx" -- vt1 # &> /dev/null
+# [[ $(fgconsole 2>/dev/null) == 1 ]] && exec startx "$XDG_CONFIG_HOME/xinit/startbspwmx" -- vt1 # &> /dev/null

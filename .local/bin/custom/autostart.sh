@@ -1,27 +1,58 @@
 #!/bin/sh
 
+# section for programs that just run
+xwallpaper --stretch /usr/share/wallpapers/Adapta/contents/images/3840x2160.png &
+# ryzenadj_normal &
+xsetroot -cursor_name left_ptr &
+
+# section for programs that dont need to restart
+if ! pgrep -x "mpd" > /dev/null
+then 
+    mpd 
+fi
+
+# if ! pgrep -x "floating.sh" > /dev/null 
+# then 
+    # floating.sh & 
+# fi
+
+if ! pgrep -x "dxhd" > /dev/null 
+then 
+    dxhd & 
+fi
+
+if ! pgrep -x "picom" > /dev/null 
+then 
+    picom --experimental-backends & 
+fi
+
+if ! pgrep -x "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1" > /dev/null 
+then 
+    /usr/lib/polkit-kde-authentication-agent-1 & 
+fi
+
 # kill section for case that you will reset bspwm
-killall floating.sh
+killall polybar
 sleep 0.1
-killall dxhd
-sleep 0.1
-killall picom
+killall dunst
 sleep 0.1
 killall polybar
 sleep 0.1
-killall slideshow
-sleep 0.1
 
 # programs section
-floating.sh &
-sleep 0.1
-mouse_detect.sh &
+dunst &
 sleep 0.1
 dxhd &
 sleep 0.1
-picom --experimental-backends &
-sleep 0.1
+polybar top -r &
+
+# for program that I might need in future
+
+# killall slideshow
+# sleep 0.1
+
 # slideshow ~/Pictures/wallpapers &
 # feh --bg-fill --no-fehbg ~/Pictures/wallpaper.png
-sleep 0.1
-polybar top -r
+
+# mouse_detect.sh &
+# sleep 0.1

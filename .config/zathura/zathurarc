@@ -6,43 +6,39 @@
 #  \____|_|  \___/|_| |_|\__, | /_/   \_\_|\_\__,_|\__|___/\__,_|_|\_\_|
 #                        |___/
 
-#
-# Dracula color theme
-#
+set notification-error-bg       "#e14245" # Red
+set notification-error-fg       "#d3dae3" # Foreground
+set notification-warning-bg     "#f6ab32" # Orange
+set notification-warning-fg     "#222d32" # Selection
+set notification-bg             "#263238" # Background
+set notification-fg             "#d3dae3" # Foreground
 
-set notification-error-bg       "#ff5555" # Red
-set notification-error-fg       "#f8f8f2" # Foreground
-set notification-warning-bg     "#ffb86c" # Orange
-set notification-warning-fg     "#44475a" # Selection
-set notification-bg             "#282a36" # Background
-set notification-fg             "#f8f8f2" # Foreground
+set completion-bg               "#263238" # Background
+set completion-fg               "#4877b1" # Comment
+set completion-group-bg         "#263238" # Background
+set completion-group-fg         "#4877b1" # Comment
+set completion-highlight-bg     "#222d32" # Selection
+set completion-highlight-fg     "#d3dae3" # Foreground
 
-set completion-bg               "#282a36" # Background
-set completion-fg               "#6272a4" # Comment
-set completion-group-bg         "#282a36" # Background
-set completion-group-fg         "#6272a4" # Comment
-set completion-highlight-bg     "#44475a" # Selection
-set completion-highlight-fg     "#f8f8f2" # Foreground
+set index-bg                    "#263238" # Background
+set index-fg                    "#d3dae3" # Foreground
+set index-active-bg             "#222d32" # Current Line
+set index-active-fg             "#d3dae3" # Foreground
 
-set index-bg                    "#282a36" # Background
-set index-fg                    "#f8f8f2" # Foreground
-set index-active-bg             "#44475a" # Current Line
-set index-active-fg             "#f8f8f2" # Foreground
+set inputbar-bg                 "#263238" # Background
+set inputbar-fg                 "#d3dae3" # Foreground
+set statusbar-bg                "#263238" # Background
+set statusbar-fg                "#d3dae3" # Foreground
 
-set inputbar-bg                 "#282a36" # Background
-set inputbar-fg                 "#f8f8f2" # Foreground
-set statusbar-bg                "#282a36" # Background
-set statusbar-fg                "#f8f8f2" # Foreground
+set highlight-color             "#f6ab32" # Orange
+set highlight-active-color      "#a660c3" # Pink
 
-set highlight-color             "#ffb86c" # Orange
-set highlight-active-color      "#ff79c6" # Pink
-
-set default-bg                  "#282a36" # Background
-set default-fg                  "#f8f8f2" # Foreground
+set default-bg                  "#263238" # Background
+set default-fg                  "#d3dae3" # Foreground
 
 set render-loading              true
-set render-loading-fg           "#282a36" # Background
-set render-loading-bg           "#f8f8f2" # Foreground
+set render-loading-fg           "#263238" # Background
+set render-loading-bg           "#d3dae3" # Foreground
 
 #
 # Recolor mode settings

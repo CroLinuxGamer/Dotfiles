@@ -43,8 +43,6 @@ alias picomconf='${=EDITOR} ~/.config/picom/picom.conf'
 # Program alias
 alias grep='grep --color=auto'
 alias vi='nvim'
-alias sublime-text='/opt/sublime_text/sublime_text'
-alias pipes='bash-pipes -p 10 -t 1 -f 100 -s 15 -r 0 -R'
 alias ryzenadj-normal='sudo ryzenadj --slow-time=30 --vrmmax-current=30000 --max-gfxclk=900 --max-fclk-frequency=1200 --tctl-temp=60 --stapm-limit=10000 --stapm-time=300 --fast-limit=12000 --slow-limit=11000'
 alias ryzenadj-fluff='sudo ryzenadj --slow-time=30 --vrmmax-current=30000 --max-gfxclk=550 --max-fclk-frequency=1200 --tctl-temp=70 --stapm-limit=5000 --stapm-time=150 --fast-limit=7000 --slow-limit=6000'
 alias ryzenadj-light-gaming='sudo ryzenadj --slow-time=30 --vrmmax-current=35000 --max-gfxclk=900 --max-fclk-frequency=1200 --tctl-temp=65 --stapm-limit=10000 --stapm-time=300 --fast-limit=12000 --slow-limit=11000'
@@ -52,17 +50,15 @@ alias ryzenadj-heavy-gaming='sudo ryzenadj --slow-time=60 --vrmmax-current=60000
 alias ryzenadj-super-heavy-programs='sudo ryzenadj --slow-time=60 --vrmmax-current=60000 --max-gfxclk=900 --max-fclk-frequency=1200 --tctl-temp=75 --stapm-limit=25000 --stapm-time=1000 --fast-limit=30000 --slow-limit=27000'
 
 # Function aliases
-alias free='free -h'
-alias update-system='sudo pacman -Sy && sudo powerpill -Su && yay -Sua'
 alias yta='youtube-dl -x -f bestaudio --audio-quality 0 --audio-format vorbis'
 alias tdown='aria2c --follow-torrent=mem'
 
-# git dotfiles aliases
-alias dot='/usr/bin/git --git-dir=$HOME/Repos/Dotfiles/ --work-tree=$HOME'
-alias dot-s='/usr/bin/git --git-dir=$HOME/Repos/Dotfiles/ --work-tree=$HOME status'
-alias dot-a='/usr/bin/git --git-dir=$HOME/Repos/Dotfiles/ --work-tree=$HOME add'
-alias dot-c='/usr/bin/git --git-dir=$HOME/Repos/Dotfiles/ --work-tree=$HOME commit -m'
-alias dot-p='/usr/bin/git --git-dir=$HOME/Repos/Dotfiles/ --work-tree=$HOME push'
-alias dot-pl='/usr/bin/git --git-dir=$HOME/Repos/Dotfiles/ --work-tree=$HOME pull'
-alias dot-rm='/usr/bin/git --git-dir=$HOME/Repos/Dotfiles/ --work-tree=$HOME rm'
-alias dot-rs='/usr/bin/git --git-dir=$HOME/Repos/Dotfiles/ --work-tree=$HOME restore'
+# # git dotfiles aliases
+# alias dot='/usr/bin/git --git-dir=$HOME/Repos/Dotfiles/ --work-tree=$HOME'
+# alias dot-s='/usr/bin/git --git-dir=$HOME/Repos/Dotfiles/ --work-tree=$HOME status'
+# alias dot-a='/usr/bin/git --git-dir=$HOME/Repos/Dotfiles/ --work-tree=$HOME add'
+# alias dot-c='/usr/bin/git --git-dir=$HOME/Repos/Dotfiles/ --work-tree=$HOME commit -m'
+# alias dot-p='/usr/bin/git --git-dir=$HOME/Repos/Dotfiles/ --work-tree=$HOME push'
+# alias dot-pl='/usr/bin/git --git-dir=$HOME/Repos/Dotfiles/ --work-tree=$HOME pull'
+# alias dot-rm='/usr/bin/git --git-dir=$HOME/Repos/Dotfiles/ --work-tree=$HOME rm'
+# alias dot-rs='/usr/bin/git --git-dir=$HOME/Repos/Dotfiles/ --work-tree=$HOME restore'

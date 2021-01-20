@@ -93,7 +93,7 @@ $TERMINAL -e {ncmpcpp,lf,htop,newsboat,adl,trackma-curses}
 
 ## some more programs
 #super + shift + {f}
-{pcmanfm}
+{dolphin}
 
 ## run cli programs
 #super + shift + {m,w,n}
@@ -102,12 +102,6 @@ $TERMINAL -e {aerc,adl -d,nmtui}
 ## system programs
 #super + ctrl + f
 gparted
-
-##---Keyboard bindings---##
-
-## turn on led
-#Scroll_Lock
-kbd-light-toogle
 
 ##--Dmenu bindings---#
 

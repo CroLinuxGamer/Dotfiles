@@ -182,7 +182,7 @@ let g:cpp_concepts_highlight = 1
 " async run and task settings
 let g:asyncrun_open = 6
 let g:asyncrun_rootmarks = ['.git', '.svn', '.root', '.project', '.hg']
-let g:asynctasks_term_pos = 'bottom'
+let g:asynctasks_term_pos = 'tab'
 let g:asynctasks_term_reuse = 1
 let g:asynctasks_system = 'linux'
 map <F10> :CocList tasks<CR>
@@ -240,7 +240,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 nnoremap <silent> <F2> :NERDTreeToggle<CR>
 
 " coc settings
-let g:coc_global_extensions=[ 'coc-word', 'coc-tasks', 'coc-tabnine', 'coc-marketplace', 'coc-json', 'coc-clangd', 'coc-git', 'coc-html', 'coc-omnisharp', 'coc-sh' ]
+let g:coc_global_extensions=[ 'coc-word', 'coc-tasks', 'coc-tabnine', 'coc-marketplace', 'coc-json', 'coc-clangd', 'coc-git', 'coc-html', 'coc-sh', 'coc-pyright' ]
 
 " airline settings
 let g:airline#extensions#tabline#enabled = 1
