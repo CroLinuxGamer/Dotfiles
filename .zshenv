@@ -23,7 +23,7 @@ export IMAGE="feh"
 export OPENER="xdg-open"
 export PAGER="less"
 export WM="bspwm"
-export SUDO_ASKPASS="$HOME/Bin/dmenu/dmenupass"
+export SUDO_ASKPASS="$HOME/.local/bin/custom/dmenupass"
 
 # clean up
 export XDG_CONFIG_HOME="$HOME/.config"

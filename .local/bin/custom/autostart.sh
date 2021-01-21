@@ -2,8 +2,9 @@
 
 # section for programs that just run
 xwallpaper --stretch /usr/share/wallpapers/Adapta/contents/images/3840x2160.png &
-# ryzenadj_normal &
+ryzenadj_normal &
 xsetroot -cursor_name left_ptr &
+xrandr --output eDP --set TearFree on
 
 # section for programs that dont need to restart
 if ! pgrep -x "mpd" > /dev/null
@@ -28,15 +29,13 @@ fi
 
 if ! pgrep -x "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1" > /dev/null 
 then 
-    /usr/lib/polkit-kde-authentication-agent-1 & 
+    '/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1' & 
 fi
 
 # kill section for case that you will reset bspwm
 killall polybar
 sleep 0.1
 killall dunst
-sleep 0.1
-killall polybar
 sleep 0.1
 
 # programs section
@@ -46,7 +45,7 @@ dxhd &
 sleep 0.1
 polybar top -r &
 
-# for program that I might need in future
+# for programs that I might need in future
 
 # killall slideshow
 # sleep 0.1

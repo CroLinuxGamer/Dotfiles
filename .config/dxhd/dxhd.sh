@@ -105,10 +105,6 @@ gparted
 
 ##--Dmenu bindings---#
 
-## dmenu usb mount and unmount
-#super + {shift,ctrl} + u
-{dmenumount,dmenuumount}
-
 ## dmenu list directories
 #super + {l,F12}
 {dmenufilehandler ~/Lightnovels,dmenuryzenadj}
