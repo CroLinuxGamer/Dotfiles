@@ -48,6 +48,7 @@ alias ryzenadj-fluff='sudo ryzenadj --slow-time=30 --vrmmax-current=30000 --max-
 alias ryzenadj-light-gaming='sudo ryzenadj --slow-time=30 --vrmmax-current=35000 --max-gfxclk=900 --max-fclk-frequency=1200 --tctl-temp=65 --stapm-limit=10000 --stapm-time=300 --fast-limit=12000 --slow-limit=11000'
 alias ryzenadj-heavy-gaming='sudo ryzenadj --slow-time=60 --vrmmax-current=60000 --max-gfxclk=900 --max-fclk-frequency=1200 --tctl-temp=70 --stapm-limit=20000 --stapm-time=1000 --fast-limit=25000 --slow-limit=21000'
 alias ryzenadj-super-heavy-programs='sudo ryzenadj --slow-time=60 --vrmmax-current=60000 --max-gfxclk=900 --max-fclk-frequency=1200 --tctl-temp=75 --stapm-limit=25000 --stapm-time=1000 --fast-limit=30000 --slow-limit=27000'
+alias zathura='zathura --mode fullscreen'
 
 # Function aliases
 alias yta='youtube-dl -x -f bestaudio --audio-quality 0 --audio-format vorbis'

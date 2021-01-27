@@ -22,6 +22,11 @@ then
     dxhd & 
 fi
 
+if ! pgrep -x "xfce4-power-manager" > /dev/null 
+then 
+    xfce4-power-manager & 
+fi
+
 if ! pgrep -x "picom" > /dev/null 
 then 
     picom --experimental-backends & 

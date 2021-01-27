@@ -94,4 +94,6 @@ _dotnet_zsh_complete()
 
 compctl -K _dotnet_zsh_complete dotnet
 
+# (( ${+functions[module]} )) || source /etc/modules/init/zsh
+
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

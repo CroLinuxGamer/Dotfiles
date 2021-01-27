@@ -44,21 +44,31 @@ set render-loading-bg           "#d3dae3" # Foreground
 # Recolor mode settings
 #
 
-set recolor-lightcolor          "#282a36" # Background
-set recolor-darkcolor           "#f8f8f2" # Foreground
+set recolor-lightcolor          "#263238" # Background
+set recolor-darkcolor           "#d3dae3" # Foreground
+set recolor                     true
+set recolor-keephue             true
+set recolor-reverse-video       false
 
-set recolor                     "true"
-set recolor-keephue             "true"      # keep original color
 
 set statusbar-h-padding 0
 set statusbar-v-padding 0
 set page-padding 1
-map r reload
+
+# fullscreen mappings
+map [fullscreen] r reload
+map [fullscreen] R rotate
+map [fullscreen] + zoom in
+map [fullscreen] - zoom out
+map [fullscreen] i recolor
+
+# normal mappings
+map  r reload
 map R rotate
 map + zoom in
 map - zoom out
 map i recolor
-set recolor                     true
+
 
 set font "Source Code Pro 11"
 set adjust-open "best-fit"
@@ -66,7 +76,4 @@ set pages-per-row 1
 set scroll-page-aware "true"
 set scroll-full-overlap 0.01
 set scroll-step 100
-
-set recolor-reverse-video "true"
-set render-loading "true"
 
