@@ -39,27 +39,27 @@ alias bspwmrc='${=EDITOR} ~/.config/bspwm/bspwmrc' # Quick acces to bspwm config
 alias zshenv='${=EDITOR} ~/.zshenv' # Quick acces to zsh enviroment settings
 alias nvimrc='${=EDITOR} ~/.config/nvim/init.vim' # Quick acces to nvim config
 alias picomconf='${=EDITOR} ~/.config/picom/picom.conf'
+alias lfrc='${=EDITOR} ~/.config/lf/lfrc'
+alias sxhkdrc='${=EDITOR} ~/.config/sxhkd/sxhkdrc'
 
 # Program alias
 alias grep='grep --color=auto'
 alias vi='nvim'
-alias ryzenadj-normal='sudo ryzenadj --slow-time=30 --vrmmax-current=30000 --max-gfxclk=900 --max-fclk-frequency=1200 --tctl-temp=60 --stapm-limit=10000 --stapm-time=300 --fast-limit=12000 --slow-limit=11000'
-alias ryzenadj-fluff='sudo ryzenadj --slow-time=30 --vrmmax-current=30000 --max-gfxclk=550 --max-fclk-frequency=1200 --tctl-temp=70 --stapm-limit=5000 --stapm-time=150 --fast-limit=7000 --slow-limit=6000'
-alias ryzenadj-light-gaming='sudo ryzenadj --slow-time=30 --vrmmax-current=35000 --max-gfxclk=900 --max-fclk-frequency=1200 --tctl-temp=65 --stapm-limit=10000 --stapm-time=300 --fast-limit=12000 --slow-limit=11000'
-alias ryzenadj-heavy-gaming='sudo ryzenadj --slow-time=60 --vrmmax-current=60000 --max-gfxclk=900 --max-fclk-frequency=1200 --tctl-temp=70 --stapm-limit=20000 --stapm-time=1000 --fast-limit=25000 --slow-limit=21000'
-alias ryzenadj-super-heavy-programs='sudo ryzenadj --slow-time=60 --vrmmax-current=60000 --max-gfxclk=900 --max-fclk-frequency=1200 --tctl-temp=75 --stapm-limit=25000 --stapm-time=1000 --fast-limit=30000 --slow-limit=27000'
+alias ls='exa -al --color=always --group-directories-first' # my preferred listing
+alias la='exa -a --color=always --group-directories-first'  # all files and dirs
+alias ll='exa -l --color=always --group-directories-first'  # long format
+alias lt='exa -aT --color=always --group-directories-first' # tree listing
+alias cat='bat'
+alias grep='rg'
+alias find='fd'
+alias ryzenadj-normal='/usr/bin/sudo ryzenadj --slow-time=30 --vrmmax-current=30000 --max-gfxclk=900 --max-fclk-frequency=1200 --tctl-temp=60 --stapm-limit=10000 --stapm-time=300 --fast-limit=12000 --slow-limit=11000'
+alias ryzenadj-fluff='/usr/bin/sudo ryzenadj --slow-time=30 --vrmmax-current=30000 --max-gfxclk=550 --max-fclk-frequency=1200 --tctl-temp=70 --stapm-limit=5000 --stapm-time=150 --fast-limit=7000 --slow-limit=6000'
+alias ryzenadj-light-gaming='/usr/bin/sudo ryzenadj --slow-time=30 --vrmmax-current=35000 --max-gfxclk=900 --max-fclk-frequency=1200 --tctl-temp=65 --stapm-limit=10000 --stapm-time=300 --fast-limit=12000 --slow-limit=11000'
+alias ryzenadj-heavy-gaming='/usr/bin/sudo ryzenadj --slow-time=60 --vrmmax-current=60000 --max-gfxclk=900 --max-fclk-frequency=1200 --tctl-temp=70 --stapm-limit=20000 --stapm-time=1000 --fast-limit=25000 --slow-limit=21000'
+alias ryzenadj-super-heavy-programs='/usr/bin/sudo ryzenadj --slow-time=60 --vrmmax-current=60000 --max-gfxclk=900 --max-fclk-frequency=1200 --tctl-temp=75 --stapm-limit=25000 --stapm-time=1000 --fast-limit=30000 --slow-limit=27000'
 alias zathura='zathura --mode fullscreen'
 
 # Function aliases
 alias yta='youtube-dl -x -f bestaudio --audio-quality 0 --audio-format vorbis'
 alias tdown='aria2c --follow-torrent=mem'
-
-# # git dotfiles aliases
-# alias dot='/usr/bin/git --git-dir=$HOME/Repos/Dotfiles/ --work-tree=$HOME'
-# alias dot-s='/usr/bin/git --git-dir=$HOME/Repos/Dotfiles/ --work-tree=$HOME status'
-# alias dot-a='/usr/bin/git --git-dir=$HOME/Repos/Dotfiles/ --work-tree=$HOME add'
-# alias dot-c='/usr/bin/git --git-dir=$HOME/Repos/Dotfiles/ --work-tree=$HOME commit -m'
-# alias dot-p='/usr/bin/git --git-dir=$HOME/Repos/Dotfiles/ --work-tree=$HOME push'
-# alias dot-pl='/usr/bin/git --git-dir=$HOME/Repos/Dotfiles/ --work-tree=$HOME pull'
-# alias dot-rm='/usr/bin/git --git-dir=$HOME/Repos/Dotfiles/ --work-tree=$HOME rm'
-# alias dot-rs='/usr/bin/git --git-dir=$HOME/Repos/Dotfiles/ --work-tree=$HOME restore'
+alias dot='cd $HOME/Repos/Dotfiles'

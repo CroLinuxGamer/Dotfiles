@@ -17,10 +17,10 @@ fi
     # floating.sh & 
 # fi
 
-if ! pgrep -x "dxhd" > /dev/null 
-then 
-    dxhd & 
-fi
+# if ! pgrep -x "dxhd" > /dev/null 
+# then 
+    # dxhd & 
+# fi
 
 if ! pgrep -x "xfce4-power-manager" > /dev/null 
 then 
@@ -42,11 +42,13 @@ killall polybar
 sleep 0.1
 killall dunst
 sleep 0.1
+killall sxhkd
+sleep 0.1
 
 # programs section
 dunst &
 sleep 0.1
-dxhd &
+sxhkd &
 sleep 0.1
 polybar top -r &
 
