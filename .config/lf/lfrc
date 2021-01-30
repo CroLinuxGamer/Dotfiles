@@ -8,15 +8,18 @@
 
 # Basic Settings
 set preview true
-set previewer preview
+set previewer lf-previewer
+set cleaner lf-cleaner
 set drawbox true
 set icons true
 set ignorecase true
+
+
 # Open function
 cmd open ${{
     case $(file --mime-type "$f" -bL) in
         text/*|application/json) $EDITOR "$f";;
-        *) xdg-open "$f" > /dev/null ;;
+        *) xdg-open "$f" 2>/dev/null ;;
     esac
 }}
 

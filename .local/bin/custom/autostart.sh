@@ -22,10 +22,10 @@ fi
     # dxhd & 
 # fi
 
-if ! pgrep -x "xfce4-power-manager" > /dev/null 
-then 
-    xfce4-power-manager & 
-fi
+# if ! pgrep -x "xfce4-power-manager" > /dev/null 
+# then 
+    # xfce4-power-manager & 
+# fi
 
 if ! pgrep -x "picom" > /dev/null 
 then 
@@ -35,6 +35,11 @@ fi
 if ! pgrep -x "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1" > /dev/null 
 then 
     '/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1' & 
+fi
+
+if ! pgrep -x "xob" > /dev/null 
+then 
+    xob-start & 
 fi
 
 # kill section for case that you will reset bspwm

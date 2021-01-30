@@ -40,6 +40,10 @@ export HISTFILE="${XDG_DATA_HOME:-$HOME/.local/share}/history"
 export CCACHE_DIR="${XDG_CACHE_HOME:-$HOME/.cache}/ccache"
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
+# fifo managment for my scipts
+export VOLUME_FIFO="/tmp/xob-volume-fifo"
+export BACKLIGHT_FIFO="/tmp/xob-backlight-fifo"
+
 # lf icons
 export LF_ICONS="\
 di=:\

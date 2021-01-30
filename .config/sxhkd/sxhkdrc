@@ -86,7 +86,7 @@ super + {Return,b,v}
 
 # terminal programs
 super + {m,f,h,n,w,t}
-    $TERMINAL -e {ncmpcpp,lf,htop,newsboat,adl,trackma-curses}
+    $TERMINAL -e {ncmpcpp,lf-run,htop,newsboat,adl,trackma-curses}
 
 # some more programs
 super + shift + {f}

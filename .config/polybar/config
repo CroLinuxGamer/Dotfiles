@@ -177,18 +177,20 @@ click-left = $TERMINAL -e nmtui &
 
 [module/volume]
 type = custom/ipc
-hook-0 = pamixer --get-volume-human
+hook-0 = poly-vol
+hook-1 = pamixer --get-volume-human
 click-left = $TERMINAL -e pulsemixer &
-initial = 1
+initial = 2
 format-prefix = " "
 format-background = ${colors.pl1}
 format-foreground = ${colors.bg1}
 
 [module/backlight]
 type = custom/ipc
-hook-0 = "echo $(light -G | sed 's/\.[0-9]*//')%"
+hook-0 = poly-backlight
+hook-1 = echo $(light -G | sed 's/\.[0-9]*//')
 format-prefix = " "
-initial = 1
+initial = 2
 format-background = ${colors.pl2}
 format-foreground = ${colors.fg}
 
