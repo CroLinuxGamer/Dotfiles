@@ -78,7 +78,7 @@ super + F11
 
 # run rofi
 super + d
-    rofi -modi drun -show drun -show-icons -display-drun "" -lines 15 -width 25
+    rofi -modi drun -show drun -show-icons -display-drun "" -lines 15 -width 25 -font "Hack 16"
 
 # run my gui programs
 super + {Return,b,v}
