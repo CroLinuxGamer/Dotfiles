@@ -34,10 +34,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " file explorer
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'ryanoasis/vim-devicons'
-" syntax checker
-Plug 'dense-analysis/ale'
-" dracula theme
-Plug 'chuling/equinusocio-material.vim'
+" color scheme
+Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 " airline
 Plug 'vim-airline/vim-airline'
 " git status
@@ -46,6 +44,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-startify'
 " pulse after search
 Plug 'inside/vim-search-pulse'
+" linter
+Plug 'dense-analysis/ale'
 call plug#end()
 
 " Center when entering insert mode
@@ -153,9 +153,9 @@ syntax on
 set background=dark
 set t_Co=256
 set termguicolors
-let g:equinusocio_material_style = 'default'
 set fillchars+=vert:│
-colorscheme equinusocio_material
+let g:material_theme_style = 'defaul'
+colorscheme material
 
 " nerdcommenter settings
 let g:NERDSpaceDelims = 1
@@ -240,12 +240,12 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 nnoremap <silent> <F2> :NERDTreeToggle<CR>
 
 " coc settings
-let g:coc_global_extensions=[ 'coc-word', 'coc-tasks', 'coc-tabnine', 'coc-marketplace', 'coc-json', 'coc-clangd', 'coc-git', 'coc-html', 'coc-sh', 'coc-pyright' ]
+let g:coc_global_extensions=[ 'coc-word', 'coc-tasks', 'coc-tabnine', 'coc-marketplace', 'coc-json', 'coc-clangd', 'coc-git', 'coc-html', 'coc-sh' ]
 
 " airline settings
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'equinusocio_material'
+let g:airline_theme = 'material'
 
 " incsearch and vim search pulse
 let g:vim_search_pulse_disable_auto_mappings = 1
@@ -266,3 +266,11 @@ map g# <Plug>(incsearch-nohl-g#)<Plug>Pulse
 autocmd! User IncSearchExecute
 autocmd User IncSearchExecute :call search_pulse#Pulse()
 
+" terminal settings
+tnoremap <Esc> <C-\><C-n>
+au BufEnter * if &buftype == 'terminal' | :startinsert | endif
+function! OpenTerminal()
+  split term://zsh
+  resize 10
+endfunction
+nnoremap <leader>t :call OpenTerminal()<CR>

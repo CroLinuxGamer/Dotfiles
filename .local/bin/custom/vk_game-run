@@ -1,0 +1,5 @@
+#!/bin/sh
+
+export MANGOHUD=1
+
+gamemoderun prime-run $1

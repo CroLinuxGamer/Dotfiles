@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# a small script to automize mounting android phone using sshfs
+# for this to work you need to have ssh enabled on your android device my friends
+
+sdcard=$(sdcard0)
+mount_sd=yes
+
+echo "Mounting main android storage"
+sshfs $1:/storage/emulated/0 ~/Android/main -p 2222
+
+if [ mount_sd = "yes" ]; then
+    echo "Mounting android sdcard"
+    sshfs $1:/storage/$sdcard/ Android/sdcard -p 2222
+fi

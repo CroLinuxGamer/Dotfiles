@@ -1,5 +1,0 @@
-#!/bin/sh
-
-export MANGOHUD_DLSYM=1
-
-mangohud gamemoderun prime-run $1

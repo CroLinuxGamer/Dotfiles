@@ -1,4 +1,7 @@
 {
+    // misc
+    "coc.preferences.hoverTarget": "preview",
+
     // diagnostic
     "diagnostic.level": "hint",
     "diagnostic.enable": true,
@@ -26,7 +29,7 @@
     "signature.enable": true,
     "signature.maxWindowWidth": 80,
     "signature.maxWindowHeight": 8,
-    "signature.preferShownAbove": true,
+    "signature.preferShownAbove": false,
     "signature.hideOnTextChange": true,
     "signature.triggerSignatureWait": 500,
 
@@ -146,6 +149,10 @@
     
     // python
     "pyright.trace.server": "off",
+    "python.analysis.logLevel": "Error",
+    "python.sortImports.args": [],
+    "python.formatting.provider": "none",
+    "python.linting.enabled": false,
 
     // rust
     "rust-client.disableRustup": true,

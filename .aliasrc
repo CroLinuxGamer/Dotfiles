@@ -54,6 +54,7 @@ alias grep='rg'
 alias find='fd'
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
+alias ps='procs'
 alias ryzenadj-normal='/usr/bin/sudo ryzenadj --slow-time=30 --vrmmax-current=30000 --max-gfxclk=900 --max-fclk-frequency=1200 --tctl-temp=60 --stapm-limit=10000 --stapm-time=300 --fast-limit=12000 --slow-limit=11000'
 alias ryzenadj-fluff='/usr/bin/sudo ryzenadj --slow-time=30 --vrmmax-current=30000 --max-gfxclk=550 --max-fclk-frequency=1200 --tctl-temp=70 --stapm-limit=5000 --stapm-time=150 --fast-limit=7000 --slow-limit=6000'
 alias ryzenadj-light-gaming='/usr/bin/sudo ryzenadj --slow-time=30 --vrmmax-current=35000 --max-gfxclk=900 --max-fclk-frequency=1200 --tctl-temp=65 --stapm-limit=10000 --stapm-time=300 --fast-limit=12000 --slow-limit=11000'
