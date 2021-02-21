@@ -46,6 +46,8 @@ Plug 'mhinz/vim-startify'
 Plug 'inside/vim-search-pulse'
 " linter
 Plug 'dense-analysis/ale'
+" python
+Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 call plug#end()
 
 " Center when entering insert mode
@@ -274,3 +276,6 @@ function! OpenTerminal()
   resize 10
 endfunction
 nnoremap <leader>t :call OpenTerminal()<CR>
+
+" python
+let g:semshi#mark_selected_nodes = 0
