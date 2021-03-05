@@ -1,7 +1,6 @@
 #!/bin/sh
 
 # section for programs that just run
-xwallpaper --stretch /usr/share/wallpapers/Adapta/contents/images/3840x2160.png &
 ryzenadj_normal &
 xsetroot -cursor_name left_ptr &
 xrandr --output eDP --set TearFree on
@@ -59,10 +58,10 @@ polybar top -r &
 
 # for programs that I might need in future
 
-# killall slideshow
-# sleep 0.1
+killall slideshow
+sleep 0.1
 
-# slideshow ~/Pictures/wallpapers &
+slideshow ~/Pictures/wallpapers &
 # feh --bg-fill --no-fehbg ~/Pictures/wallpaper.png
 
 # mouse_detect.sh &
