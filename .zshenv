@@ -44,6 +44,9 @@ export DOTNET_CLI_TELEMETRY_OPTOUT=1
 export VOLUME_FIFO="/tmp/xob-volume-fifo"
 export BACKLIGHT_FIFO="/tmp/xob-backlight-fifo"
 
+# gaming settings
+DXVK_HUD=compiler
+
 # lf icons
 export LF_ICONS="\
 di=:\

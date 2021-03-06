@@ -178,6 +178,13 @@
             ],
             "version": "dubbed"
         },
+        "egyanime": {
+            "servers": [
+                "clipwatching",
+                "streamtape"
+            ],
+            "version": "subbed"
+        },
         "gogoanime": {
             "server": "cdn",
             "version": "subbed"
@@ -279,6 +286,7 @@
             "360p"
         ],
         "log_level": "INFO",
+        "mpv_arguments": "",
         "provider": "twist.moe",
         "quality": "1080p"
     }

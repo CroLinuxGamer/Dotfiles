@@ -19,7 +19,7 @@ Plug 'lambdalisue/suda.vim'
 " advanced syntax for multiple languages
 Plug 'sheerun/vim-polyglot'
 " advanced c++ syntax
-Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'bfrg/vim-cpp-modern'
 " async tack runner with a lot of functionality
 Plug 'skywind3000/asynctasks.vim'
 Plug 'skywind3000/asyncrun.vim'
@@ -175,14 +175,6 @@ let g:suda_smart_edit = 1
 let g:suda#prefix = ['suda://', 'sudo://', '_://']
 let g:suda#prompt = 'Pass: '
 
-" c++ syntax settings
-let g:cpp_class_scope_highlight = 1
-let g:cpp_member_variable_highlight = 1
-let g:cpp_class_decl_highlight = 1
-let g:cpp_posix_standard = 1
-let g:cpp_experimental_template_highlight = 1
-let g:cpp_concepts_highlight = 1
-
 " async run and task settings
 let g:asyncrun_open = 6
 let g:asyncrun_rootmarks = ['.git', '.svn', '.root', '.project', '.hg']
@@ -281,3 +273,8 @@ nnoremap <leader>t :call OpenTerminal()<CR>
 
 " python
 let g:semshi#mark_selected_nodes = 0
+
+" cpp
+let g:cpp_attributes_highlight = 1
+let g:cpp_member_highlight = 1
+let g:cpp_simple_highlight = 1

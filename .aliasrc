@@ -66,6 +66,7 @@ alias zathura='zathura --mode fullscreen'
 alias yta='youtube-dl -x -f bestaudio --audio-quality 0 --audio-format vorbis'
 alias tdown='aria2c --follow-torrent=mem'
 alias dot='cd $HOME/Repos/Dotfiles'
+alias clear='clear; pfetch'
 
 # termbin
 alias tb="nc termbin.com 9999"
