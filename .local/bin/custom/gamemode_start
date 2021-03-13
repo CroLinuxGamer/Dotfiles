@@ -1,5 +1,0 @@
-#!/bin/sh
-
-notify-send "GameMode started"
-/home/ivica/.local/bin/custom/dmenuryzenadj &
-qdbus org.kde.KWin /Compositor suspend

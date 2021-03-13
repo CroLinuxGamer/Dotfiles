@@ -1,6 +1,0 @@
-#!/bin/sh
-
-case "$(printf "shutdown\\nreboot" | dmenu -l 2 -p "Choose your poison")" in
-	"shutdown") poweroff ;;
-	"reboot") reboot ;;
-esac

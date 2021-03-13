@@ -8,7 +8,7 @@
 
 # Path export
 typeset -U PATH path
-path=("$HOME/.dotnet/tools" "$HOME/.dotnet/tools" "$HOME/.local/bin" "$HOME/.local/bin/custom" "$path[@]")
+path=("$HOME/.dotnet/tools" "$HOME/.local/bin" "$HOME/Bin/dmenu" "$HOME/Bin/gaming" "$HOME/Bin/kde" "$HOME/Bin/lf" "$HOME/Bin/misc"  "$path[@]")
 export PATH
 
 # Programs export

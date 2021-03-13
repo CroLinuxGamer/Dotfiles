@@ -1,5 +1,0 @@
-#!/bin/sh
-
-mpd &
-ryzenadj_normal
-ryzenadj_normal

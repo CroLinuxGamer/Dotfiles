@@ -3,7 +3,7 @@
         "aria2c_for_torrents": true,
         "aria2c_log_level": "error",
         "chunk_size": "10",
-        "download_dir": "~/Videos/Anime",
+        "download_dir": "$HOME/Videos/Anime",
         "external_downloader": "{aria2}",
         "fallback_qualities": [
             "720p",
@@ -13,7 +13,7 @@
         "file_format": "{anime_title}/{anime_title}_{ep_no}",
         "force_download": false,
         "player": null,
-        "provider": "animeout",
+        "provider": "animekisa",
         "quality": "1080p",
         "selescrape_browser": null,
         "selescrape_browser_executable_path": null,
@@ -23,7 +23,7 @@
         "url": false
     },
     "ezdl": {
-        "download_metadata": false,
+        "download_metadata": true,
         "fallback_providers": [
             "9anime",
             "vidstream",

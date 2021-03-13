@@ -1,0 +1,13 @@
+#!/bin/sh
+
+for Dir in *; {
+    if cd "$Dir" 2> /dev/null; then
+        for File in *.mp3; {
+            [ -f "$File" ] || continue
+
+            ffmpeg -i "$File" "${File%.mp3}.ogg" && rm -v "$File"
+        }
+
+        cd ..
+    fi
+}

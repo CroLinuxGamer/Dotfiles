@@ -1,0 +1,11 @@
+#!/bin/sh
+
+volume=$(pamixer --get-volume-human)
+echo $volume
+
+if [ $volume = "muted" ]; then
+    echo $(pamixer --get-volume)! > /tmp/xob-volume-fifo
+else
+    echo $(pamixer --get-volume) > /tmp/xob-volume-fifo
+fi
+
