@@ -2,6 +2,5 @@
 temp=$(sensors | grep "Tctl:" | awk '{print $2}')
 usage=$(poly-cpu)
 mhz=$(lscpu | grep 'CPU MHz' | awk '{print $3}')
-governor=$(cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor)
 
 echo "$usage / $temp / $mhz MHz / $(< /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor)"

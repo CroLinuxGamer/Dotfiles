@@ -1,6 +1,5 @@
 #!/bin/sh
 
 mpd &
-xrandr --output eDP --set TearFree on
 ryzenadj_normal
 ryzenadj_normal

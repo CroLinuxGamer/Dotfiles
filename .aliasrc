@@ -64,6 +64,8 @@ alias zathura='zathura --mode fullscreen'
 
 # Function aliases
 alias yta='youtube-dl -x -f bestaudio --audio-quality 0 --audio-format vorbis'
+alias ytvb='youtube-dl --merge-output-format mp4 -f "bestvideo+bestaudio[ext=m4a]/best" --embyoutube-dl --merge-output-format mp4 -f "bestvideo+bestaudio[ext=m4a]/best" --embed-thumbnail --external-downloader aria2c --external-downloader-args "-j 16 -s 16 -x 16 -k 5M" --add-metadata -o "%(title)s.%(ext)s""'
+alias ytvf='youtube-dl --merge-output-format mp4 --format best --embed-thumbnail --external-downloader aria2c --external-downloader-args "-j 16 -s 16 -x 16 -k 5M" --add-metadata -o "%(title)s.%(ext)s"'
 alias tdown='aria2c --follow-torrent=mem'
 alias dot='cd $HOME/Repos/Dotfiles'
 alias clear='clear; pfetch'
