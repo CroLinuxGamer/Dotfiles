@@ -1,5 +1,5 @@
 #!/bin/sh
 
-mpd &
+mpd
 ryzenadj_normal
-ryzenadj_normal
+mouse_detect.sh

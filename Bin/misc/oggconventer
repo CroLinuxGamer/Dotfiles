@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/env bash
 
 for Dir in *; {
     if cd "$Dir" 2> /dev/null; then

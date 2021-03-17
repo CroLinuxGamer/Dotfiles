@@ -52,7 +52,7 @@ alias lt='exa -aT --color=always --group-directories-first' # tree listing
 alias cat='bat'
 alias grep='rg'
 alias find='fd'
-alias df='df -h'                          # human-readable sizes
+alias df='df -h -x devtmpfs -x tmpfs -x usbfs -x loop'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias ps='procs'
 alias ryzenadj-normal='/usr/bin/sudo ryzenadj --slow-time=30 --vrmmax-current=30000 --max-gfxclk=900 --max-fclk-frequency=1200 --tctl-temp=60 --stapm-limit=10000 --stapm-time=300 --fast-limit=12000 --slow-limit=11000'
@@ -63,12 +63,12 @@ alias ryzenadj-super-heavy-programs='/usr/bin/sudo ryzenadj --slow-time=60 --vrm
 alias zathura='zathura --mode fullscreen'
 
 # Function aliases
-alias yta='youtube-dl -x -f bestaudio --audio-quality 0 --audio-format vorbis'
+alias yta='youtube-dl -x -f bestaudio --audio-quality 0 --external-downloader aria2c --external-downloader-args "-j 16 -s 16 -x 16 -k 5M" --audio-format vorbis -o "%(title)s.%(ext)s"'
 alias ytvb='youtube-dl --merge-output-format mp4 -f "bestvideo+bestaudio[ext=m4a]/best" --embyoutube-dl --merge-output-format mp4 -f "bestvideo+bestaudio[ext=m4a]/best" --embed-thumbnail --external-downloader aria2c --external-downloader-args "-j 16 -s 16 -x 16 -k 5M" --add-metadata -o "%(title)s.%(ext)s""'
 alias ytvf='youtube-dl --merge-output-format mp4 --format best --embed-thumbnail --external-downloader aria2c --external-downloader-args "-j 16 -s 16 -x 16 -k 5M" --add-metadata -o "%(title)s.%(ext)s"'
 alias tdown='aria2c --follow-torrent=mem'
 alias dot='cd $HOME/Repos/Dotfiles'
-alias clear='clear; pfetch'
+alias clear='clear; nerdfetch'
 
 # termbin
 alias tb="nc termbin.com 9999"

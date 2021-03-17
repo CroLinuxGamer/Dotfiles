@@ -2,4 +2,4 @@
 
 qdbus org.kde.KWin /Compositor resume
 notify-send "GameMode ended"
-/home/ivica/.local/bin/custom/dmenuryzenadj &
+dmenuryzenadj
