@@ -43,6 +43,7 @@ alias lfrc='${=EDITOR} ~/.config/lf/lfrc'
 alias sxhkdrc='${=EDITOR} ~/.config/sxhkd/sxhkdrc'
 
 # Program alias
+alias netris='ssh netris.rocketnine.space'
 alias grep='grep --color=auto'
 alias vi='nvim'
 alias ls='exa -al --color=always --group-directories-first' # my preferred listing
@@ -63,12 +64,13 @@ alias ryzenadj-super-heavy-programs='/usr/bin/sudo ryzenadj --slow-time=60 --vrm
 alias zathura='zathura --mode fullscreen'
 
 # Function aliases
-alias yta='youtube-dl -x -f bestaudio --audio-quality 0 --external-downloader aria2c --external-downloader-args "-j 16 -s 16 -x 16 -k 5M" --audio-format vorbis -o "%(title)s.%(ext)s"'
-alias ytvb='youtube-dl --merge-output-format mp4 -f "bestvideo+bestaudio[ext=m4a]/best" --embyoutube-dl --merge-output-format mp4 -f "bestvideo+bestaudio[ext=m4a]/best" --embed-thumbnail --external-downloader aria2c --external-downloader-args "-j 16 -s 16 -x 16 -k 5M" --add-metadata -o "%(title)s.%(ext)s""'
+alias yta='youtube-dl -x -f bestaudio --external-downloader aria2c --external-downloader-args "-j 16 -s 16 -x 16 -k 5M" --audio-format vorbis -o "%(title)s.%(ext)s"'
+alias ytvb='youtube-dl --merge-output-format mp4 -f "bestvideo+bestaudio[ext=m4a]/best" --embed-thumbnail --external-downloader aria2c --external-downloader-args "-j 16 -s 16 -x 16 -k 5M" --add-metadata -o "%(title)s.%(ext)s"'
 alias ytvf='youtube-dl --merge-output-format mp4 --format best --embed-thumbnail --external-downloader aria2c --external-downloader-args "-j 16 -s 16 -x 16 -k 5M" --add-metadata -o "%(title)s.%(ext)s"'
 alias tdown='aria2c --follow-torrent=mem'
 alias dot='cd $HOME/Repos/Dotfiles'
 alias clear='clear; nerdfetch'
+alias aur-up='paru -Syua'
 
 # termbin
 alias tb="nc termbin.com 9999"

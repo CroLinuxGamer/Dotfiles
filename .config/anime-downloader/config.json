@@ -3,7 +3,7 @@
         "aria2c_for_torrents": true,
         "aria2c_log_level": "error",
         "chunk_size": "10",
-        "download_dir": "$HOME/Videos/Anime",
+        "download_dir": "/home/ivica/Videos/Anime",
         "external_downloader": "{aria2}",
         "fallback_qualities": [
             "720p",
@@ -240,6 +240,12 @@
         },
         "ryuanime": {
             "server": "trollvid",
+            "servers": [
+                "vidstream",
+                "mp4upload",
+                "xstreamcdn",
+                "trollvid"
+            ],
             "version": "subbed"
         },
         "vidstream": {

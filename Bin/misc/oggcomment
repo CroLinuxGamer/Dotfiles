@@ -3,11 +3,9 @@
 for DIR in *; {
     if cd "$DIR" 2> /dev/null; then
         for FILE in *.ogg; {
-            if [ -f "$File" ] ; then {
-                
-                echo            
-                echo "$FILE"
-                echo
+            if [ -f "$FILE" ] ; then {
+                            
+                echo "curent file is: $FILE"
 
                 art="0"
                 titl="0"
@@ -36,7 +34,10 @@ for DIR in *; {
                     echo
                     vorbiscomment -l "$FILE"
                     sleep 2
+                } else {
+                echo "File "$FILE" already has tags"
                 } fi
+                echo
             } fi
         } 
 

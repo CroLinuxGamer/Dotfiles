@@ -50,6 +50,7 @@ Plug 'dense-analysis/ale'
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 " color scheme
 Plug 'fneu/breezy'
+Plug 'vimwiki/vimwiki'
 call plug#end()
 
 " Center when entering insert mode

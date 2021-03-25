@@ -5,7 +5,7 @@ for Dir in *; {
         for File in *.ogg; {
             [ -f "$File" ] || continue
 
-            vorbisgain -f -a "$File"
+            vorbisgain -f "$File"
         }
 
         cd ..
