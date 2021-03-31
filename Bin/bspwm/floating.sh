@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/env bash
 
 # change the desktop number here
 FLOATING_DESKTOP_ID=$(bspc query -D -d '^4')

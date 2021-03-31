@@ -9,11 +9,6 @@
 # Nice system info (I hate neofetch)
 nerdfetch
 
-# Instant prompt
-# if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  # source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-# fi
-
 # set options
 setopt extendedglob                                             # Extended globbing. Allows using regular expressions with *
 setopt nocaseglob                                               # Case insensitive globbing
@@ -76,7 +71,7 @@ colors
 # plugins section
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
-# source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 zmodload zsh/terminfo
 bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
@@ -92,16 +87,6 @@ _dotnet_zsh_complete()
 }
 
 compctl -K _dotnet_zsh_complete dotnet
-
-### CHANGE TITLE OF TERMINALS
-# case ${TERM} in
-  # xterm*|rxvt*|Eterm*|aterm|kterm|gnome*|alacritty|st|konsole*)
-    # PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/\~}\007"'
-        # ;;
-  # screen*)
-    # PROMPT_COMMAND='echo -ne "\033_${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/\~}\033\\"'
-    # ;;
-# esac
 
 function set_win_title(){
     echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/\~}\007"
@@ -122,5 +107,4 @@ lf () {
 
 # (( ${+functions[module]} )) || source /etc/modules/init/zsh
 
-# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 eval "$(starship init zsh)"
