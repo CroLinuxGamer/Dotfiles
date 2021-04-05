@@ -3,7 +3,7 @@
 continuous() {
 while true;
 do
-    usage=$(awk '{u=$2+$4; t=$2+$4+$5; if (NR==1){u1=u; t1=t;} else print ($2+$4-u1) * 100 / (t-t1) "%"; }' <(grep 'cpu ' /proc/stat) <(sleep 1;grep 'cpu ' /proc/stat))
+    usage=$(poly-cpu)
     echo "Cpu name: $(lscpu | grep 'Model name:' | cut -c34-)"
     echo "Temp: $(sensors | grep "Tctl:" | awk '{print $2}')"
     echo "All core mhz: $(lscpu | grep 'CPU MHz' | awk '{print $3}') mhz"
@@ -23,7 +23,7 @@ done
 }
 
 print() {
-usage=$(awk '{u=$2+$4; t=$2+$4+$5; if (NR==1){u1=u; t1=t;} else print ($2+$4-u1) * 100 / (t-t1) "%"; }' <(grep 'cpu ' /proc/stat) <(sleep 1;grep 'cpu ' /proc/stat))
+usage=$(poly-cpu)
 echo "Cpu name: $(lscpu | grep 'Model name:' | cut -c34-)"
 echo "Temp: $(sensors | grep "Tctl:" | awk '{print $2}')"
 echo "All core mhz: $(lscpu | grep 'CPU MHz' | awk '{print $3}') mhz"
