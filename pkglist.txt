@@ -1,4 +1,3 @@
-0ad
 acpi
 adl-git
 alacritty
