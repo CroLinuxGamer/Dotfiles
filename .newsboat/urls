@@ -16,22 +16,22 @@ https://www.archlinux.org/feeds/news/ "~Arch news" "(Update news)"
 https://bugs.archlinux.org/feed.php?feed_type=rss1&project=1 "~Arch Bug Tracker" "(Update news)"
 https://forum.manjaro.org/c/announcements/testing-updates/13.rss "~Manjaro Testing Updates" "(Update news)"
 
-# (Anime)
-https://honeysanime.com/feed/ "~Honey's Anime" "(Anime)"
-https://www.animenewsnetwork.com/newsfeed/rss.xml?ann-edition=us "~AnimeNewsNetwork" "(Anime)"
-
-# (GitHub Projects)
-https://github.com/anime-dl/anime-downloader/releases.atom "~anime-downloader" "(GitHub Projects)"
-
 # (Lightnovels)
 https://thatnovelcorner.com/feed/ "~That Novel Corner" "(Light novels)"
 
-# (Blogs)
-https://www.tecmint.com/feed/ "~Tecmint" "(Blogs)"
-https://linuxscoop.com/feed "~Linux Scoop" "(Blogs)"
+# (Linux blogs)
+https://itsfoss.com/feed/ "~It's FOSS" "(Linux blogs)"
+https://www.linuxjournal.com/node/feed "~Linux Journal" "(Linux Blogs)"
+https://www.phoronix.com/rss.php "~Phoronix" "(Linux blogs)"
+
+# (Gaming blogs)
+https://www.gamingonlinux.com/article_rss.php "~GamingOnLinux" "(Gaming blogs)"
+https://boilingsteam.com/feed/ "~Boiling Steam" "(Gaming blogs)"
+https://linuxgameconsortium.com/feed/ "~Linux Games Consortium" "(Gaming blogs)"
+https://www.gamersonlinux.com/forum/forums/-/index.rss "~GamersOnLinux" "(Gaming blogs)"
+https://rootgamer.com/feed/ "~RootGamer.com" "(Gaming blogs)"
 
 # (Youtube)
-# https://www.youtube.com/feeds/videos.xml?channel_id=UCCIHOP7e271SIumQgyl6XBQ "~OldTechBloke" "(YouTube)"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCYNrBrBOgTfHswcz2DdZQFA "~DaFluffyPotato" "(YouTube)"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCfiC4q3AahU4Io-s83-CIbQ "~codergopher" "(YouTube)"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCl7dSJloxuCa9IBFml7sakw "~PolyMars" "(YouTube)"
@@ -58,15 +58,6 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCRHXUZ0BxbkU2MYZgsuFgkQ "~T
 https://www.youtube.com/feeds/videos.xml?channel_id=UCZWadyLVO4ZnMgLrRVtS6VA "~baby WOGUE" "(YouTube)"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC7YOGHUfC1Tb6E4pudI9STA "~Mental Outlaw" "(YouTube)"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC7MUgl7pf_OfZhWurZQS1oA "~Bero Tech" "(YouTube)"
-# https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "~Luke Smith" "(YouTube)"
-# https://www.youtube.com/feeds/videos.xml?channel_id=UCI7jCWExkpw2UTupPKcCsbg "~Should You Play It?" "(YouTube)"
-# https://www.youtube.com/feeds/videos.xml?channel_id=UCOEq_-iN7jhwv7ZXPh8djRg "~Low Budget Gaming" "(YouTube)"
-# https://www.youtube.com/feeds/videos.xml?channel_id=UCVls1GmFKf6WlTraIb_IaJg "~DistroTube" "(YouTube)"
-# https://www.youtube.com/feeds/videos.xml?channel_id=UCd4XwUn2Lure2NHHjukoCwA "~Linux For Everyone" "(YouTube)"
-# https://www.youtube.com/feeds/videos.xml?channel_id=UCg6gPGh8HU2U01vaFCAsvmQ "~Chris Titus Tech" "(YouTube)"
-# https://www.youtube.com/feeds/videos.xml?channel_id=UCld68syR8Wi-GY_n4CaoJGA "~Brodie Robertson" "(YouTube)"
-# https://www.youtube.com/feeds/videos.xml?channel_id=UCZYRhp6PPov9MurfZY7Itqw "~Penguin Revolution" "(YouTube)"
-# https://www.youtube.com/feeds/videos.xml?channel_id=UCv1Kcz-CuGM6mxzL3B1_Eiw "~TLG" "(YouTube)"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCylGUf9BvQooEFjgdNudoQg "~The Linux Cast" "(YouTube)"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCX_WM2O-X96URC5n66G-hvw "~EF - Linux Made Simple" "(YouTube)"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCfp-lNJy4QkIGnaEE6NtDSg "~Learn Linux" "(YouTube)"

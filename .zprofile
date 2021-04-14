@@ -10,6 +10,6 @@
 # bspwm tty1
 # [[ $(fgconsole 2>/dev/null) == 1 ]] && exec startx "$XDG_CONFIG_HOME/xinit/startbspwmx" -- vt1 # &> /dev/null
 
-eval `ssh-agent -s`
-ssh-add "$HOME"/.ssh/id_rsa_gh_manjaro
-trap 'kill $SSH_AGENT_PID' EXIT
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519_gh_ct
+ssh-add ~/.ssh/id_ed25519_gh_ca
