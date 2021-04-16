@@ -4,7 +4,7 @@
         "aria2c_log_level": "error",
         "chunk_size": "10",
         "download_dir": "/home/ivica/Videos/Anime",
-        "external_downloader": "{aria2}",
+        "external_downloader": "{aria2c}",
         "fallback_qualities": [
             "720p",
             "480p",
@@ -13,7 +13,7 @@
         "file_format": "{anime_title}/{anime_title}_{ep_no}",
         "force_download": false,
         "player": null,
-        "provider": "animeout",
+        "provider": "4anime",
         "quality": "1080p",
         "selescrape_browser": null,
         "selescrape_browser_executable_path": null,

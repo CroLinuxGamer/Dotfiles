@@ -46,7 +46,7 @@ alias ytvf='youtube-dl --merge-output-format mp4 --format best --embed-thumbnail
 alias dot='cd $HOME/Repos/Dotfiles'
 alias clear='clear; nerdfetch'
 alias cpu-power='sudo chmod o+r /sys/class/powercap/intel-rapl\:0/energy_uj'
-
+alias cv='covid19-cli -c Croatia'
 # termbin
 alias tb="nc termbin.com 9999"
 
