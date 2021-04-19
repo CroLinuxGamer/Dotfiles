@@ -5,3 +5,4 @@ ryzenadj_normal
 mouse_detect.sh
 mpd
 mpd-mpris &
+sudo nvidia-persistenced --user ivica

@@ -1,0 +1,4 @@
+#!/bin/sh
+
+killall nvidia-persistenced
+sudo /bin/rm -rf /var/run/nvidia-persistenced
