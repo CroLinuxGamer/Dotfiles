@@ -9,19 +9,20 @@
 # Config file aliases
 alias zshrc='${=EDITOR} ~/.zshrc' # Quick access to zsh config
 alias termconf='${=EDITOR} ~/.config/alacritty/alacritty.yml' # Quick acces terminal config
-alias polyconf='${=EDITOR} ~/.config/polybar/config' # Quick acces to polybar config
+# alias polyconf='${=EDITOR} ~/.config/polybar/config' # Quick acces to polybar config
 alias aliasrc='${=EDITOR} ~/.aliasrc' # Quick acces to alias config
-alias dxhdrc='${=EDITOR} ~/.config/dxhd/dxhd.sh' # Quick acces to sxhkd config
-alias bspwmrc='${=EDITOR} ~/.config/bspwm/bspwmrc' # Quick acces to bspwm config
+# alias dxhdrc='${=EDITOR} ~/.config/dxhd/dxhd.sh' # Quick acces to sxhkd config
+# alias bspwmrc='${=EDITOR} ~/.config/bspwm/bspwmrc' # Quick acces to bspwm config
 alias zshenv='${=EDITOR} ~/.zshenv' # Quick acces to zsh enviroment settings
 alias nvimrc='${=EDITOR} ~/.config/nvim/init.vim' # Quick acces to nvim config
-alias picomconf='${=EDITOR} ~/.config/picom/picom.conf'
+# alias picomconf='${=EDITOR} ~/.config/picom/picom.conf'
 alias lfrc='${=EDITOR} ~/.config/lf/lfrc'
-alias sxhkdrc='${=EDITOR} ~/.config/sxhkd/sxhkdrc'
+# alias sxhkdrc='${=EDITOR} ~/.config/sxhkd/sxhkdrc'
+alias runrc='${=EDITOR} ~/.config/game_run/config.ini'
 
 # Program alias
 alias netris='ssh netris.rocketnine.space'
-alias grep='grep --color=auto'
+alias grep='rg'
 alias vi='nvim'
 alias ls='exa -al --color=always --group-directories-first' # my preferred listing
 alias la='exa -a --color=always --group-directories-first'  # all files and dirs
@@ -32,6 +33,7 @@ alias find='fd'
 alias df='df -h -x devtmpfs -x tmpfs -x usbfs -x loop'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias ps='procs'
+alias top='ytop'
 alias ryzenadj-normal='/usr/bin/sudo ryzenadj --slow-time=30 --vrmmax-current=30000 --max-gfxclk=900 --max-fclk-frequency=1200 --tctl-temp=60 --stapm-limit=10000 --stapm-time=300 --fast-limit=12000 --slow-limit=11000'
 alias ryzenadj-fluff='/usr/bin/sudo ryzenadj --slow-time=30 --vrmmax-current=30000 --max-gfxclk=550 --max-fclk-frequency=1200 --tctl-temp=70 --stapm-limit=5000 --stapm-time=150 --fast-limit=7000 --slow-limit=6000'
 alias ryzenadj-light-gaming='/usr/bin/sudo ryzenadj --slow-time=30 --vrmmax-current=35000 --max-gfxclk=900 --max-fclk-frequency=1200 --tctl-temp=65 --stapm-limit=10000 --stapm-time=300 --fast-limit=12000 --slow-limit=11000'
@@ -47,6 +49,7 @@ alias dot='cd $HOME/Repos/Dotfiles'
 alias clear='clear; nerdfetch'
 alias cpu-power='sudo chmod o+r /sys/class/powercap/intel-rapl\:0/energy_uj'
 alias cv='covid19-cli -c Croatia'
+
 # termbin
 alias tb="nc termbin.com 9999"
 

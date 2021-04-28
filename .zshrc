@@ -9,6 +9,9 @@
 # Nice system info (I hate neofetch)
 nerdfetch
 
+eval "$(starship init zsh)"
+eval "$(fasd --init auto)"
+
 # set options
 setopt extendedglob                                             # Extended globbing. Allows using regular expressions with *
 setopt nocaseglob                                               # Case insensitive globbing
@@ -79,14 +82,14 @@ bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
 # zsh parameter completion for the dotnet CLI
-_dotnet_zsh_complete()
-{
-  local completions=("$(dotnet complete "$words")")
+# _dotnet_zsh_complete()
+# {
+  # local completions=("$(dotnet complete "$words")")
 
-  reply=( "${(ps:\n:)completions}" )
-}
+  # reply=( "${(ps:\n:)completions}" )
+# }
 
-compctl -K _dotnet_zsh_complete dotnet
+# compctl -K _dotnet_zsh_complete dotnet
 
 function set_win_title(){
     echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/\~}\007"
@@ -105,6 +108,3 @@ lf () {
 	unset LF_TEMPDIR
 }
 
-# (( ${+functions[module]} )) || source /etc/modules/init/zsh
-
-eval "$(starship init zsh)"

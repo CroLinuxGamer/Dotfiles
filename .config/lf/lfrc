@@ -14,6 +14,32 @@ set drawbox true
 set icons true
 set ignorecase true
 
+set shell zsh
+set shellopts '-euy'
+set ifs "\n"
+set filesep "\n"  # default already
+
+# remove some of the default bindings
+map n
+map m
+map o
+map "'"
+map '"'
+map d
+map c
+map e
+map f
+
+# Basic Functions
+map . set hidden!
+map <delete> delete
+map p paste
+map d cut
+map y copy
+map r rename
+map R reload
+map C clear
+map U unselect
 
 # Open function
 cmd open ${{
@@ -23,12 +49,22 @@ cmd open ${{
     esac
 }}
 
+map <enter> open
+
+# Different file openings
+map ee $$EDITOR "$f"
+map ev $$VISUAL "$f"
+map er $$READER "$f"
+map eb $$BOOK_READER "$f"
+
 # make directory
 cmd mkdir ${{
   printf "Directory Name: "
   read ans
   mkdir "$ans"
 }}
+
+map md mkdir
 
 # make file
 cmd mkfile ${{
@@ -37,6 +73,8 @@ cmd mkfile ${{
   $EDITOR "$ans"
 }}
 
+map mf mkfile
+
 # make programs executable
 cmd chmod ${{
   printf "Mode Bits: "
@@ -44,48 +82,83 @@ cmd chmod ${{
 
   for file in "$fx"
   do
-    chmod $ans $file
+    chmod $ans "$file"
   done
 }}
 
+map ch chmod
+
 # Archive
 cmd unarchive ${{
-    aunpack "$fx"
+    printf "Extracting:"
+
+    for file in "$fx"
+    do
+        aunpack "$file"
+    done
 }}
-# Removing some default bindings
-map m
-map o
-map n
-map "'"
-map '"'
-map d
-map c
-map e
-map f
 
-# Different file openings
-map ee $$EDITOR "$f"
-map ev $$VISUAL "$f"
-map er $$READER "$f"
-map eb $$BOOK_READER "$f"
-
-# Archive Mappings
-map az zip
-map at tar
 map au unarchive
 
-# Basic Functions
-map . set hidden!
-map <delete> delete
-map p paste
-map d cut
-map y copy
-map <enter> open
-map mf mkfile
-map md mkdir
-map ch chmod
-map r rename
-map R reload
-map C clear
-map U unselect
+# Rust new project
+cmd rust_new_bin ${{
+    printf "Type the name of your rust binary project: "
+    read ans
 
+    cargo new $ans --bin
+}}
+
+cmd rust_new_lib ${{
+    printf "Type the name of your rust library project:"
+    read ans
+
+    cargo new $ans --lib
+}}
+
+map nb rust_new_bin
+map nl rust_new_lib
+
+
+# Archive Mappings
+
+# open vscode in the directory
+map ed $code .
+
+# git support
+cmd git_branch ${{
+    git branch | fzf | xargs git checkout 
+    pwd_shell=$(pwd)
+    lf -remote "send $id updir"
+    lf -remote "send $id cd \"$pwd_shell\""
+}}
+map gb :git_branch
+map gp ${{clear; git pull --rebase || true; echo "press ENTER"; read ENTER}}
+map gs ${{clear; git status; echo "press ENTER"; read ENTER}}
+map gl ${{clear; git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit}}
+
+cmd on-cd &{{
+    # display git repository status in your prompt
+    source /usr/share/git/completion/git-prompt.sh
+    GIT_PS1_SHOWDIRTYSTATE=auto
+    GIT_PS1_SHOWSTASHSTATE=auto
+    GIT_PS1_SHOWUNTRACKEDFILES=auto
+    GIT_PS1_SHOWUPSTREAM=auto
+    GIT_PS1_COMPRESSSPARSESTATE=auto
+    git=$(__git_ps1 " [GIT BRANCH:> %s]") || true
+    fmt="\033[32;1m%u@%h\033[0m:\033[34;1m%w\033[0m\033[33;1m$git\033[0m"
+    lf -remote "send $id set promptfmt \"$fmt\""
+}}
+
+
+# fast directory jumping
+cmd fasd_dir ${{
+   res="$(fasd -dl | grep -iv cache | fzf 2>/dev/tty | sed 's/\\/\\\\/g;s/"/\\"/g')"
+   if [ -d "$res" ]; then
+      cmd="cd"
+   else
+      cmd="select"
+   fi
+ lf -remote "send $id $cmd \"$res\""
+ }}
+
+map go :fasd_dir
