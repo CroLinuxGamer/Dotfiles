@@ -14,7 +14,7 @@ alias aliasrc='${=EDITOR} ~/.aliasrc' # Quick acces to alias config
 # alias dxhdrc='${=EDITOR} ~/.config/dxhd/dxhd.sh' # Quick acces to sxhkd config
 # alias bspwmrc='${=EDITOR} ~/.config/bspwm/bspwmrc' # Quick acces to bspwm config
 alias zshenv='${=EDITOR} ~/.zshenv' # Quick acces to zsh enviroment settings
-alias nvimrc='${=EDITOR} ~/.config/nvim/init.vim' # Quick acces to nvim config
+alias virc='${=EDITOR} ~/.config/nvim/init.lua' # Quick acces to nvim config
 # alias picomconf='${=EDITOR} ~/.config/picom/picom.conf'
 alias lfrc='${=EDITOR} ~/.config/lf/lfrc'
 # alias sxhkdrc='${=EDITOR} ~/.config/sxhkd/sxhkdrc'
@@ -46,7 +46,7 @@ alias yta='youtube-dl -x -f bestaudio --external-downloader aria2c --external-do
 alias ytvb='youtube-dl --merge-output-format mp4 -f "bestvideo+bestaudio[ext=m4a]/best" --embed-thumbnail --external-downloader aria2c --external-downloader-args "-j 16 -s 16 -x 16 -k 5M" --add-metadata -o "%(title)s.%(ext)s"'
 alias ytvf='youtube-dl --merge-output-format mp4 --format best --embed-thumbnail --external-downloader aria2c --external-downloader-args "-j 16 -s 16 -x 16 -k 5M" --add-metadata -o "%(title)s.%(ext)s"'
 alias dot='cd $HOME/Repos/Dotfiles'
-alias clear='clear; nerdfetch'
+alias clear='clear; pfetch'
 alias cpu-power='sudo chmod o+r /sys/class/powercap/intel-rapl\:0/energy_uj'
 alias cv='covid19-cli -c Croatia'
 

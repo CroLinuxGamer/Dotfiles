@@ -7,7 +7,7 @@
                        # |___/
 
 # Nice system info (I hate neofetch)
-nerdfetch
+pfetch
 
 eval "$(starship init zsh)"
 eval "$(fasd --init auto)"
