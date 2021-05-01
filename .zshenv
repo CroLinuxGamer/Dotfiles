@@ -13,7 +13,7 @@ export PATH
 
 # Programs export
 export EDITOR="nvim"
-export VISUAL="code"
+export VISUAL="codium"
 export READER="zathura"
 export BOOK_READER="foliate"
 export TERMINAL="alacritty"
