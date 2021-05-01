@@ -1,0 +1,5 @@
+ppsspp-git
+dolphin-emu
+duckstation-git
+rpcs3-git
+rpcs3-udev
