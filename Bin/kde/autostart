@@ -6,6 +6,3 @@ mouse_detect.sh
 mpd
 mpd-mpris &
 sudo /bin/rm -rf /var/run/nvidia-persistenced
-sudo /bin/rm -rf /var/run/nvidia-persistenced
-sleep 1
-sudo nvidia-persistenced --user ivica
