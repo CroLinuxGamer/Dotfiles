@@ -8,44 +8,22 @@
 
 # Path export
 typeset -U PATH path
-path=("$HOME/.dotnet/tools" "$HOME/.local/bin" "$HOME/Bin/dmenu" "$HOME/Bin/gaming" "$HOME/Bin/kde" "$HOME/Bin/lf" "$HOME/Bin/misc" "$HOME/Bin/bspwm" "$HOME/Bin/bar" "$HOME/Bin/rust" "$path[@]")
+path=("$HOME/Bin" "$HOME/.local/bin/custom" "$HOME/.local/bin/dmenu" "$HOME/.local/bin/lf" "$HOME/.local/bin/" "$HOME/.local/share/go/bin/" "$HOME/.local/bin/servers" "$path[@]")
 export PATH
+. "$HOME/.cargo/env"
 
 # Programs export
 export EDITOR="nvim"
-export VISUAL="codium"
+export VISUAL="code"
 export READER="zathura"
 export BOOK_READER="foliate"
 export TERMINAL="alacritty"
-export BROWSER="brave"
+export BROWSER="brave-browser"
 export VIDEO="mpv"
-export IMAGE="feh"
 export OPENER="xdg-open"
-export PAGER="less"
-export WM="bspwm"
+export GOPATH="$HOME/.local/share/go"
 
-# clean up
-export XDG_CONFIG_HOME="$HOME/.config"
-export XDG_DATA_HOME="$HOME/.local/share"
-export XDG_CACHE_HOME="$HOME/.cache"
-export NOTMUCH_CONFIG="${XDG_CONFIG_HOME:-$HOME/.config}/notmuch-config"
-export LESSHISTFILE="-"
-export WINEPREFIX="${XDG_DATA_HOME:-$HOME/.local/share}/wineprefixes/default"
-export PASSWORD_STORE_DIR="${XDG_DATA_HOME:-$HOME/.local/share}/password-store"
-export ANDROID_SDK_HOME="${XDG_CONFIG_HOME:-$HOME/.config}/android"
-export CARGO_HOME="${XDG_DATA_HOME:-$HOME/.local/share}/cargo"
-export GOPATH="${XDG_DATA_HOME:-$HOME/.local/share}/go"
-export HISTFILE="${XDG_DATA_HOME:-$HOME/.local/share}/history"
-export CCACHE_DIR="${XDG_CACHE_HOME:-$HOME/.cache}/ccache"
-export DOTNET_CLI_TELEMETRY_OPTOUT=1
-
-# fifo managment for my scipts
-export VOLUME_FIFO="/tmp/xob-volume-fifo"
-export BACKLIGHT_FIFO="/tmp/xob-backlight-fifo"
-
-# gaming settings
-DXVK_HUD=compiler
-
+export QT_QPA_PLATFORMTHEME=gtk2
 # lf icons
 export LF_ICONS="\
 di=:\

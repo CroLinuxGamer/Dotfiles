@@ -4,7 +4,7 @@
         "aria2c_log_level": "error",
         "chunk_size": "10",
         "download_dir": "/home/ivica/Videos/Anime",
-        "external_downloader": "{aria2c}",
+        "external_downloader": "{aria2}",
         "fallback_qualities": [
             "720p",
             "480p",

@@ -1,4 +1,0 @@
-#!/bin/sh
-
-sudo /bin/rm -rf /var/run/nvidia-persistenced
-

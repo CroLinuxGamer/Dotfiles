@@ -1,0 +1,13 @@
+#!/bin/env bash
+
+for Dir in *; {
+    if cd "$Dir" 2> /dev/null; then
+        for File in *.ogg; {
+            [ -f "$File" ] || continue
+
+            vorbisgain -f "$File"
+        }
+
+        cd ..
+    fi
+}

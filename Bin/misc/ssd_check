@@ -1,7 +1,0 @@
-#!/bin/sh
-
-perc=$(sudo tlp-stat  | grep "Percentage Used:" | awk '{printf $3}')
-written=$(sudo tlp-stat  | grep "Data Units Written:" | awk '{printf $4" "$5" "$6}')
-temperature=$(sudo tlp-stat | grep "Temperature:" | awk '{printf $2" "$3}')
-
-echo "$perc $written $temperature"

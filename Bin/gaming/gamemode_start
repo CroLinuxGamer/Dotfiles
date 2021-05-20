@@ -1,5 +1,0 @@
-#!/bin/sh
-
-notify-send "GameMode started"
-dmenuryzenadj
-qdbus org.kde.KWin /Compositor suspend

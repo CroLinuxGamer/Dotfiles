@@ -1,6 +1,0 @@
-#!/bin/sh
-
-usage=$(nvidia-settings -q GPUUtilization -t)
-temp=$(nvidia-settings -q gpucoretemp -t)
-
-echo "$usage / $temp°C"

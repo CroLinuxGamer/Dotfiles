@@ -11,10 +11,21 @@
 "query:Starred:flags # \"s\""
 "query:Unread:unread = \"yes\""
 
+# (Github)
+https://github.com/RaitaroH/adl/commits/master.atom "~Adl" "(Github)"
+https://github.com/anime-dl/anime-downloader/commits/master.atom "~anime-downloader" "(Github)"
+https://github.com/z411/trackma/commits/master.atom "~Trackma" "(Github)"
+https://github.com/flubberding/ProtonUpdater/commits/master.atom "~ProtonUpdater" "(Github)"
+https://github.com/gokcehan/lf/releases.atom "~lf" "(Github)"
+https://github.com/dylanaraps/pfetch/commits/master.atom "~pfetch" "(Github)"
+https://github.com/FlyGoat/RyzenAdj/commits/master.atom "~RyzenAdj" "(Github)"
+https://github.com/marianosimone/epub-thumbnailer/commits/master "~epub-thumbnailer" "(Github)"
+https://github.com/ytdl-org/youtube-dl/releases.atom "~youtube-dl" "(Github)"
+
 # (Update news)
-https://www.archlinux.org/feeds/news/ "~Arch news" "(Update news)"
-https://bugs.archlinux.org/feed.php?feed_type=rss1&project=1 "~Arch Bug Tracker" "(Update news)"
-https://forum.manjaro.org/c/announcements/testing-updates/13.rss "~Manjaro Testing Updates" "(Update news)"
+# https://www.archlinux.org/feeds/news/ "~Arch news" "(Update news)"
+# https://bugs.archlinux.org/feed.php?feed_type=rss1&project=1 "~Arch Bug Tracker" "(Update news)"
+# https://forum.manjaro.org/c/announcements/testing-updates/13.rss "~Manjaro Testing Updates" "(Update news)"
 
 # (Lightnovels)
 https://thatnovelcorner.com/feed/ "~That Novel Corner" "(Light novels)"

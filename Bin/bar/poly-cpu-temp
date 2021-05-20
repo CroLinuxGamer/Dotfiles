@@ -1,4 +1,0 @@
-#!/bin/sh
-
-temp=$(sensors | awk '/^Tdie:/ {print $2}')
-echo "$temp"
