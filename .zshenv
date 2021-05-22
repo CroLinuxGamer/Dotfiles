@@ -8,7 +8,7 @@
 
 # Path export
 typeset -U PATH path
-path=("$HOME/Bin" "$HOME/.local/bin/custom" "$HOME/.local/bin/dmenu" "$HOME/.local/bin/lf" "$HOME/.local/bin/" "$HOME/.local/share/go/bin/" "$HOME/.local/bin/servers" "$path[@]")
+path=("$HOME/Bin" "$HOME/.local/bin/custom" "$HOME/.local/bin/dmenu" "$HOME/.local/bin/lf" "$HOME/.local/bin/" "$HOME/.local/share/go/bin/" "$HOME/.local/bin/servers" "$HOME/.local/bin/dwm" "$path[@]")
 export PATH
 . "$HOME/.cargo/env"
 

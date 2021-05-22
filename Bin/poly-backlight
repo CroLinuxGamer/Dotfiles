@@ -1,6 +1,4 @@
 #!/bin/sh
 
-backlight=$(light -G | sed 's/\.[0-9]*//')
+echo $(light -G | sed 's/\.[0-9]*//')
 
-echo $backlight
-echo $backlight > /tmp/xob-backlight-fifo
