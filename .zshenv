@@ -8,22 +8,21 @@
 
 # Path export
 typeset -U PATH path
-path=("$HOME/Bin" "$HOME/.local/bin/custom" "$HOME/.local/bin/dmenu" "$HOME/.local/bin/lf" "$HOME/.local/bin/" "$HOME/.local/share/go/bin/" "$HOME/.local/bin/servers" "$HOME/.local/bin/dwm" "$path[@]")
+path=("$HOME/Bin" "$path[@]")
 export PATH
-. "$HOME/.cargo/env"
 
 # Programs export
 export EDITOR="nvim"
 export VISUAL="code"
-export READER="zathura"
-export BOOK_READER="foliate"
-export TERMINAL="alacritty"
-export BROWSER="brave-browser"
-export VIDEO="mpv"
-export OPENER="xdg-open"
-export GOPATH="$HOME/.local/share/go"
+#export READER="/mnt/c/dsdsdsds"
+#export BOOK_READER="foliate"
+#export TERMINAL="alacritty"
+#export BROWSER="brave-browser"
+#export VIDEO="mpv"
+#export OPENER="xdg-open"
+#export GOPATH="$HOME/.local/share/go"
 
-export QT_QPA_PLATFORMTHEME=gtk2
+#export QT_QPA_PLATFORMTHEME=gtk2
 # lf icons
 export LF_ICONS="\
 di=:\
