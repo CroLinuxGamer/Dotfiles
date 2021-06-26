@@ -25,7 +25,9 @@ auto-reload yes
 auto-reload yes
 reload-threads 100
 
-browser "dmenulinkhandler %u"
+browser "/mnt/c/Users/Ivica/AppData/Local/BraveSoftware/Brave-Browser/Application/brave.exe"
+
+macro w set browser "mpv.exe %u" ; open-in-browser ; set browser "/mnt/c/Users/Ivica/AppData/Local/BraveSoftware/Brave-Browser/Application/brave.exe %u"
 
 color background          color236   default
 color listnormal          color248   default
@@ -45,4 +47,4 @@ highlight feedlist "^─.*$" color6 color236 bold
 
 download-path "~/Downloads"
 max-downloads 2
-player "mpd"
+player "mpd.exe"
