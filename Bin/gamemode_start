@@ -1,4 +1,0 @@
-#!/bin/sh
-
-dmenuryzenadj
-gnome-extensions disable unredirect@vaina.lt

@@ -7,9 +7,8 @@
                        # |___/
 
 # Path export
-typeset -U PATH path
-path=("$HOME/Bin" "$path[@]")
-export PATH
+# load my path
+[ -f "$HOME/.path" ] && source "$HOME/.path"
 
 # Programs export
 export EDITOR="nvim"

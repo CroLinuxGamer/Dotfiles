@@ -28,18 +28,18 @@ alias ls='exa -al --color=always --group-directories-first' # my preferred listi
 alias la='exa -a --color=always --group-directories-first'  # all files and dirs
 # alias ll='exa -l --color=always --group-directories-first'  # long format
 alias lt='exa -aT --color=always --group-directories-first' # tree listing
-alias cat='batcat'
-alias find='fd'
+alias cat='bat'
+alias find='fdfind'
 alias df='df -h -x devtmpfs -x tmpfs -x usbfs -x loop'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias ps='procs'
 alias top='ytop'
-# alias ryzenadj-normal='/usr/bin/sudo ryzenadj --slow-time=30 --vrmmax-current=30000 --max-gfxclk=900 --max-fclk-frequency=1200 --tctl-temp=60 --stapm-limit=10000 --stapm-time=300 --fast-limit=12000 --slow-limit=11000'
-# alias ryzenadj-fluff='/usr/bin/sudo ryzenadj --slow-time=30 --vrmmax-current=30000 --max-gfxclk=550 --max-fclk-frequency=1200 --tctl-temp=70 --stapm-limit=5000 --stapm-time=150 --fast-limit=7000 --slow-limit=6000'
-# alias ryzenadj-light-gaming='/usr/bin/sudo ryzenadj --slow-time=30 --vrmmax-current=35000 --max-gfxclk=900 --max-fclk-frequency=1200 --tctl-temp=65 --stapm-limit=10000 --stapm-time=300 --fast-limit=12000 --slow-limit=11000'
-# alias ryzenadj-heavy-gaming='/usr/bin/sudo ryzenadj --slow-time=60 --vrmmax-current=60000 --max-gfxclk=900 --max-fclk-frequency=1200 --tctl-temp=70 --stapm-limit=20000 --stapm-time=1000 --fast-limit=25000 --slow-limit=21000'
-# alias ryzenadj-super-heavy-programs='/usr/bin/sudo ryzenadj --slow-time=60 --vrmmax-current=60000 --max-gfxclk=900 --max-fclk-frequency=1200 --tctl-temp=75 --stapm-limit=25000 --stapm-time=1000 --fast-limit=30000 --slow-limit=27000'
-# alias zathura='zathura --mode fullscreen'
+alias ryzenadj-normal='/usr/bin/sudo ryzenadj --slow-time=30 --vrmmax-current=30000 --max-gfxclk=900 --max-fclk-frequency=1200 --tctl-temp=60 --stapm-limit=10000 --stapm-time=300 --fast-limit=12000 --slow-limit=11000'
+alias ryzenadj-fluff='/usr/bin/sudo ryzenadj --slow-time=30 --vrmmax-current=30000 --max-gfxclk=550 --max-fclk-frequency=1200 --tctl-temp=70 --stapm-limit=5000 --stapm-time=150 --fast-limit=7000 --slow-limit=6000'
+alias ryzenadj-light-gaming='/usr/bin/sudo ryzenadj --slow-time=30 --vrmmax-current=35000 --max-gfxclk=900 --max-fclk-frequency=1200 --tctl-temp=65 --stapm-limit=10000 --stapm-time=300 --fast-limit=12000 --slow-limit=11000'
+alias ryzenadj-heavy-gaming='/usr/bin/sudo ryzenadj --slow-time=60 --vrmmax-current=60000 --max-gfxclk=900 --max-fclk-frequency=1200 --tctl-temp=70 --stapm-limit=20000 --stapm-time=1000 --fast-limit=25000 --slow-limit=21000'
+alias ryzenadj-super-heavy-programs='/usr/bin/sudo ryzenadj --slow-time=60 --vrmmax-current=60000 --max-gfxclk=900 --max-fclk-frequency=1200 --tctl-temp=75 --stapm-limit=25000 --stapm-time=1000 --fast-limit=30000 --slow-limit=27000'
+alias zathura='zathura --mode fullscreen'
 
 # Function aliases
 alias yta='youtube-dl -x -f bestaudio --external-downloader aria2c --external-downloader-args "-j 16 -s 16 -x 16 -k 5M" --audio-format vorbis -o "%(title)s.%(ext)s"'

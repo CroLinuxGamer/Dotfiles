@@ -1,0 +1,13 @@
+#!/bin/sh
+
+for wifi in /sys/class/net/w*
+do
+    state=$(cat "$wifi"/operstate)
+
+    if [ "$state" = "up" ]; then # if connected
+        echo "直 "
+    else
+        echo "睊 "
+    fi
+done
+

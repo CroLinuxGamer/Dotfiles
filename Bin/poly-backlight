@@ -1,4 +1,0 @@
-#!/bin/sh
-
-echo $(light -G | sed 's/\.[0-9]*//')
-

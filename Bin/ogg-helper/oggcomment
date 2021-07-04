@@ -1,0 +1,46 @@
+#!/bin/env bash
+
+for DIR in *; {
+    if cd "$DIR" 2> /dev/null; then
+        for FILE in *.ogg; {
+            if [ -f "$FILE" ] ; then {
+                            
+                echo "curent file is: $FILE"
+
+                art="0"
+                titl="0"
+
+                ARTIST=$(vorbiscomment -l "$FILE" | grep 'ARTIST')
+
+                if [ -z "$ARTIST" ]; then {
+                    read -p "Write the name of the artist: " artist
+                    art="1"
+                    vorbiscomment -a -t "ARTIST=$artist" "$FILE"
+                } fi
+
+                TITLE=$(vorbiscomment -l "$FILE" | grep 'TITLE')
+
+                if [ -z "$TITLE" ]; then {
+                    read -p "Write the title of the song: " title
+                    titl="1"
+                    vorbiscomment -a -t "TITLE=$title" "$FILE"
+                } fi
+                
+                if [ $art == "1" ] ; then {
+                    echo
+                    vorbiscomment -l "$FILE"
+                    sleep 2
+                } elif [ $titl == "1" ]; then {
+                    echo
+                    vorbiscomment -l "$FILE"
+                    sleep 2
+                } else {
+                echo "File "$FILE" already has tags"
+                } fi
+                echo
+            } fi
+        } 
+
+        cd ..
+    fi
+}

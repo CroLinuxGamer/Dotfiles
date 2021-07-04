@@ -8,4 +8,6 @@
 
 # export MANGOHUD=1
 # export QT_QPA_PLATFORMTHEME="qt5ct"
-export DISPLAY="`grep nameserver /etc/resolv.conf | sed 's/nameserver //'`:0"
+# export DISPLAY="`grep nameserver /etc/resolv.conf | sed 's/nameserver //'`:0"
+# load my path
+[ -f "$HOME/.path" ] && source "$HOME/.path"

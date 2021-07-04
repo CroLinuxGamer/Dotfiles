@@ -1,0 +1,9 @@
+#!/bin/sh
+
+export PATH=$PATH:$HOME/Bin/amd-ryzen
+export PATH=$PATH:$HOME/Bin/gaming
+export PATH=$PATH:$HOME/Bin/misc
+export PATH=$PATH:$HOME/Bin/ogg-helper
+export PATH=$PATH:$HOME/Bin/pop-os
+export PATH=$PATH:$HOME/Bin/software
+export PATH=$PATH:$HOME/Bin/language-servers

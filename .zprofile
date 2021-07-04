@@ -12,7 +12,7 @@
 
 eval "$(ssh-agent -s)" &> /dev/null
 # ssh-add ~/.ssh/id_ed25519_gh_ct
-ssh-add ~/.ssh/id_ed25519-cronyakatsuki &> /dev/null
+# ssh-add ~/.ssh/id_ed25519-cronyakatsuki &> /dev/null
 
 # if [ "$TERM" = "linux" ]; then
 #     printf %b '\e[40m' '\e[8]' # set default background to color 0 'dracula-bg'
@@ -36,4 +36,3 @@ ssh-add ~/.ssh/id_ed25519-cronyakatsuki &> /dev/null
 #     clear
 # fi
 
-export DISPLAY="`grep nameserver /etc/resolv.conf | sed 's/nameserver //'`:0"
