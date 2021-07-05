@@ -6,8 +6,7 @@
  # \____|_|  \___/|_| |_|\__, | /_/   \_\_|\_\__,_|\__|___/\__,_|_|\_\_|
                        # |___/
 
-# export MANGOHUD=1
-# export QT_QPA_PLATFORMTHEME="qt5ct"
-# export DISPLAY="`grep nameserver /etc/resolv.conf | sed 's/nameserver //'`:0"
 # load my path
 [ -f "$HOME/.path" ] && source "$HOME/.path"
+# load my exports
+[ -f "$HOME/.exportrc" ] && source "$HOME/.exportrc"

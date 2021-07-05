@@ -7,3 +7,7 @@ export PATH=$PATH:$HOME/Bin/ogg-helper
 export PATH=$PATH:$HOME/Bin/pop-os
 export PATH=$PATH:$HOME/Bin/software
 export PATH=$PATH:$HOME/Bin/language-servers
+export PATH=$PATH:$HOME/Bin/lf
+export PATH=$PATH:$HOME/Bin/dmenu
+export PATH=$PATH:$HOME/Bin/dwm
+export PATH=$PATH:$HOME/.local/bin
