@@ -1,11 +1,18 @@
 #!/bin/env bash
 
+# easy comment artist and title for a ogg file
+
+total_files="0"
+no_action_files="0"
+commented_files="0"
+
 for DIR in *; {
     if cd "$DIR" 2> /dev/null; then
         for FILE in *.ogg; {
+            total_files="$(($total_files + 1))"
             if [ -f "$FILE" ] ; then {
-                            
                 echo "curent file is: $FILE"
+                commented_files="$(($commented_files +1))"
 
                 art="0"
                 titl="0"
@@ -33,9 +40,10 @@ for DIR in *; {
                 } elif [ $titl == "1" ]; then {
                     echo
                     vorbiscomment -l "$FILE"
-                    sleep 2
+                    sleep # easy comment artist and title for a ogg file2
                 } else {
                 echo "File "$FILE" already has tags"
+                no_action_files="$(($no_action_files +1))"
                 } fi
                 echo
             } fi
@@ -44,3 +52,7 @@ for DIR in *; {
         cd ..
     fi
 }
+
+echo "Total: $total_files
+Commented: $commented_files
+No changes $no_action_files"
