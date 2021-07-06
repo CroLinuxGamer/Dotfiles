@@ -3,7 +3,6 @@
 # a simple script to toggle of unneeded extension while playing games for example
 
 # set your custom icon here
-icon="$HOME/Pictures/logo.jpg"
 
 list=$(gnome-extensions list)
 
