@@ -8,7 +8,7 @@
 
 # Config file aliases
 alias zshrc='${=EDITOR} ~/.zshrc' # Quick access to zsh config
-# alias termconf='${=EDITOR} ~/.config/alacritty/alacritty.yml' # Quick acces terminal config
+alias termconf='${=EDITOR} ~/.config/alacritty/alacritty.yml' # Quick acces terminal config
 # alias polyconf='${=EDITOR} ~/.config/polybar/config' # Quick acces to polybar config
 alias aliasrc='${=EDITOR} ~/.aliasrc' # Quick acces to alias config
 # alias dxhdrc='${=EDITOR} ~/.config/dxhd/dxhd.sh' # Quick acces to sxhkd config

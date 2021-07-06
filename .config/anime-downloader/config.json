@@ -277,6 +277,13 @@
             ],
             "version": "subbed"
         },
+        "wcostream": {
+            "servers": [
+                "vidstreampro",
+                "mcloud"
+            ],
+            "version": "subbed"
+        },
         "yify": {
             "servers": [
                 "vidstream",
