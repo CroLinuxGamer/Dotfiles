@@ -1,0 +1,16 @@
+#!/bin/sh
+
+# a simple script to toggle of unneeded extension while playing games for example
+
+# set your custom icon here
+icon="$HOME/Pictures/logo.jpg"
+
+list=$(gnome-extensions list)
+
+for line in $list; do
+   [ "$line" != "gamemode@christian.kellner.me" ] && [ "$line" != "cosmic-dock@system76.com" ] && [ "$line" != "pop-cosmic@system76.com" ] && [ "$line" != "ding@rastersoft.com" ] && [ "$line" != "pop-shell@system76.com" ] && [ "$line" != "system76-power@system76.com" ] && [ "$line" != "ubuntu-appindicators@ubuntu.com" ] || continue
+   state=$(gnome-extensions info $line | grep 'State' | awk '{ print $2 }')
+   [ "$state" = "ENABLED" ] && gnome-extensions disable $line || gnome-extensions enable $line
+done
+
+[ "$state" = "ENABLED" ] && notify-send "Extension Toggler" "Disabled unneeded extensions" -u normal -i "$icon" || notify-send "Extension Toggler" "Enabled disabled extensions" -u normal -i "$icon"
