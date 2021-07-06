@@ -1,11 +1,12 @@
 #!/bin/sh
+export QT_QPA_PLATFORMTHEME=gtk2
 
 export EDITOR="nvim"
 export VISUAL="nvim"
 export BOOK_READER="foliate"
 export TERMINAL="alacritty"
 export BROWSER="brave-browser"
-export VIDEO="mpv"
+export VIDEO="celluloid"
 export OPENER="xdg-open"
 
 export LF_ICONS="\
