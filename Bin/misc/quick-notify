@@ -1,0 +1,7 @@
+#!/bin/sh
+
+#a basic script to quickly send a notification with a image
+
+icon="$HOME/Pictures/logo.jpg"
+
+notify-send "$1" "$2" -u normal -i "$icon"
